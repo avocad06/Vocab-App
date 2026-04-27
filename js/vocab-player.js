@@ -96,6 +96,7 @@
     `;
 
     refs.fs.classList.add('is-active');
+    window._vocabSetFullscreen?.(true);   // 풀스크린 진입 → 버튼 차단
     await raf2();
 
     s.style.transition = `transform ${T.EXPAND_DUR}ms cubic-bezier(0.4,0,0.2,1)`;
@@ -117,6 +118,7 @@
     await wait(T.COLLAPSE_DUR);
 
     refs.fs.classList.remove('is-active');
+    window._vocabSetFullscreen?.(false);  // 풀스크린 해제 → 버튼 허용
     s.style.cssText = '';
   }
 
@@ -219,22 +221,55 @@
     await wait(T.FINAL_HOLD);
   }
 
+  // 각 phase를 안전하게 실행 — 실패해도 시퀀스 계속 진행
+  async function safeRun(label, fn) {
+    try {
+      await fn();
+    } catch (err) {
+      console.warn(`[VocabPlayer] ${label} 실패, 건너뜀:`, err);
+    }
+  }
+
   async function play(card, wordData) {
     const refs = getRefs(card);
-    reset(refs);
-    await phase1(refs, wordData);
-    await phase2(refs);
-    await phase3(refs);
-    await phase4(refs, wordData);
-    await phase5(refs);
-    await phase6(refs, wordData);
-    await phase7(refs, wordData);
+
+    try {
+      reset(refs);
+    } catch (err) {
+      console.warn('[VocabPlayer] reset 실패:', err);
+    }
+
+    await safeRun('phase1', () => phase1(refs, wordData));
+    await safeRun('phase2', () => phase2(refs));
+    await safeRun('phase3', () => phase3(refs));
+    await safeRun('phase4', () => phase4(refs, wordData));
+    await safeRun('phase5', () => phase5(refs));
+    await safeRun('phase6', () => phase6(refs, wordData));
+    await safeRun('phase7', () => phase7(refs, wordData));
+
+    // 에러로 인해 풀스크린이 열린 채 끝났을 경우 강제 정리
+    try {
+      if (refs.fs?.classList.contains('is-active')) {
+        refs.fs.classList.remove('is-active');
+        refs.fsImg.style.cssText = '';
+        refs.fsBlur.classList.remove('is-visible');
+        refs.fsWordRow.classList.remove('is-visible');
+        refs.fsMeaning.classList.remove('is-visible');
+        refs.fsExWrap.classList.remove('is-visible');
+        refs.fs.closest('.vocab-card')?.classList.remove('is-fs-open');
+        window._vocabSetFullscreen?.(false);  // 버튼 차단 해제
+      }
+    } catch (e) { /* 무시 */ }
   }
 
   async function playAll(cards, wordDataList, opts = {}) {
     for (let i = 0; i < cards.length; i++) {
       if (opts.onCard) opts.onCard(i, cards[i]);
-      await play(cards[i], wordDataList[i]);
+      try {
+        await play(cards[i], wordDataList[i]);
+      } catch (err) {
+        console.warn(`[VocabPlayer] 카드 ${i} 전체 실패, 다음으로:`, err);
+      }
       if (i < cards.length - 1) await wait(T.BETWEEN);
     }
   }
