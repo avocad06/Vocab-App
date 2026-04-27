@@ -1,45 +1,31 @@
 /**
  * js/vocab-card.js
- *
- * DOM 구조:
- *   .vocab-card                     ← 카드 루트 (viewport 크기로 확장됨)
- *     .vocab-card__bg               ← 배경 미디어 (thumb → 확대 → video/gif)
- *       img.vocab-thumb             ← 초기 스냅 이미지
- *       video or img.vocab-card__media  ← 실제 미디어 (7단계에서 등장)
- *     .vocab-card__blur             ← 블러 오버레이 (3~6단계)
- *     .vocab-card__overlay          ← 텍스트 레이어 (중앙 정렬)
- *       .vocab-card__word-wrap      ← 단어 + 품사 (3·4단계)
- *         .vocab-card__pos
- *         .vocab-card__word-row     ← 글자별 span
- *       .vocab-card__meaning-wrap   ← 뜻 (5단계)
- *       .vocab-card__example-wrap   ← 예문 어절 (6·7단계)
- *         .vocab-card__chunk        ← 어절별 span
  */
 (function () {
   'use strict';
 
-  function buildWordRow(word) {
+  function buildCardWordRow(word) {
     const row = document.createElement('div');
     row.className = 'vocab-card__word-row';
     for (const ch of word) {
-      const span = document.createElement('span');
-      span.className = 'vocab-card__letter';
-      span.textContent = ch;
-      row.appendChild(span);
+      if (ch === ' ') {
+        const sp = document.createElement('span');
+        sp.className = 'vocab-card__word-space';
+        row.appendChild(sp);
+        continue;
+      }
+      const wrap = document.createElement('span');
+      wrap.className = 'vocab-card__word-char';
+      const letter = document.createElement('span');
+      letter.className = 'vocab-card__letter';
+      letter.textContent = ch;
+      const blank = document.createElement('span');
+      blank.className = 'vocab-card__blank';
+      wrap.appendChild(letter);
+      wrap.appendChild(blank);
+      row.appendChild(wrap);
     }
     return row;
-  }
-
-  function buildExampleRow(chunks) {
-    const wrap = document.createElement('div');
-    wrap.className = 'vocab-card__example-wrap';
-    chunks.forEach(chunk => {
-      const span = document.createElement('span');
-      span.className = 'vocab-card__chunk';
-      span.textContent = chunk;
-      wrap.appendChild(span);
-    });
-    return wrap;
   }
 
   function createCard(wordData) {
@@ -47,57 +33,99 @@
     card.className = 'vocab-card';
     card.dataset.id = wordData.id;
 
-    /* ── 배경 레이어 ── */
-    const bg = document.createElement('div');
-    bg.className = 'vocab-card__bg';
+    /* ── 미디어 영역 ── */
+    const mediaWrap = document.createElement('div');
+    mediaWrap.className = 'vocab-card__media-wrap';
 
-    // 스냅 썸네일 (처음 보여줄 이미지)
-    const thumb = MediaLoader.createThumb(wordData);
-    thumb.classList.add('vocab-card__snap');
-
-    // 실제 미디어 (7단계에서 표시)
     const mediaEl = MediaLoader.create(wordData);
-    mediaEl.classList.add('vocab-card__media-hidden');
 
-    bg.appendChild(thumb);
-    bg.appendChild(mediaEl);
+    const snap = document.createElement('div');
+    snap.className = 'vocab-card__snap';
+    snap.appendChild(MediaLoader.createThumb(wordData));
 
-    /* ── 블러 오버레이 ── */
-    const blur = document.createElement('div');
-    blur.className = 'vocab-card__blur';
+    mediaWrap.appendChild(mediaEl);
+    mediaWrap.appendChild(snap);
 
-    /* ── 텍스트 오버레이 ── */
-    const overlay = document.createElement('div');
-    overlay.className = 'vocab-card__overlay';
-
-    // 단어 영역
-    const wordWrap = document.createElement('div');
-    wordWrap.className = 'vocab-card__word-wrap';
+    /* ── 텍스트 영역 ── */
+    const info = document.createElement('div');
+    info.className = 'vocab-card__info';
 
     const pos = document.createElement('span');
     pos.className = 'vocab-card__pos';
     pos.textContent = wordData.pos;
 
-    const wordRow = buildWordRow(wordData.word);
+    const wordRow = buildCardWordRow(wordData.word);
 
-    wordWrap.appendChild(pos);
-    wordWrap.appendChild(wordRow);
+    const meaning = document.createElement('p');
+    meaning.className = 'vocab-card__meaning';
+    meaning.textContent = wordData.meaning;
 
-    // 뜻 영역
-    const meaningWrap = document.createElement('div');
-    meaningWrap.className = 'vocab-card__meaning-wrap';
-    meaningWrap.textContent = wordData.meaning;
+    const exWrap = document.createElement('div');
+    exWrap.className = 'vocab-card__example-wrap';
+    (wordData.exampleChunks || []).forEach(chunk => {
+      const span = document.createElement('span');
+      span.className = 'vocab-card__chunk';
+      span.textContent = chunk;
+      exWrap.appendChild(span);
+    });
 
-    // 예문 어절 영역
-    const exampleWrap = buildExampleRow(wordData.exampleChunks);
+    info.appendChild(pos);
+    info.appendChild(wordRow);
+    info.appendChild(meaning);
+    info.appendChild(exWrap);
 
-    overlay.appendChild(wordWrap);
-    overlay.appendChild(meaningWrap);
-    overlay.appendChild(exampleWrap);
+    card.appendChild(mediaWrap);
+    card.appendChild(info);
 
-    card.appendChild(bg);
-    card.appendChild(blur);
-    card.appendChild(overlay);
+    /* ── 풀스크린 레이어 ── */
+    const fs = document.createElement('div');
+    fs.className = 'vocab-fs';
+
+    const fsImg = MediaLoader.createThumb(wordData);
+    fsImg.className = 'vocab-fs__img';
+
+    const fsBlur = document.createElement('div');
+    fsBlur.className = 'vocab-fs__blur';
+
+    const fsText = document.createElement('div');
+    fsText.className = 'vocab-fs__text';
+
+    const fsPos = document.createElement('span');
+    fsPos.className = 'vocab-fs__pos';
+    fsPos.textContent = wordData.pos;
+
+    const fsWordRow = document.createElement('div');
+    fsWordRow.className = 'vocab-fs__word-row';
+    for (const ch of wordData.word) {
+      const span = document.createElement('span');
+      span.className = 'vocab-fs__letter';
+      span.textContent = ch;
+      fsWordRow.appendChild(span);
+    }
+
+    const fsMeaning = document.createElement('p');
+    fsMeaning.className = 'vocab-fs__meaning';
+    fsMeaning.textContent = wordData.meaning;
+
+    const fsExWrap = document.createElement('div');
+    fsExWrap.className = 'vocab-fs__example-wrap';
+    (wordData.exampleChunks || []).forEach(chunk => {
+      const span = document.createElement('span');
+      span.className = 'vocab-fs__chunk';
+      span.textContent = chunk;
+      fsExWrap.appendChild(span);
+    });
+
+    fsText.appendChild(fsPos);
+    fsText.appendChild(fsWordRow);
+    fsText.appendChild(fsMeaning);
+    fsText.appendChild(fsExWrap);
+
+    fs.appendChild(fsImg);
+    fs.appendChild(fsBlur);
+    fs.appendChild(fsText);
+
+    card.appendChild(fs);
 
     return card;
   }

@@ -1,6 +1,5 @@
 /**
  * js/media-loader.js
- * URL 생성 + 네트워크 감지 + GIF/Video 엘리먼트 생성
  */
 (function () {
   'use strict';
@@ -41,12 +40,12 @@
   function createVideo(wordData) {
     const video = document.createElement('video');
     const opt = CFG.video;
-    video.className   = 'vocab-card__media';
-    video.preload     = opt.preload;
-    video.muted       = opt.muted;
-    video.loop        = opt.loop;
+    video.className = 'vocab-card__media';
+    video.preload = opt.preload;
+    video.muted = opt.muted;
+    video.loop = opt.loop;
     video.playsInline = opt.playsInline;
-    video.poster      = resolveUrl(wordData.media.thumb);
+    video.poster = resolveUrl(wordData.media.thumb);
     video.onerror = () => {
       const gif = createGif(wordData);
       video.replaceWith(gif);
@@ -70,8 +69,8 @@
   }
 
   window.MediaLoader = {
-    create     : (wordData) => detectMediaType() === 'gif' ? createGif(wordData) : createVideo(wordData),
+    create: (wordData) => detectMediaType() === 'gif' ? createGif(wordData) : createVideo(wordData),
     createThumb: (wordData) => createThumb(wordData),
-    getType    : detectMediaType,
+    getType: detectMediaType,
   };
 })();
