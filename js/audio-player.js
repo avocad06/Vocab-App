@@ -127,5 +127,43 @@
     }
   }
 
-  window.AudioPlayer = { preload, playOnce, getDuration, analyzeChunkTimings };
+  // 중단 신호 — stopAll() 호출 시 모든 playOnce Promise 즉시 resolve
+  let _stopResolvers = new Set();
+  let _currentAudio = null;
+
+  function stopAll() {
+    // 재생 중인 오디오 즉시 정지
+    if (_currentAudio) {
+      _currentAudio.pause();
+      _currentAudio.currentTime = 0;
+      _currentAudio = null;
+    }
+    // 대기 중인 모든 playOnce Promise 강제 resolve → await 풀림
+    _stopResolvers.forEach(resolve => resolve());
+    _stopResolvers.clear();
+  }
+
+  function playOnce(src, fallbackMs = 700) {
+    return new Promise(resolve => {
+      // 중단 신호 등록
+      _stopResolvers.add(resolve);
+
+      const done = () => {
+        _stopResolvers.delete(resolve);
+        _currentAudio = null;
+        resolve();
+      };
+
+      if (!src) { setTimeout(done, fallbackMs); return; }
+
+      const audio = load(src);
+      _currentAudio = audio;
+      audio.currentTime = 0;
+      audio.onended = done;
+      audio.onerror = () => setTimeout(done, fallbackMs);
+      audio.play().catch(() => setTimeout(done, fallbackMs));
+    });
+  }
+
+  window.AudioPlayer = { preload, playOnce, getDuration, analyzeChunkTimings, stopAll };
 })();

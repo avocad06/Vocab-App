@@ -392,7 +392,7 @@ body {
   gap: 1rem;
   width: 100%;
   max-width: 780px;
-  visibility: hidden; /* 시작 전 숨김 */
+  visibility: hidden;       /* 시작 전 숨김 */
 }
 
 /* ── 이전/다음 버튼 ─────────────────────────────────────────── */
@@ -416,9 +416,20 @@ body {
 }
 
 /* ── 처음으로 버튼 ──────────────────────────────────────────── */
+/* vocab-layout 바로 아래에 항상 붙음
+   position:absolute 라 display 변경 시 카드 레이아웃 밀지 않음 */
+/* 처음으로 버튼 — body flex 흐름으로 카드 바로 아래에 위치
+   min-height 로 항상 자리를 차지해 카드가 밀려 올라가지 않음 */
 #vocab-restart-wrap {
-  display: none;
+  display: flex;            /* 항상 flex — visibility로 숨김/표시 */
+  visibility: hidden;       /* 기본 숨김 */
   justify-content: center;
+  width: 100%;
+  max-width: 780px;
+  padding-top: 1rem;
+}
+#vocab-restart-wrap.is-visible {
+  visibility: visible;
 }
 
 #btn-restart {

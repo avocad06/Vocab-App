@@ -28,32 +28,33 @@
     isFullscreen = active;
   }
 
-  // 현재 카드 표시 + 버튼 상태 업데이트
+  // 버튼 상태 = 인덱스에만 종속
+  // 재생 여부와 무관하게 인덱스가 바뀌는 순간 즉시 반영
+  function updateButtons(index) {
+    const isLast = index === cards.length - 1;
+    btnPrev.style.visibility = 'visible';                    // 항상 표시
+    btnNext.style.visibility = isLast ? 'hidden' : 'visible';
+    restartWrap.classList.toggle('is-visible', isLast);
+  }
+
+  // 현재 카드 활성화
   function showCard(index) {
     cards.forEach((c, i) => c.classList.toggle('is-active', i === index));
-
-    const isLast = index === cards.length - 1;
-
-    // 이전 버튼: 항상 표시 (첫 번째 카드에서 누르면 시작 페이지로)
-    btnPrev.style.visibility = 'visible';
-
-    // 다음 버튼: 마지막 카드에선 숨김
-    btnNext.style.visibility = isLast ? 'hidden' : 'visible';
-
-    // 처음으로 버튼: 마지막 카드에서만 표시
-    restartWrap.style.display = isLast ? 'flex' : 'none';
+    updateButtons(index);
   }
 
   // 카드 재생 — 에러가 나도 isFullscreen 반드시 해제
   async function playCard(index) {
+    AudioPlayer.stopAll();       // 오디오 즉시 중단
+    VocabPlayer.stopSequence();  // 시퀀스(wait/phase) 즉시 중단
     currentIndex = index;
-    showCard(index);
+    showCard(index);          // 카드 전환 즉시 버튼 상태 반영
     try {
       await VocabPlayer.play(cards[index], VOCAB_WORDS[index]);
     } catch (err) {
       console.warn('[main] playCard 실패:', err);
     } finally {
-      isFullscreen = false;  // 에러로 풀스크린이 남아있어도 강제 해제
+      isFullscreen = false;
     }
   }
 
