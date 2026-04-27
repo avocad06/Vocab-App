@@ -1,0 +1,29 @@
+/**
+ * js/media-config.js
+ * 서빙 방식이 결정되면 mode 와 bases 만 수정하면 전체 적용됩니다.
+ *
+ * mode: 'local' | 's3' | 'cdn'
+ */
+window.MEDIA_CONFIG = {
+  mode: 'local',
+
+  bases: {
+    local: '.',
+    s3   : 'https://YOUR-BUCKET.s3.ap-northeast-2.amazonaws.com/vocab',
+    cdn  : 'https://YOUR-CDN-DOMAIN/vocab',
+  },
+
+  mediaType: 'video',        // 'gif' | 'video'
+  autoDetectNetwork: true,
+  slowNetworkTypes : ['slow-2g', '2g'],
+
+  video: {
+    preload    : 'auto',
+    muted      : true,
+    loop       : true,
+    playsInline: true,
+  },
+  gif: {
+    lazyLoad: true,
+  },
+};
