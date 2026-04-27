@@ -1,256 +1,368 @@
 /* ================================================================
-   css/vocab.css  —  7단계 시나리오 스타일
+   css/vocab.css
    상태 클래스:
-     .is-active      현재 재생 중인 카드
-     .is-expanded    Phase 2: viewport 전체 확대
-     .is-returning   Phase 7: 원래 크기로 복귀
-     .is-visible     요소 표시 (opacity 1)
-     .is-hidden      요소 숨김 (opacity 0, pointer-events none)
-     .is-highlight   텍스트 하이라이트 (글자·어절 공통)
+     .is-active    풀스크린 레이어 표시
+     .is-visible   요소 표시
+     .is-highlight 하이라이트
    ================================================================ */
 
-/* ── 리셋 ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --c-bg        : #f8f7f2;
   --c-surface   : #ffffff;
-  --c-overlay   : rgba(0, 0, 0, 0.35);
-  --c-text-light: #ffffff;
-  --c-muted     : rgba(255, 255, 255, 0.65);
+  --c-border    : rgba(0,0,0,0.08);
+  --c-text      : #1a1a1a;
+  --c-muted     : #7a7a72;
   --c-accent    : #1d9e75;
-  --c-highlight : #facc15;        /* 하이라이트 노란색 */
+  --c-blank     : #d4d2c8;
+  --c-highlight : #1d9e75;
 
-  --expand-dur  : 600ms;
-  --blur-dur    : 400ms;
-  --fade-dur    : 250ms;
-}
+  --c-fs-text   : #ffffff;
+  --c-fs-muted  : rgba(255,255,255,0.65);
+  --c-fs-hl     : #facc15;
 
-html, body {
-  width: 100%; height: 100%;
-  overflow: hidden;
+  --snap-fade   : 350ms;
+  --reveal-dur  : 220ms;
+  --example-dur : 400ms;
+  --fs-blur-dur : 400ms;
+  --fs-fade-dur : 220ms;
+
+  --radius-card : 16px;
+  --radius-media: 12px;
 }
 
 body {
   background: var(--c-bg);
   font-family: 'Georgia', serif;
+  color: var(--c-text);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem 1rem;
 }
 
-/* ── 루트 ──────────────────────────────────────────────────── */
+/* ── 시작 버튼 ──────────────────────────────────────────────── */
+#vocab-start-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+#vocab-start {
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  color: var(--c-accent);
+  background: transparent;
+  border: 1.5px solid var(--c-accent);
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+#vocab-start:hover {
+  background: var(--c-accent);
+  color: #ffffff;
+}
+
+/* ── 카드 루트 ──────────────────────────────────────────────── */
 #vocab-root {
-  width: 360px;
-  height: 240px;
+  width: 100%;
+  max-width: 640px;
   position: relative;
 }
 
-/* ── 카드 ──────────────────────────────────────────────────── */
 .vocab-card {
-  display: none;                  /* 기본 숨김 */
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  overflow: hidden;
+  display: none;
+  background: var(--c-surface);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--c-border);
+  padding: 1.75rem;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.vocab-card.is-active { display: flex; }
 
-  /* Phase 2 확대 기준점: 카드 중심 → 화면 중심으로 */
-  transform-origin: center center;
-  transition:
-    width  var(--expand-dur) cubic-bezier(.4,0,.2,1),
-    height var(--expand-dur) cubic-bezier(.4,0,.2,1),
-    top    var(--expand-dur) cubic-bezier(.4,0,.2,1),
-    left   var(--expand-dur) cubic-bezier(.4,0,.2,1),
-    border-radius var(--expand-dur) cubic-bezier(.4,0,.2,1);
+/* ── 미디어 래퍼 ────────────────────────────────────────────── */
+.vocab-card__media-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-media);
+  overflow: hidden;
+  background: #e8e6df;
 }
 
-.vocab-card.is-active {
+.vocab-card__media {
+  width: 100%; height: 100%;
+  object-fit: cover;
   display: block;
 }
 
-/* Phase 2: viewport 전체로 확대 */
-.vocab-card.is-expanded {
-  position: fixed;
-  inset: 0;
-  width: 100vw !important;
-  height: 100vh !important;
-  border-radius: 0;
-  z-index: 100;
-}
-
-/* Phase 7: 복귀 트랜지션 (is-expanded 해제 시 자동 역방향 재생) */
-.vocab-card.is-returning {
-  transition:
-    width  var(--expand-dur) cubic-bezier(.4,0,.2,1),
-    height var(--expand-dur) cubic-bezier(.4,0,.2,1),
-    top    var(--expand-dur) cubic-bezier(.4,0,.2,1),
-    left   var(--expand-dur) cubic-bezier(.4,0,.2,1),
-    border-radius var(--expand-dur) cubic-bezier(.4,0,.2,1);
-}
-
-/* ── 배경 레이어 ────────────────────────────────────────────── */
-.vocab-card__bg {
-  position: absolute;
-  inset: 0;
-  background: #1a1a1a;
-}
-
-/* 스냅 썸네일 */
+/* ── 스냅 오버레이 ──────────────────────────────────────────── */
 .vocab-card__snap {
   position: absolute;
   inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: opacity var(--fade-dur) ease;
-}
-
-.vocab-card__snap.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* 실제 미디어 (GIF / Video) */
-.vocab-card__media {
-  position: absolute;
-  inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-}
-
-.vocab-card__media-hidden {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--fade-dur) ease;
-}
-
-.vocab-card__media-hidden:not(.vocab-card__media-hidden) {
-  opacity: 1;
-}
-
-/* 미디어 플레이스홀더 */
-.vocab-media-placeholder {
-  position: absolute;
-  inset: 0;
+  border-radius: var(--radius-media);
+  background: #e8e6df;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
-  background: #2a2a2a;
-}
-
-/* ── 블러 오버레이 ──────────────────────────────────────────── */
-.vocab-card__blur {
-  position: absolute;
-  inset: 0;
-  backdrop-filter: blur(18px) brightness(0.6);
-  -webkit-backdrop-filter: blur(18px) brightness(0.6);
-  background: var(--c-overlay);
-
   opacity: 0;
   pointer-events: none;
-  transition: opacity var(--blur-dur) ease;
+  transition: opacity var(--snap-fade) ease;
 }
-
-.vocab-card__blur.is-visible {
+.vocab-card__snap.is-visible {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* ── 텍스트 오버레이 ────────────────────────────────────────── */
-.vocab-card__overlay {
-  position: absolute;
-  inset: 0;
+.vocab-thumb {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-media);
+  display: block;
+}
+
+.vocab-media-placeholder {
+  width: 100%; height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 2rem;
-  z-index: 10;
-  pointer-events: none;
+  font-size: 4rem;
+  background: #e8e6df;
 }
 
-/* ── 단어 영역 (Phase 3·4) ──────────────────────────────────── */
-.vocab-card__word-wrap {
+/* ── 텍스트 영역 ────────────────────────────────────────────── */
+.vocab-card__info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity var(--fade-dur) ease, transform var(--fade-dur) ease;
-}
-
-.vocab-card__word-wrap.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+  gap: 0.75rem;
 }
 
 .vocab-card__pos {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-style: italic;
   color: var(--c-muted);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 }
 
+/* ── 단어 행 ────────────────────────────────────────────────── */
 .vocab-card__word-row {
   display: flex;
-  gap: 1px;
+  flex-wrap: wrap;
+  gap: 3px;
+  align-items: flex-end;
+  min-height: 2.5rem;
 }
-
+.vocab-card__word-space { width: 10px; }
+.vocab-card__word-char {
+  position: relative;
+  width: 22px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .vocab-card__letter {
-  font-size: clamp(2rem, 8vw, 3.5rem);
-  font-weight: 600;
-  color: var(--c-text-light);
-  letter-spacing: 0.02em;
-  transition: color 0.1s ease;
-}
-
-.vocab-card__letter.is-highlight {
-  color: var(--c-highlight);
-}
-
-/* ── 뜻 영역 (Phase 5) ──────────────────────────────────────── */
-.vocab-card__meaning-wrap {
-  font-size: clamp(1.4rem, 5vw, 2.2rem);
+  font-size: 1.8rem;
   font-weight: 500;
-  color: var(--c-text-light);
-  text-align: center;
-
+  line-height: 1;
+  color: var(--c-text);
+  position: absolute;
   opacity: 0;
-  transform: translateY(8px);
-  transition: opacity var(--fade-dur) ease, transform var(--fade-dur) ease;
+  transition: opacity var(--reveal-dur) ease, color 0.1s ease;
 }
+.vocab-card__letter.is-visible   { opacity: 1; }
+.vocab-card__letter.is-highlight { color: var(--c-highlight); }
 
-.vocab-card__meaning-wrap.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+.vocab-card__blank {
+  position: absolute;
+  bottom: 6px;
+  left: 1px; right: 1px;
+  height: 2px;
+  background: var(--c-blank);
+  border-radius: 1px;
+  opacity: 0;
+  transition: opacity var(--reveal-dur) ease;
 }
+.vocab-card__blank.is-visible { opacity: 1; }
 
-/* ── 예문 어절 영역 (Phase 6·7) ─────────────────────────────── */
+/* ── 뜻 ─────────────────────────────────────────────────────── */
+.vocab-card__meaning {
+  font-size: 1rem;
+  color: var(--c-muted);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity var(--reveal-dur) ease, transform var(--reveal-dur) ease;
+}
+.vocab-card__meaning.is-visible { opacity: 1; transform: translateY(0); }
+
+/* ── 예문 (카드용) ──────────────────────────────────────────── */
 .vocab-card__example-wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4em;
-  justify-content: center;
-
+  gap: 0.35em;
+  align-items: baseline;
+  border-left: 2px solid var(--c-accent);
+  padding-left: 0.75rem;
   opacity: 0;
-  transform: translateY(8px);
-  transition: opacity var(--fade-dur) ease, transform var(--fade-dur) ease;
+  transform: translateY(6px);
+  transition: opacity var(--example-dur) ease, transform var(--example-dur) ease;
 }
-
-.vocab-card__example-wrap.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.vocab-card__example-wrap.is-visible { opacity: 1; transform: translateY(0); }
 
 .vocab-card__chunk {
-  font-size: clamp(1rem, 4vw, 1.6rem);
-  color: var(--c-text-light);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--c-text);
   transition: color 0.1s ease;
 }
+.vocab-card__chunk.is-highlight { color: var(--c-highlight); }
 
-.vocab-card__chunk.is-highlight {
-  color: var(--c-highlight);
+/* ── 반응형 ─────────────────────────────────────────────────── */
+@media (min-width: 480px) {
+  .vocab-card { flex-direction: row; align-items: flex-start; }
+  .vocab-card__media-wrap { flex: 0 0 260px; aspect-ratio: 4 / 3; }
+  .vocab-card__info { flex: 1; padding-top: 0.25rem; }
 }
+
+/* ================================================================
+   풀스크린 레이어
+   .vocab-fs 는 .vocab-card 의 자식이지만 position:fixed 로
+   viewport 전체를 덮는다.
+   기본: opacity:0, pointer-events:none (숨김)
+   .is-active: opacity:1, pointer-events:auto (표시)
+   ================================================================ */
+
+.vocab-fs {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  /* opacity transition 없음 — fsImg의 확대 애니메이션이 등장을 담당 */
+}
+.vocab-fs.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── 확대 이미지 ────────────────────────────────────────────── */
+/* 기본 스타일은 최소화 — JS가 position:fixed + top/left/width/height 를
+   카드 미디어 크기로 인라인 세팅 후 transform:scale 로 확대.
+   JS 제어 구간(phase2~7) 동안은 인라인이 우선 적용됨. */
+.vocab-fs__img {
+  position: fixed;
+  object-fit: cover;
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+/* ── 블러 오버레이 ──────────────────────────────────────────── */
+.vocab-fs__blur {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(20px) brightness(0.55);
+  -webkit-backdrop-filter: blur(20px) brightness(0.55);
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity var(--fs-blur-dur) ease;
+}
+.vocab-fs__blur.is-visible { opacity: 1; }
+
+/* ── 텍스트 레이어 ──────────────────────────────────────────── */
+/* 단어·뜻·예문이 각각 독립적으로 중앙에 위치하도록
+   .vocab-fs__text 를 기준으로 자식들을 position:absolute 처리.
+   opacity:0 상태일 때 레이아웃 공간을 차지하지 않아
+   보이는 요소만 정확히 수직 중앙에 위치함.              */
+.vocab-fs__text {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+.vocab-fs__pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 3rem));
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--c-fs-muted);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* ── 풀스크린 단어 ──────────────────────────────────────────── */
+.vocab-fs__word-row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(10px);
+  display: flex;
+  gap: 2px;
+  opacity: 0;
+  transition: opacity var(--fs-fade-dur) ease, transform var(--fs-fade-dur) ease;
+}
+.vocab-fs__word-row.is-visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.vocab-fs__letter {
+  font-size: clamp(2.2rem, 7vw, 4rem);
+  font-weight: 600;
+  color: var(--c-fs-text);
+  letter-spacing: 0.02em;
+  transition: color 0.1s ease;
+}
+.vocab-fs__letter.is-highlight { color: var(--c-fs-hl); }
+
+/* ── 풀스크린 뜻 ────────────────────────────────────────────── */
+.vocab-fs__meaning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(10px);
+  width: 90%;
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  font-weight: 500;
+  color: var(--c-fs-text);
+  text-align: center;
+  opacity: 0;
+  transition: opacity var(--fs-fade-dur) ease, transform var(--fs-fade-dur) ease;
+}
+.vocab-fs__meaning.is-visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+/* ── 풀스크린 예문 ──────────────────────────────────────────── */
+.vocab-fs__example-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(10px);
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--fs-fade-dur) ease, transform var(--fs-fade-dur) ease;
+}
+.vocab-fs__example-wrap.is-visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.vocab-fs__chunk {
+  font-size: clamp(1rem, 3.5vw, 1.8rem);
+  color: var(--c-fs-text);
+  transition: color 0.1s ease;
+}
+.vocab-fs__chunk.is-highlight { color: var(--c-fs-hl); }
