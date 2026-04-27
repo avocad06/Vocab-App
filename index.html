@@ -9,10 +9,22 @@
 </head>
 
 <body>
+  <!-- 시작 버튼 -->
   <div id="vocab-start-wrap">
     <button id="vocab-start">▶ 시작</button>
   </div>
-  <div id="vocab-root"></div>
+
+  <!-- 카드 + 이전/다음 버튼 레이아웃 -->
+  <div id="vocab-layout">
+    <button id="btn-prev" class="nav-btn" aria-label="이전">◀</button>
+    <div id="vocab-root"></div>
+    <button id="btn-next" class="nav-btn" aria-label="다음">▶</button>
+  </div>
+
+  <!-- 처음으로 버튼 (마지막 페이지에만 표시) -->
+  <div id="vocab-restart-wrap">
+    <button id="btn-restart">↩ 처음으로</button>
+  </div>
 
   <script src="data/words.js"></script>
   <script src="js/media-config.js"></script>

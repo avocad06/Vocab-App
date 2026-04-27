@@ -34,9 +34,11 @@ body {
   color: var(--c-text);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
+  gap: 1.25rem;
 }
 
 /* ── 시작 버튼 ──────────────────────────────────────────────── */
@@ -69,8 +71,8 @@ body {
 
 /* ── 카드 루트 ──────────────────────────────────────────────── */
 #vocab-root {
-  width: 100%;
-  max-width: 640px;
+  flex: 1;
+  min-width: 0;
   position: relative;
 }
 
@@ -369,3 +371,70 @@ body {
   transition: color 0.1s ease;
 }
 .vocab-fs__chunk.is-highlight { color: var(--c-fs-hl); }
+
+/* ================================================================
+   네비게이션 버튼
+   ================================================================ */
+
+/* ── 시작 버튼 ──────────────────────────────────────────────── */
+#vocab-start-wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* ── 카드 + 이전/다음 버튼 레이아웃 ────────────────────────── */
+#vocab-layout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 780px;
+  visibility: hidden; /* 시작 전 숨김 */
+}
+
+/* ── 이전/다음 버튼 ─────────────────────────────────────────── */
+.nav-btn {
+  flex-shrink: 0;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  color: var(--c-muted);
+  background: transparent;
+  border: 1.5px solid var(--c-muted);
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.nav-btn:hover {
+  background: var(--c-muted);
+  color: #ffffff;
+}
+
+/* ── 처음으로 버튼 ──────────────────────────────────────────── */
+#vocab-restart-wrap {
+  display: none;
+  justify-content: center;
+}
+
+#btn-restart {
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  color: var(--c-accent);
+  background: transparent;
+  border: 1.5px solid var(--c-accent);
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+#btn-restart:hover {
+  background: var(--c-accent);
+  color: #ffffff;
+}
