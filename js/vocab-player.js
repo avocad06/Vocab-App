@@ -1,5 +1,14 @@
 /**
  * js/vocab-player.js
+ *
+ * 시나리오:
+ *  Phase 1  카드: 스냅 + 빈칸 (1초)
+ *  Phase 2  풀스크린 확대 (영상/gif) + 2초 대기
+ *  Phase 3  블러 + 영단어 등장
+ *  Phase 4  영단어 음독 3회 + 하이라이트
+ *  Phase 5  영단어 → 뜻 (2초)
+ *  Phase 6  뜻 → 예문, 어절별 하이라이트 + 음독
+ *  Phase 7  카드 복귀, 미디어 재생, 예문 3회 반복 음독
  */
 (function () {
   'use strict';
@@ -16,40 +25,63 @@
     FADE_DUR: 200,
     CHUNK_FB: 1200,
     COLLAPSE_DUR: 500,
+    REPEAT_GAP: 400,   // 예문 반복 사이 간격
     FINAL_HOLD: 2000,
     BETWEEN: 800,
   };
 
-  // ── 취소 토큰 ─────────────────────────────────────────────────
-  // stopSequence() 호출 시 _token 값이 바뀜
-  // 각 async 작업은 자신이 시작할 때 받은 token과 현재 token을 비교해
-  // 다르면 즉시 중단
+  // ── 취소 토큰 ────────────────────────────────────────────────
   let _token = 0;
+  const stopSequence = () => { _token++; };
+  const isCancelled = (t) => t !== _token;
 
-  function stopSequence() {
-    _token++;  // 토큰 변경 → 이전 시퀀스의 모든 isCancelled() = true
-  }
+  // ── 취소 전용 에러 ───────────────────────────────────────────
+  class CancelError extends Error { }
 
-  function isCancelled(token) {
-    return token !== _token;
-  }
+  // ── 헬퍼 ────────────────────────────────────────────────────
+  const raf2 = () => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
 
-  // 취소 가능한 wait
-  function wait(ms, token) {
-    return new Promise(resolve => {
-      if (isCancelled(token)) { resolve(); return; }
+  // 취소 가능한 wait — 취소 시 CancelError throw
+  function waitOrCancel(ms, t) {
+    return new Promise((resolve, reject) => {
+      if (isCancelled(t)) { reject(new CancelError()); return; }
       const id = setTimeout(resolve, ms);
-      // 취소 감지를 위한 폴링 (100ms 간격)
       const check = setInterval(() => {
-        if (isCancelled(token)) { clearTimeout(id); clearInterval(check); resolve(); }
-      }, 100);
-      setTimeout(() => clearInterval(check), ms + 200);
+        if (isCancelled(t)) {
+          clearTimeout(id);
+          clearInterval(check);
+          reject(new CancelError());
+        }
+      }, 80);
+      setTimeout(() => clearInterval(check), ms + 100);
     });
   }
 
-  const raf2 = () => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+  // 어절별 하이라이트 + 음독 (phase6, phase7 공용)
+  async function readWithHighlight(chunks, src, t) {
+    const n = chunks.length;
+    const timings = await AudioPlayer.analyzeChunkTimings(src, n, {
+      silenceThreshold: 0.015,
+      minSilenceMs: 80,
+    });
+    if (isCancelled(t)) throw new CancelError();
 
-  // ── DOM refs ──────────────────────────────────────────────────
+    const start = performance.now();
+    const audioPromise = AudioPlayer.playOnce(src, T.CHUNK_FB);
+
+    for (let i = 0; i < n; i++) {
+      if (isCancelled(t)) break;
+      const delay = Math.max(0, timings[i] - (performance.now() - start));
+      await waitOrCancel(delay, t);
+      if (i > 0) chunks[i - 1].classList.remove('is-highlight');
+      chunks[i].classList.add('is-highlight');
+    }
+
+    await audioPromise;
+    chunks.forEach(c => c.classList.remove('is-highlight'));
+  }
+
+  // ── DOM refs ─────────────────────────────────────────────────
   function getRefs(card) {
     return {
       mediaWrap: card.querySelector('.vocab-card__media-wrap'),
@@ -71,7 +103,7 @@
     };
   }
 
-  // ── 초기화 ────────────────────────────────────────────────────
+  // ── 초기화 ───────────────────────────────────────────────────
   function reset(refs) {
     refs.snap.classList.add('is-visible');
     refs.letters.forEach(l => l.classList.remove('is-visible', 'is-highlight'));
@@ -88,231 +120,175 @@
     refs.fsChunks.forEach(c => c.classList.remove('is-highlight'));
     refs.fsImg.style.cssText = '';
     if (refs.mediaEl?.tagName === 'VIDEO') refs.mediaEl.pause();
+    if (refs.fsImg?.tagName === 'VIDEO') refs.fsImg.pause();
   }
 
-  // 풀스크린 강제 정리 (중단 시 호출)
+  // 풀스크린 강제 정리
   function cleanupFs(refs) {
     try {
       refs.fs.classList.remove('is-active');
       refs.fsImg.style.cssText = '';
       refs.fsImg.style.transition = '';
-      refs.fsBlur.classList.remove('is-visible');
-      refs.fsWordRow.classList.remove('is-visible');
-      refs.fsMeaning.classList.remove('is-visible');
-      refs.fsExWrap.classList.remove('is-visible');
+      if (refs.fsImg?.tagName === 'VIDEO') refs.fsImg.pause();
+      [refs.fsBlur, refs.fsWordRow, refs.fsMeaning, refs.fsExWrap]
+        .forEach(el => el.classList.remove('is-visible'));
       refs.fsLetters.forEach(l => l.classList.remove('is-highlight'));
       refs.fsChunks.forEach(c => c.classList.remove('is-highlight'));
       refs.fs.closest('.vocab-card')?.classList.remove('is-fs-open');
       window._vocabSetFullscreen?.(false);
-    } catch (e) { /* 무시 */ }
+    } catch (e) { }
   }
 
-  // ── 풀스크린 확대/축소 ─────────────────────────────────────────
-  function getFsScale(r) {
-    const vw = window.innerWidth, vh = window.innerHeight;
-    return {
-      sx: vw / r.width,
-      sy: vh / r.height,
-      dx: vw / 2 - (r.left + r.width / 2),
-      dy: vh / 2 - (r.top + r.height / 2),
-    };
-  }
+  // ── 메인 play ────────────────────────────────────────────────
+  async function play(card, wordData) {
+    const t = _token;
+    const refs = getRefs(card);
+    const w = (ms) => waitOrCancel(ms, t);
+    const ok = () => { if (isCancelled(t)) throw new CancelError(); };
 
-  async function expandFsImg(refs, token) {
-    const r = refs.mediaWrap.getBoundingClientRect();
-    const { sx, sy, dx, dy } = getFsScale(r);
-    const s = refs.fsImg;
+    reset(refs);
 
-    s.style.cssText = `
-      position:fixed;
-      left:${r.left}px; top:${r.top}px;
-      width:${r.width}px; height:${r.height}px;
-      object-fit:cover;
-      transform-origin:50% 50%;
-      transform:translate(0,0) scale(1);
-    `;
-
-    refs.fs.classList.add('is-active');
-    window._vocabSetFullscreen?.(true);
-    await raf2();
-    if (isCancelled(token)) return;
-
-    s.style.transition = `transform ${T.EXPAND_DUR}ms cubic-bezier(0.4,0,0.2,1)`;
-    s.style.transform = `translate(${dx}px,${dy}px) scale(${sx},${sy})`;
-    await wait(T.EXPAND_DUR, token);
-    s.style.transition = '';
-  }
-
-  async function collapseFsImg(refs, token) {
-    const s = refs.fsImg;
-    s.style.transition = '';
-    await raf2();
-    if (isCancelled(token)) return;
-
-    s.style.transition = `transform ${T.COLLAPSE_DUR}ms cubic-bezier(0.4,0,0.2,1)`;
-    s.style.transform = `translate(0,0) scale(1)`;
-    await wait(T.COLLAPSE_DUR, token);
-
-    refs.fs.classList.remove('is-active');
-    window._vocabSetFullscreen?.(false);
-    s.style.cssText = '';
-  }
-
-  // ── Phase 함수들 ───────────────────────────────────────────────
-  async function phase1(refs, wordData, token) {
+    // 오디오 미리 로드
     AudioPlayer.preload(wordData.media.audio?.word);
     AudioPlayer.preload(wordData.media.audio?.example);
-    await wait(T.SNAP_HOLD, token);
-  }
 
-  async function phase2(refs, token) {
-    refs.snap.style.transition = 'none';
-    refs.snap.classList.remove('is-visible');
-    await expandFsImg(refs, token);
-    if (isCancelled(token)) return;
-    await wait(T.FS_HOLD, token);
-    refs.snap.style.transition = '';
-  }
+    try {
 
-  async function phase3(refs, token) {
-    refs.fsBlur.classList.add('is-visible');
-    await wait(T.BLUR_DUR, token);
-    if (isCancelled(token)) return;
-    refs.fsWordRow.classList.add('is-visible');
-    await wait(T.WORD_DUR, token);
-  }
+      // ── Phase 1: 스냅 + 빈칸 ──────────────────────────────
+      await w(T.SNAP_HOLD);
 
-  async function phase4(refs, wordData, token) {
-    const src = wordData.media.audio?.word;
-    for (let i = 0; i < 3; i++) {
-      if (isCancelled(token)) return;
-      refs.fsLetters.forEach(l => l.classList.add('is-highlight'));
-      await AudioPlayer.playOnce(src, T.AUDIO_FB);
-      refs.fsLetters.forEach(l => l.classList.remove('is-highlight'));
-      if (i < 2) await wait(T.READ_PAUSE, token);
-    }
-  }
+      // ── Phase 2: 풀스크린 확대 ────────────────────────────
+      refs.snap.style.transition = 'none';
+      refs.snap.classList.remove('is-visible');
 
-  async function phase5(refs, token) {
-    refs.fsWordRow.classList.remove('is-visible');
-    await wait(T.FADE_DUR, token);
-    if (isCancelled(token)) return;
-    refs.fsMeaning.classList.add('is-visible');
-    await wait(T.MEANING_HOLD, token);
-    if (isCancelled(token)) return;
-    refs.fsMeaning.classList.remove('is-visible');
-    await wait(T.FADE_DUR, token);
-  }
+      const r = refs.mediaWrap.getBoundingClientRect();
+      const vw = window.innerWidth, vh = window.innerHeight;
+      const sx = vw / r.width, sy = vh / r.height;
+      const dx = vw / 2 - (r.left + r.width / 2);
+      const dy = vh / 2 - (r.top + r.height / 2);
 
-  async function phase6(refs, wordData, token) {
-    refs.fsExWrap.classList.add('is-visible');
-    await wait(T.FADE_DUR, token);
-    if (isCancelled(token)) return;
+      const fsm = refs.fsImg;
+      fsm.style.cssText = `
+        position:fixed;
+        left:${r.left}px; top:${r.top}px;
+        width:${r.width}px; height:${r.height}px;
+        object-fit:cover; object-position:center;
+        transform-origin:50% 50%;
+        transform:translate(0,0) scale(1);
+      `;
 
-    const src = wordData.media.audio?.example;
-    const chunks = refs.fsChunks;
-    const n = chunks.length;
+      refs.fs.classList.add('is-active');
+      window._vocabSetFullscreen?.(true);
 
-    const timings = await AudioPlayer.analyzeChunkTimings(src, n, {
-      silenceThreshold: 0.015,
-      minSilenceMs: 80,
-    });
-    if (isCancelled(token)) return;
-
-    const startTime = performance.now();
-    const audioPromise = AudioPlayer.playOnce(src, T.CHUNK_FB);
-
-    for (let i = 0; i < n; i++) {
-      if (isCancelled(token)) break;
-      const elapsed = performance.now() - startTime;
-      const delay = Math.max(0, timings[i] - elapsed);
-      await wait(delay, token);
-      if (isCancelled(token)) break;
-      if (i > 0) chunks[i - 1].classList.remove('is-highlight');
-      chunks[i].classList.add('is-highlight');
-    }
-
-    await audioPromise;
-    chunks.forEach(c => c.classList.remove('is-highlight'));
-  }
-
-  async function phase7(refs, wordData, token) {
-    refs.fsBlur.classList.remove('is-visible');
-    refs.fsWordRow.classList.remove('is-visible');
-    refs.fsMeaning.classList.remove('is-visible');
-    refs.fsExWrap.classList.remove('is-visible');
-    await wait(T.FADE_DUR, token);
-    if (isCancelled(token)) return;
-
-    await collapseFsImg(refs, token);
-    if (isCancelled(token)) return;
-
-    refs.snap.classList.remove('is-visible');
-    refs.blanks.forEach(b => b.classList.remove('is-visible'));
-    refs.letters.forEach(l => l.classList.add('is-visible'));
-    refs.meaning.classList.remove('is-visible');
-    refs.exWrap.classList.add('is-visible');
-
-    if (refs.mediaEl?.tagName === 'VIDEO') {
-      refs.mediaEl.currentTime = 0;
-      refs.mediaEl.play().catch(() => {
-        refs.mediaEl.muted = true;
-        refs.mediaEl.play().catch(console.warn);
-      });
-    }
-
-    if (isCancelled(token)) return;
-    refs.chunks.forEach(c => c.classList.add('is-highlight'));
-    const src = wordData.media.audio?.example;
-    await AudioPlayer.playOnce(src, T.CHUNK_FB);
-    refs.chunks.forEach(c => c.classList.remove('is-highlight'));
-
-    await wait(T.FINAL_HOLD, token);
-  }
-
-  // ── 메인 play ─────────────────────────────────────────────────
-  async function play(card, wordData) {
-    const token = _token;  // 이 시퀀스의 토큰 확보
-    const refs = getRefs(card);
-
-    try { reset(refs); } catch (e) { }
-
-    const phases = [
-      () => phase1(refs, wordData, token),
-      () => phase2(refs, token),
-      () => phase3(refs, token),
-      () => phase4(refs, wordData, token),
-      () => phase5(refs, token),
-      () => phase6(refs, wordData, token),
-      () => phase7(refs, wordData, token),
-    ];
-
-    for (const [i, phaseFn] of phases.entries()) {
-      if (isCancelled(token)) break;
-      try {
-        await phaseFn();
-      } catch (err) {
-        console.warn(`[VocabPlayer] phase${i + 1} 실패:`, err);
+      // 확대 애니메이션 동안 영상 재생
+      if (fsm.tagName === 'VIDEO') {
+        fsm.currentTime = 0;
+        fsm.play().catch(() => { fsm.muted = true; fsm.play().catch(() => { }); });
       }
-    }
 
-    // 취소됐거나 에러로 풀스크린이 남아있으면 강제 정리
-    if (isCancelled(token) || refs.fs?.classList.contains('is-active')) {
-      cleanupFs(refs);
+      await raf2(); ok();
+      fsm.style.transition = `transform ${T.EXPAND_DUR}ms cubic-bezier(0.4,0,0.2,1)`;
+      fsm.style.transform = `translate(${dx}px,${dy}px) scale(${sx},${sy})`;
+      await w(T.EXPAND_DUR);
+      fsm.style.transition = '';
+      refs.snap.style.transition = '';
+
+      await w(T.FS_HOLD);
+
+      // ── Phase 3: 블러 + 영단어 ────────────────────────────
+      // 블러 등장 시 영상 정지 (움직임 불필요)
+      if (fsm.tagName === 'VIDEO') fsm.pause();
+      refs.fsBlur.classList.add('is-visible');
+      await w(T.BLUR_DUR);
+      refs.fsWordRow.classList.add('is-visible');
+      await w(T.WORD_DUR);
+
+      // ── Phase 4: 음독 3회 + 하이라이트 ───────────────────
+      const wordSrc = wordData.media.audio?.word;
+      for (let i = 0; i < 3; i++) {
+        ok();
+        refs.fsLetters.forEach(l => l.classList.add('is-highlight'));
+        await AudioPlayer.playOnce(wordSrc, T.AUDIO_FB);
+        refs.fsLetters.forEach(l => l.classList.remove('is-highlight'));
+        if (i < 2) await w(T.READ_PAUSE);
+      }
+
+      // ── Phase 5: 영단어 → 뜻 ──────────────────────────────
+      refs.fsWordRow.classList.remove('is-visible');
+      await w(T.FADE_DUR);
+      refs.fsMeaning.classList.add('is-visible');
+      await w(T.MEANING_HOLD);
+      refs.fsMeaning.classList.remove('is-visible');
+      await w(T.FADE_DUR);
+
+      // ── Phase 6: 예문 어절별 하이라이트 + 음독 ───────────
+      refs.fsExWrap.classList.add('is-visible');
+      await w(T.FADE_DUR);
+      await readWithHighlight(refs.fsChunks, wordData.media.audio?.example, t);
+
+      // ── Phase 7: 카드 복귀 ────────────────────────────────
+      [refs.fsBlur, refs.fsWordRow, refs.fsMeaning, refs.fsExWrap]
+        .forEach(el => el.classList.remove('is-visible'));
+      await w(T.FADE_DUR);
+
+      // 풀스크린 축소
+      ok();
+      await raf2();
+      fsm.style.transition = `transform ${T.COLLAPSE_DUR}ms cubic-bezier(0.4,0,0.2,1)`;
+      fsm.style.transform = `translate(0,0) scale(1)`;
+      await w(T.COLLAPSE_DUR);
+      refs.fs.classList.remove('is-active');
+      window._vocabSetFullscreen?.(false);
+      if (fsm.tagName === 'VIDEO') fsm.pause();
+      fsm.style.cssText = '';
+
+      // 카드 상태 복귀
+      refs.snap.classList.remove('is-visible');
+      refs.blanks.forEach(b => b.classList.remove('is-visible'));
+      refs.letters.forEach(l => l.classList.add('is-visible'));
+      refs.meaning.classList.remove('is-visible');
+      refs.exWrap.classList.add('is-visible');
+
+      // 카드 미디어 재생
+      if (refs.mediaEl?.tagName === 'VIDEO') {
+        refs.mediaEl.currentTime = 0;
+        refs.mediaEl.play().catch(() => {
+          refs.mediaEl.muted = true;
+          refs.mediaEl.play().catch(() => { });
+        });
+      }
+
+      // 예문 3회 반복 음독
+      const exSrc = wordData.media.audio?.example;
+      for (let i = 0; i < 3; i++) {
+        ok();
+        if (i < 2) {
+          // 1~2회: 어절별 하이라이트
+          await readWithHighlight(refs.chunks, exSrc, t);
+          await w(T.REPEAT_GAP);
+        } else {
+          // 3회(마지막): 문장 전체 초록색으로 켜고 음독 후 그대로 유지
+          refs.chunks.forEach(c => c.classList.add('is-highlight'));
+          await AudioPlayer.playOnce(exSrc, T.CHUNK_FB);
+        }
+      }
+
+      await w(T.FINAL_HOLD);
+
+    } catch (e) {
+      if (!(e instanceof CancelError)) console.warn('[VocabPlayer]', e);
+    } finally {
+      if (refs.fs.classList.contains('is-active')) cleanupFs(refs);
     }
   }
 
   async function playAll(cards, wordDataList, opts = {}) {
     for (let i = 0; i < cards.length; i++) {
-      const token = _token;
+      const t = _token;
       if (opts.onCard) opts.onCard(i, cards[i]);
-      try {
-        await play(cards[i], wordDataList[i]);
-      } catch (err) {
-        console.warn(`[VocabPlayer] 카드 ${i} 실패:`, err);
-      }
-      if (isCancelled(token)) break;
-      if (i < cards.length - 1) await wait(T.BETWEEN, token);
+      await play(cards[i], wordDataList[i]);
+      if (isCancelled(t) || i === cards.length - 1) break;
+      await waitOrCancel(T.BETWEEN, _token).catch(() => { });
     }
   }
 

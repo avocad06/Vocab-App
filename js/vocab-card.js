@@ -81,8 +81,16 @@
     const fs = document.createElement('div');
     fs.className = 'vocab-fs';
 
-    const fsImg = MediaLoader.createThumb(wordData);
+    // 풀스크린 확대 시 실제 미디어(video/gif) 사용
+    const fsImg = MediaLoader.create(wordData);
     fsImg.className = 'vocab-fs__img';
+    // video 설정
+    if (fsImg.tagName === 'VIDEO') {
+      fsImg.muted = true;
+      fsImg.loop = true;
+      fsImg.playsInline = true;
+      fsImg.autoplay = false;
+    }
 
     const fsBlur = document.createElement('div');
     fsBlur.className = 'vocab-fs__blur';
