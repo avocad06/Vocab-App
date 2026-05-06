@@ -47,7 +47,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  z-index: 1;
 }
 
 #vocab-start {
@@ -239,7 +239,7 @@ body {
 .vocab-fs {
   position: fixed;
   inset: 0;
-  z-index: 200;
+  z-index: 3;
   opacity: 0;
   pointer-events: none;
 }
@@ -293,7 +293,7 @@ body {
 .vocab-fs__text {
   position: absolute;
   inset: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .vocab-fs__pos {
@@ -382,7 +382,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  z-index: 1;
 }
 
 /* ── 카드 + 이전/다음 버튼 레이아웃 ────────────────────────── */
@@ -446,6 +446,152 @@ body {
   transition: background 0.15s ease, color 0.15s ease;
 }
 #btn-restart:hover {
+  background: var(--c-accent);
+  color: #ffffff;
+}
+
+/* ── 자동재생 토글 버튼 ─────────────────────────────────────── */
+#vocab-autoplay-wrap {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 4;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.autoplay-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.4rem;
+  font-size: 0.85rem;
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: color 0.15s ease;
+}
+
+.autoplay-label {
+  transition: color 0.15s ease;
+}
+
+/* 토글 트랙 */
+.autoplay-track {
+  position: relative;
+  width: 2.6rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: var(--c-blank);
+  transition: background 0.25s ease;
+  flex-shrink: 0;
+}
+
+/* 토글 썸 (동그라미) */
+.autoplay-thumb {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease;
+}
+
+/* ON 상태 — 초록 */
+.autoplay-btn.is-on .autoplay-label { color: var(--c-accent); }
+.autoplay-btn.is-on .autoplay-track  { background: var(--c-accent); }
+.autoplay-btn.is-on .autoplay-thumb  { transform: translateX(1.2rem); }
+
+/* OFF 상태 — 회색 */
+.autoplay-btn.is-off .autoplay-label { color: var(--c-muted); }
+.autoplay-btn.is-off .autoplay-track  { background: var(--c-blank); }
+.autoplay-btn.is-off .autoplay-thumb  { transform: translateX(0); }
+
+/* ── 도움말 버튼 ────────────────────────────────────────────── */
+.help-btn {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--c-muted);
+  background: transparent;
+  color: var(--c-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: border-color 0.15s, color 0.15s;
+}
+.help-btn:hover {
+  border-color: var(--c-text);
+  color: var(--c-text);
+}
+
+/* ── 도움말 모달 ────────────────────────────────────────────── */
+.help-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.help-modal[hidden] { display: none; }
+
+.help-modal__box {
+  background: var(--c-surface);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  max-width: 320px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.help-modal__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--c-text);
+}
+
+.help-modal__desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--c-muted);
+}
+
+.help-modal__desc strong {
+  color: var(--c-text);
+  font-weight: 700;
+}
+
+.help-modal__close {
+  align-self: flex-end;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.88rem;
+  font-family: 'Georgia', serif;
+  color: var(--c-accent);
+  background: transparent;
+  border: 1.5px solid var(--c-accent);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.help-modal__close:hover {
   background: var(--c-accent);
   color: #ffffff;
 }

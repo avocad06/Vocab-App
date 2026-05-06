@@ -12,6 +12,11 @@
   const btnNext = document.getElementById('btn-next');
   const restartWrap = document.getElementById('vocab-restart-wrap');
   const btnRestart = document.getElementById('btn-restart');
+  const btnAutoplay = document.getElementById('btn-autoplay');
+  const autoplayWrap = document.getElementById('vocab-autoplay-wrap');
+  const btnHelp = document.getElementById('btn-help');
+  const helpModal = document.getElementById('help-modal');
+  const btnHelpClose = document.getElementById('btn-help-close');
 
   // 카드 DOM 생성
   const cards = VOCAB_WORDS.map(wordData => {
@@ -22,10 +27,13 @@
 
   let currentIndex = 0;
   let isFullscreen = false;  // 풀스크린 중 여부 — 이때만 버튼 완전 차단
+  let autoplay = true;   // 자동재생 기본값: ON
+  let isModalOpen = false;  // 모달 열림 여부 — autoplay 차단용
 
   // 풀스크린 상태 변경 (vocab-player.js 에서 호출)
   function setFullscreen(active) {
     isFullscreen = active;
+    if (autoplayWrap) autoplayWrap.style.visibility = active ? 'hidden' : 'visible';
   }
 
   // 버튼 상태 = 인덱스에만 종속
@@ -43,12 +51,16 @@
     updateButtons(index);
   }
 
-  // 카드 재생 — 에러가 나도 isFullscreen 반드시 해제
+  // 카드 재생
+  // playId로 이전 호출과 현재 호출을 구분 — autoplay 체인이 끊기지 않도록
+  let _playId = 0;
+
   async function playCard(index) {
-    AudioPlayer.stopAll();       // 오디오 즉시 중단
-    VocabPlayer.stopSequence();  // 시퀀스(wait/phase) 즉시 중단
+    AudioPlayer.stopAll();
+    VocabPlayer.stopSequence();
     currentIndex = index;
-    showCard(index);          // 카드 전환 즉시 버튼 상태 반영
+    const myId = ++_playId;   // 이 호출의 고유 ID
+    showCard(index);
     try {
       await VocabPlayer.play(cards[index], VOCAB_WORDS[index]);
     } catch (err) {
@@ -56,12 +68,18 @@
     } finally {
       isFullscreen = false;
     }
+
+    // 자동재생: 내가 여전히 최신 호출이고, autoplay ON이고, 모달 닫혀있을 때만
+    if (myId === _playId && autoplay && !isModalOpen && currentIndex < cards.length - 1) {
+      await playCard(currentIndex + 1);
+    }
   }
 
   // 이전 버튼 — 풀스크린 중에만 차단
   // 첫 번째 카드에서 누르면 시작 페이지로 복귀 (새로고침)
   btnPrev.addEventListener('click', () => {
     if (isFullscreen) return;
+    disableAutoplay();
     if (currentIndex === 0) {
       location.reload();
       return;
@@ -72,6 +90,7 @@
   // 다음 버튼 — 풀스크린 중에만 차단
   btnNext.addEventListener('click', () => {
     if (isFullscreen || currentIndex === cards.length - 1) return;
+    disableAutoplay();
     playCard(currentIndex + 1);
   });
 
@@ -81,6 +100,81 @@
     playCard(0);
   });
 
+  // 자동재생 OFF로 전환
+  function disableAutoplay() {
+    if (!autoplay) return;
+    autoplay = false;
+    btnAutoplay?.classList.replace('is-on', 'is-off');
+    // 텍스트는 항상 'Auto' 유지 — 색상으로만 구분
+  }
+
+  // 자동재생 토글
+  btnAutoplay?.addEventListener('click', () => {
+    autoplay = !autoplay;
+    btnAutoplay.classList.toggle('is-on', autoplay);
+    btnAutoplay.classList.toggle('is-off', !autoplay);
+    // 텍스트는 항상 'Auto' 유지 — 색상으로만 구분
+  });
+
+  // 도움말 모달
+  // 카드를 초기 상태(스냅+빈칸)로 리셋만 하고 재생은 하지 않음
+  function resetCardDisplay(index) {
+    cards.forEach((c, i) => c.classList.toggle('is-active', i === index));
+    const card = cards[index];
+
+    // 풀스크린 강제 정리
+    const fs = card.querySelector('.vocab-fs');
+    if (fs) {
+      fs.classList.remove('is-active');
+      const fsImg = fs.querySelector('.vocab-fs__img');
+      if (fsImg) { fsImg.style.cssText = ''; if (fsImg.tagName === 'VIDEO') fsImg.pause(); }
+      fs.querySelectorAll('.is-visible').forEach(el => el.classList.remove('is-visible'));
+      fs.querySelectorAll('.is-highlight').forEach(el => el.classList.remove('is-highlight'));
+      card.classList.remove('is-fs-open');
+    }
+
+    // 카드 초기 상태: 스냅 표시 + 빈칸
+    card.querySelector('.vocab-card__snap')?.classList.add('is-visible');
+    card.querySelectorAll('.vocab-card__letter').forEach(l => l.classList.remove('is-visible', 'is-highlight'));
+    card.querySelectorAll('.vocab-card__blank').forEach(b => b.classList.add('is-visible'));
+    card.querySelector('.vocab-card__meaning')?.classList.remove('is-visible');
+    card.querySelector('.vocab-card__example-wrap')?.classList.remove('is-visible');
+    card.querySelectorAll('.vocab-card__chunk').forEach(c => c.classList.remove('is-highlight'));
+
+    const mediaEl = card.querySelector('.vocab-card__media');
+    if (mediaEl?.tagName === 'VIDEO') mediaEl.pause();
+
+    updateButtons(index);
+  }
+
+  function openHelp() {
+    isModalOpen = true;       // autoplay 차단 — 가장 먼저
+    // 모든 것 즉시 중단
+    AudioPlayer.stopAll();
+    VocabPlayer.stopSequence();
+    isFullscreen = false;
+    window._vocabSetFullscreen?.(false);
+
+    // 현재 카드 초기 상태로 리셋
+    resetCardDisplay(currentIndex);
+
+    if (autoplayWrap) autoplayWrap.style.visibility = 'hidden';
+    helpModal.hidden = false;
+  }
+
+  async function closeHelp() {
+    isModalOpen = false;
+    helpModal.hidden = true;
+    if (autoplayWrap) autoplayWrap.style.visibility = 'visible';
+    await playCard(currentIndex);
+  }
+
+  btnHelp?.addEventListener('click', openHelp);
+  btnHelpClose?.addEventListener('click', closeHelp);
+  helpModal?.addEventListener('click', (e) => {
+    if (e.target === helpModal) closeHelp();
+  });
+
   // vocab-player.js 가 풀스크린 상태를 알릴 수 있도록 전역 노출
   window._vocabSetFullscreen = setFullscreen;
 
@@ -88,6 +182,7 @@
   function startPlay() {
     startWrap.style.display = 'none';
     layout.style.visibility = 'visible';
+    if (autoplayWrap) autoplayWrap.style.visibility = 'visible';
     playCard(0);
   }
 
