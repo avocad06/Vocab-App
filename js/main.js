@@ -54,12 +54,14 @@
   // 카드 재생
   // playId로 이전 호출과 현재 호출을 구분 — autoplay 체인이 끊기지 않도록
   let _playId = 0;
+  let isSequenceDone = false;
 
   async function playCard(index) {
     AudioPlayer.stopAll();
     VocabPlayer.stopSequence();
     currentIndex = index;
-    const myId = ++_playId;   // 이 호출의 고유 ID
+    isSequenceDone = false;
+    const myId = ++_playId;
     showCard(index);
     try {
       await VocabPlayer.play(cards[index], VOCAB_WORDS[index]);
@@ -67,9 +69,10 @@
       console.warn('[main] playCard 실패:', err);
     } finally {
       isFullscreen = false;
+      if (myId === _playId) isSequenceDone = true;
     }
 
-    // 자동재생: 내가 여전히 최신 호출이고, autoplay ON이고, 모달 닫혀있을 때만
+    // sequence 완료 → autoplay ON이면 다음 카드
     if (myId === _playId && autoplay && !isModalOpen && currentIndex < cards.length - 1) {
       await playCard(currentIndex + 1);
     }
@@ -113,7 +116,15 @@
     autoplay = !autoplay;
     btnAutoplay.classList.toggle('is-on', autoplay);
     btnAutoplay.classList.toggle('is-off', !autoplay);
-    // 텍스트는 항상 'Auto' 유지 — 색상으로만 구분
+
+    // sequence가 끝난 상태에서 Auto ON → 0.5초 후 다음 카드
+    if (autoplay && isSequenceDone && !isModalOpen && currentIndex < cards.length - 1) {
+      setTimeout(() => {
+        if (autoplay && isSequenceDone && !isModalOpen && currentIndex < cards.length - 1) {
+          playCard(currentIndex + 1);
+        }
+      }, 500);
+    }
   });
 
   // 도움말 모달

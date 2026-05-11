@@ -81,16 +81,8 @@
     const fs = document.createElement('div');
     fs.className = 'vocab-fs';
 
-    // 풀스크린 확대 시 실제 미디어(video/gif) 사용
-    const fsImg = MediaLoader.create(wordData);
+    const fsImg = MediaLoader.createThumb(wordData);
     fsImg.className = 'vocab-fs__img';
-    // video 설정
-    if (fsImg.tagName === 'VIDEO') {
-      fsImg.muted = true;
-      fsImg.loop = true;
-      fsImg.playsInline = true;
-      fsImg.autoplay = false;
-    }
 
     const fsBlur = document.createElement('div');
     fsBlur.className = 'vocab-fs__blur';
@@ -105,6 +97,12 @@
     const fsWordRow = document.createElement('div');
     fsWordRow.className = 'vocab-fs__word-row';
     for (const ch of wordData.word) {
+      if (ch === ' ') {
+        const sp = document.createElement('span');
+        sp.className = 'vocab-fs__word-space';
+        fsWordRow.appendChild(sp);
+        continue;
+      }
       const span = document.createElement('span');
       span.className = 'vocab-fs__letter';
       span.textContent = ch;
