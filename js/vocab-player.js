@@ -87,6 +87,7 @@
       mediaWrap: card.querySelector('.vocab-card__media-wrap'),
       mediaEl: card.querySelector('.vocab-card__media'),
       snap: card.querySelector('.vocab-card__snap'),
+      wordRow: card.querySelector('.vocab-card__word-row'),
       letters: card.querySelectorAll('.vocab-card__letter'),
       blanks: card.querySelectorAll('.vocab-card__blank'),
       meaning: card.querySelector('.vocab-card__meaning'),
@@ -106,11 +107,22 @@
   // ── 초기화 ───────────────────────────────────────────────────
   function reset(refs) {
     refs.snap.classList.add('is-visible');
+
+    // wordRow를 빈칸 구조로 복원 (phase7에서 span 하나로 교체됐을 수 있음)
+    if (refs.wordRow && refs._word) {
+      const fresh = VocabCard.buildWordRow(refs._word);
+      refs.wordRow.innerHTML = '';
+      fresh.childNodes.forEach(n => refs.wordRow.appendChild(n.cloneNode(true)));
+      // refs 재참조
+      refs.letters = refs.wordRow.querySelectorAll('.vocab-card__letter');
+      refs.blanks = refs.wordRow.querySelectorAll('.vocab-card__blank');
+    }
+
     refs.letters.forEach(l => l.classList.remove('is-visible', 'is-highlight'));
     refs.blanks.forEach(b => b.classList.add('is-visible'));
     refs.meaning.classList.remove('is-visible');
     refs.exWrap.classList.remove('is-visible');
-    refs.chunks.forEach(c => c.classList.remove('is-highlight'));
+    refs.chunks.forEach(c => c.classList.remove('is-highlight', 'is-final'));
     refs.fs.classList.remove('is-active');
     refs.fsBlur.classList.remove('is-visible');
     refs.fsWordRow.classList.remove('is-visible');
@@ -133,6 +145,7 @@
       [refs.fsBlur, refs.fsWordRow, refs.fsMeaning, refs.fsExWrap]
         .forEach(el => el.classList.remove('is-visible'));
       refs.fsLetters.forEach(l => l.classList.remove('is-highlight'));
+
       refs.fsChunks.forEach(c => c.classList.remove('is-highlight'));
       refs.fs.closest('.vocab-card')?.classList.remove('is-fs-open');
       window._vocabSetFullscreen?.(false);
@@ -143,6 +156,7 @@
   async function play(card, wordData) {
     const t = _token;
     const refs = getRefs(card);
+    refs._word = wordData.word;   // reset() 시 wordRow 복원에 사용
     const w = (ms) => waitOrCancel(ms, t);
     const ok = () => { if (isCancelled(t)) throw new CancelError(); };
 
@@ -210,6 +224,7 @@
         refs.fsLetters.forEach(l => l.classList.add('is-highlight'));
         await AudioPlayer.playOnce(wordSrc, T.AUDIO_FB);
         refs.fsLetters.forEach(l => l.classList.remove('is-highlight'));
+
         if (i < 2) await w(T.READ_PAUSE);
       }
 
@@ -244,8 +259,14 @@
 
       // 카드 상태 복귀
       refs.snap.classList.remove('is-visible');
-      refs.blanks.forEach(b => b.classList.remove('is-visible'));
-      refs.letters.forEach(l => l.classList.add('is-visible'));
+      // 빈칸 → 공개: span 하나로 교체 (커서 블록 시 한 단어 선택)
+      if (refs.wordRow) {
+        refs.wordRow.innerHTML = '';
+        const span = document.createElement('span');
+        span.className = 'vocab-card__word-revealed';
+        span.textContent = wordData.word;
+        refs.wordRow.appendChild(span);
+      }
       refs.meaning.classList.remove('is-visible');
       refs.exWrap.classList.add('is-visible');
 
@@ -258,20 +279,18 @@
         });
       }
 
-      // 예문 3회 반복 음독
+      // 예문 반복 음독
       const exSrc = wordData.media.audio?.example;
-      for (let i = 0; i < 3; i++) {
-        ok();
-        if (i < 2) {
-          // 1~2회: 어절별 하이라이트
-          await readWithHighlight(refs.chunks, exSrc, t);
-          await w(T.REPEAT_GAP);
-        } else {
-          // 3회(마지막): 문장 전체 초록색으로 켜고 음독 후 그대로 유지
-          refs.chunks.forEach(c => c.classList.add('is-highlight'));
-          await AudioPlayer.playOnce(exSrc, T.CHUNK_FB);
-        }
-      }
+
+      // 1회: 어절별 하이라이트
+      ok();
+      await readWithHighlight(refs.chunks, exSrc, t);
+      await w(T.REPEAT_GAP);
+
+      // 2회(마지막): 전체 굵은 하이라이트 + 음독 후 유지
+      ok();
+      refs.chunks.forEach(c => c.classList.add('is-final'));
+      await AudioPlayer.playOnce(exSrc, T.CHUNK_FB);
 
       await w(T.FINAL_HOLD);
 

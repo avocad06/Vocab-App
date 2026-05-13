@@ -4,9 +4,11 @@
 (function () {
   'use strict';
 
-  function buildCardWordRow(word) {
+  // 빈칸 상태 word-row 생성 (외부에서도 호출 가능)
+  function buildWordRow(word) {
     const row = document.createElement('div');
     row.className = 'vocab-card__word-row';
+
     for (const ch of word) {
       if (ch === ' ') {
         const sp = document.createElement('span');
@@ -16,15 +18,19 @@
       }
       const wrap = document.createElement('span');
       wrap.className = 'vocab-card__word-char';
+
       const letter = document.createElement('span');
       letter.className = 'vocab-card__letter';
       letter.textContent = ch;
+
       const blank = document.createElement('span');
       blank.className = 'vocab-card__blank';
+
       wrap.appendChild(letter);
       wrap.appendChild(blank);
       row.appendChild(wrap);
     }
+
     return row;
   }
 
@@ -54,7 +60,7 @@
     pos.className = 'vocab-card__pos';
     pos.textContent = wordData.pos;
 
-    const wordRow = buildCardWordRow(wordData.word);
+    const wordRow = buildWordRow(wordData.word);
 
     const meaning = document.createElement('p');
     meaning.className = 'vocab-card__meaning';
@@ -81,7 +87,6 @@
     const fs = document.createElement('div');
     fs.className = 'vocab-fs';
 
-    // 풀스크린 확대 시 실제 미디어(video/gif) 사용
     const fsImg = MediaLoader.create(wordData);
     fsImg.className = 'vocab-fs__img';
     if (fsImg.tagName === 'VIDEO') {
@@ -143,5 +148,5 @@
     return card;
   }
 
-  window.VocabCard = { createCard };
+  window.VocabCard = { createCard, buildWordRow };
 })();
