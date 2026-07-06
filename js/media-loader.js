@@ -28,12 +28,25 @@
   }
 
   function createGif(wordData) {
+    const url = resolveUrl(wordData.media.gif);
+    // gif 경로가 MP4 URL이면 video 엘리먼트로 렌더링
+    if (url.endsWith('.mp4')) {
+      const video = document.createElement('video');
+      video.className = 'vocab-card__media';
+      video.autoplay = true;
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.onerror = () => replacePlaceholder(video, wordData);
+      video.src = url;
+      return video;
+    }
     const img = document.createElement('img');
     img.className = 'vocab-card__media';
     img.alt = wordData.word;
     if (CFG.gif.lazyLoad) img.loading = 'lazy';
     img.onerror = () => replacePlaceholder(img, wordData);
-    img.src = resolveUrl(wordData.media.gif);
+    img.src = url;
     return img;
   }
 
