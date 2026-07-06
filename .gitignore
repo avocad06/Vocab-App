@@ -4,6 +4,8 @@ data/words.js.bak_*
 
 # 임시 파일
 assets/_temp/
+_audiofiles.json
+_*.json
 
 # Windows 시스템 파일
 desktop.ini

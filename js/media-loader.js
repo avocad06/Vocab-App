@@ -71,6 +71,8 @@
     const img = document.createElement('img');
     img.className = 'vocab-thumb';
     img.alt = wordData.word;
+    img.loading = 'lazy';
+    img.decoding = 'async';
     img.onerror = () => {
       const ph = document.createElement('div');
       ph.className = 'vocab-media-placeholder';

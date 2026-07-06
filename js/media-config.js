@@ -18,7 +18,7 @@ window.MEDIA_CONFIG = {
   slowNetworkTypes : ['slow-2g', '2g'],
 
   video: {
-    preload    : 'auto',
+    preload    : 'none',
     muted      : true,
     loop       : true,
     playsInline: true,

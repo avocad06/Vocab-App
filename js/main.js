@@ -18,12 +18,41 @@
   const helpModal = document.getElementById('help-modal');
   const btnHelpClose = document.getElementById('btn-help-close');
 
-  // 카드 DOM 생성
-  const cards = VOCAB_WORDS.map(wordData => {
-    const card = VocabCard.createCard(wordData);
-    root.appendChild(card);
-    return card;
-  });
+  const loadingEl = document.getElementById('vocab-loading');
+  const loadingProgressEl = document.getElementById('vocab-loading-progress');
+
+  // 카드 DOM 생성 — 청크 단위로 나눠 생성해 로딩 오버레이가 먼저 그려지게 한다
+  const cards = [];
+  const BUILD_CHUNK = 30;
+  const totalWords = VOCAB_WORDS.length;
+
+  function buildChunk(start) {
+    const frag = document.createDocumentFragment();
+    const end = Math.min(start + BUILD_CHUNK, totalWords);
+    for (let i = start; i < end; i++) {
+      const card = VocabCard.createCard(VOCAB_WORDS[i]);
+      frag.appendChild(card);
+      cards.push(card);
+    }
+    root.appendChild(frag);
+    if (loadingProgressEl) {
+      loadingProgressEl.textContent = Math.round((end / totalWords) * 100) + '%';
+    }
+    if (end < totalWords) {
+      requestAnimationFrame(() => buildChunk(end));
+    } else {
+      finishLoading();
+    }
+  }
+
+  function finishLoading() {
+    if (!loadingEl) return;
+    loadingEl.classList.add('is-hidden');
+    setTimeout(() => { loadingEl.style.display = 'none'; }, 300);
+  }
+
+  // 오버레이가 실제로 렌더된 다음 프레임부터 카드 생성 시작
+  requestAnimationFrame(() => buildChunk(0));
 
   let currentIndex = 0;
   let isFullscreen = false;  // 풀스크린 중 여부 — 이때만 버튼 완전 차단
