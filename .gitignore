@@ -1,0 +1,10 @@
+# 백업 파일
+data/words.js.bak
+data/words.js.bak_*
+
+# 임시 파일
+assets/_temp/
+
+# Windows 시스템 파일
+desktop.ini
+**/desktop.ini
