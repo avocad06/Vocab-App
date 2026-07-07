@@ -11,6 +11,12 @@
     if (cache.has(src)) return cache.get(src);
     const audio = new Audio(src);
     audio.preload = 'auto';
+    const acfg = (window.MEDIA_CONFIG && window.MEDIA_CONFIG.audio) || {};
+    if (acfg.playbackRate) audio.playbackRate = acfg.playbackRate;
+    const pp = acfg.preservesPitch !== false;
+    audio.preservesPitch = pp;
+    audio.mozPreservesPitch = pp;
+    audio.webkitPreservesPitch = pp;
     cache.set(src, audio);
     return audio;
   }

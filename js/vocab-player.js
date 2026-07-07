@@ -69,9 +69,12 @@
     const start = performance.now();
     const audioPromise = AudioPlayer.playOnce(src, T.CHUNK_FB);
 
+    // 재생 속도를 늦추면 실제 재생 시간이 늘어나므로 하이라이트 타이밍도 스케일
+    const rate = (window.MEDIA_CONFIG && window.MEDIA_CONFIG.audio && window.MEDIA_CONFIG.audio.playbackRate) || 1;
+
     for (let i = 0; i < n; i++) {
       if (isCancelled(t)) break;
-      const delay = Math.max(0, timings[i] - (performance.now() - start));
+      const delay = Math.max(0, timings[i] / rate - (performance.now() - start));
       await waitOrCancel(delay, t);
       if (i > 0) chunks[i - 1].classList.remove('is-highlight');
       chunks[i].classList.add('is-highlight');

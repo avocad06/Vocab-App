@@ -26,4 +26,8 @@ window.MEDIA_CONFIG = {
   gif: {
     lazyLoad: true,
   },
+  audio: {
+    playbackRate  : 0.85,   // 1 = 원속도, 0.85 = 15% 느리게 (숫자 낮출수록 느려짐)
+    preservesPitch: true,   // 속도 늦춰도 음정(목소리 톤) 유지
+  },
 };

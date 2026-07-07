@@ -7,63 +7,17 @@
  */
 window.VOCAB_WORDS = [
   {
-    "id": "growl",
-    "word": "growl",
-    "pos": "v.",
-    "meaning": "으르렁거리다",
-    "example": "The dog growls loudly.",
-    "exampleChunks": [
-      "The",
-      "dog",
-      "growls",
-      "loudly."
-    ],
-    "media": {
-      "gif": "assets/gif/growl.gif",
-      "video": "assets/video/growl.mp4",
-      "thumb": "assets/thumb/growl-thumb.jpg",
-      "placeholder": "🐺",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%203_011_growl_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%203_011_growl_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "act",
-    "word": "act",
-    "pos": "v.",
-    "meaning": "행동하다",
-    "example": "We must act now.",
-    "exampleChunks": [
-      "We",
-      "must",
-      "act",
-      "now."
-    ],
-    "media": {
-      "gif": "assets/gif/act.gif",
-      "video": "assets/video/act.mp4",
-      "thumb": "assets/thumb/act-thumb.jpg",
-      "placeholder": "🏃",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%209_014_act_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%209_014_act_sentence.mp3"
-      }
-    }
-  },
-  {
     "id": "watch",
     "word": "watch",
     "pos": "v.",
-    "meaning": "보다 (시청하다)",
-    "example": "I watch TV every evening.",
+    "meaning": "보다",
+    "example": "My sister watches TV shows.",
     "exampleChunks": [
-      "I",
-      "watch",
+      "My",
+      "sister",
+      "watches",
       "TV",
-      "every",
-      "evening."
+      "shows."
     ],
     "media": {
       "gif": "assets/gif/watch.gif",
@@ -81,14 +35,12 @@ window.VOCAB_WORDS = [
     "word": "look for",
     "pos": "v.",
     "meaning": "찾다",
-    "example": "I am looking for my keys.",
+    "example": "He looks for a job.",
     "exampleChunks": [
-      "I",
-      "am",
-      "looking",
-      "for",
-      "my",
-      "keys."
+      "He",
+      "looks for",
+      "a",
+      "job."
     ],
     "media": {
       "gif": "assets/gif/look_for.gif",
@@ -106,12 +58,13 @@ window.VOCAB_WORDS = [
     "word": "make",
     "pos": "v.",
     "meaning": "만들다",
-    "example": "She makes a birdhouse.",
+    "example": "Her family makes a cake.",
     "exampleChunks": [
-      "She",
+      "Her",
+      "family",
       "makes",
       "a",
-      "birdhouse."
+      "cake."
     ],
     "media": {
       "gif": "assets/gif/make.gif",
@@ -168,6 +121,320 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_005_do_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_005_do_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "know",
+    "word": "know",
+    "pos": "v.",
+    "meaning": "알다, 이해하다",
+    "example": "I know how to cook noodle.",
+    "exampleChunks": [
+      "I",
+      "know",
+      "how",
+      "to",
+      "cook",
+      "noodle."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020921_c6da759e-3898-4054-9c27-8b5c7a6d25a1.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020921_c6da759e-3898-4054-9c27-8b5c7a6d25a1.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/2d86e062-1304-445f-b129-20ce99320c7e.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_006_know_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_006_know_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "sit_on",
+    "word": "sit on",
+    "pos": "v.",
+    "meaning": "앉다",
+    "example": "She sits on the chair.",
+    "exampleChunks": [
+      "She",
+      "sits",
+      "on",
+      "the",
+      "chair."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020923_3bc8ff07-a9f8-4276-928b-c978bc83322a.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020923_3bc8ff07-a9f8-4276-928b-c978bc83322a.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/98941d29-61e1-4aee-b400-a48b602227ac.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_007_sit%20on_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_007_sit%20on_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "move",
+    "word": "move",
+    "pos": "v.",
+    "meaning": "움직이다",
+    "example": "The snail moves really slow.",
+    "exampleChunks": [
+      "The",
+      "snail",
+      "moves",
+      "really",
+      "slow."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020925_46585567-2abc-432d-b2dd-fa93e281138e.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020925_46585567-2abc-432d-b2dd-fa93e281138e.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/0688160c-fb7d-4ba4-94a0-654a0f260971.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_008_move_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_008_move_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "fall_down",
+    "word": "fall down",
+    "pos": "v.",
+    "meaning": "떨어진다",
+    "example": "The monkey falls down from the tree.",
+    "exampleChunks": [
+      "The",
+      "monkey",
+      "falls",
+      "down",
+      "from",
+      "the",
+      "tree."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021239_b30ad879-c25b-4416-b90e-399656e8db76.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021239_b30ad879-c25b-4416-b90e-399656e8db76.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/10d8c8dc-d26a-4f9b-9bb5-ead87264ed86.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_009_fall%20down_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_009_fall%20down_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "see",
+    "word": "see",
+    "pos": "v.",
+    "meaning": "~을 보다",
+    "example": "I see you.",
+    "exampleChunks": [
+      "I",
+      "see",
+      "you."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021241_5129f0f8-0005-4655-b9d0-59bd4a763720.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021241_5129f0f8-0005-4655-b9d0-59bd4a763720.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/2c3a2885-9b70-473f-8184-5901c042b4d3.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_010_see_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_010_see_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "open",
+    "word": "open",
+    "pos": "v.",
+    "meaning": "열다",
+    "example": "She opens the window.",
+    "exampleChunks": [
+      "She",
+      "opens",
+      "the",
+      "window."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021247_a606c35e-5832-4958-8a0d-bbd418557d77.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021247_a606c35e-5832-4958-8a0d-bbd418557d77.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/f32ab09c-1aa1-4247-983c-705a8ab17740.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_013_open_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_013_open_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "wash",
+    "word": "wash",
+    "pos": "v.",
+    "meaning": "씻다",
+    "example": "I wash my hands.",
+    "exampleChunks": [
+      "I",
+      "wash",
+      "my",
+      "hands."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021417_fd3ad5c8-d362-48d4-9f2e-1f825030be79.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021417_fd3ad5c8-d362-48d4-9f2e-1f825030be79.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/3f86e989-ea1f-4d64-a57f-d448e5cd7820.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_014_wash_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_014_wash_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "wake",
+    "word": "wake",
+    "pos": "v.",
+    "meaning": "잠에서 깨다",
+    "example": "Mom wakes my sister.",
+    "exampleChunks": [
+      "Mom",
+      "wakes",
+      "my",
+      "sister."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021419_e765b7a6-34b0-45c7-ab7e-f023607f6cc7.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021419_e765b7a6-34b0-45c7-ab7e-f023607f6cc7.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/4a59257f-116f-4872-a28f-6bcfc3dfdff6.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_015_wake_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_015_wake_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "wear",
+    "word": "wear",
+    "pos": "v.",
+    "meaning": "입다",
+    "example": "The children wear their costumes for Halloween.",
+    "exampleChunks": [
+      "The",
+      "children",
+      "wear",
+      "their",
+      "costumes",
+      "for",
+      "Halloween."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260626_052218_fd6482f9-7b15-4933-b074-c55dbd315c44.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260626_052218_fd6482f9-7b15-4933-b074-c55dbd315c44.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/e5d93684-2aa2-415c-bcb7-af8c63e44065.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://drive.google.com/uc?export=download&id=1h3NaXHLu7DopVUUuDkHjfAMS0s_AL2PD",
+        "example": "https://drive.google.com/uc?export=download&id=1RHUL22ecManjQcKvujcSfKme-5DTuHZo"
+      }
+    }
+  },
+  {
+    "id": "want",
+    "word": "want",
+    "pos": "v.",
+    "meaning": "원하다",
+    "example": "He wants to play at the playground.",
+    "exampleChunks": [
+      "He",
+      "wants",
+      "to",
+      "play",
+      "at",
+      "the",
+      "playground."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021526_02ade6cb-cc22-4f39-8532-fa3f8b611da9.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021526_02ade6cb-cc22-4f39-8532-fa3f8b611da9.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/dd4156fc-3874-4873-9b78-79ddb1e89b00.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_017_want_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_017_want_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "wait",
+    "word": "wait",
+    "pos": "v.",
+    "meaning": "기다리다",
+    "example": "He waits for his turn.",
+    "exampleChunks": [
+      "He",
+      "waits",
+      "for",
+      "his",
+      "turn."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021528_898dadd5-11b4-49b5-9871-83ec8d18e819.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021528_898dadd5-11b4-49b5-9871-83ec8d18e819.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/707c702b-a3b3-4188-a88a-b1d078907c4b.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_018_wait_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_018_wait_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "say",
+    "word": "say",
+    "pos": "v.",
+    "meaning": "말하다",
+    "example": "She says sorry to me.",
+    "exampleChunks": [
+      "She",
+      "says",
+      "sorry",
+      "to",
+      "me."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021530_f2db7fec-6459-48eb-a41e-eca3dcb6a5a7.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021530_f2db7fec-6459-48eb-a41e-eca3dcb6a5a7.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/b239ab83-c3b6-4fcd-9c6d-863b60e36828.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_019_say_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_019_say_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "blow",
+    "word": "blow",
+    "pos": "v.",
+    "meaning": "불다",
+    "example": "I blow up the balloon.",
+    "exampleChunks": [
+      "I",
+      "blow",
+      "up",
+      "the",
+      "balloon."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021532_3ff66c45-1800-41d8-ad70-5d279a3efc38.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021532_3ff66c45-1800-41d8-ad70-5d279a3efc38.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/89984b58-b3b7-438d-abee-c5e3e2890ea9.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_020_blow_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_020_blow_sentence.mp3"
       }
     }
   },
@@ -285,6 +552,76 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "assets/audio/wink-word.mp3",
         "example": "assets/audio/wink-example.mp3"
+      }
+    }
+  },
+  {
+    "id": "read",
+    "word": "read",
+    "pos": "v.",
+    "meaning": "읽다",
+    "example": "Dad reads a newspaper.",
+    "exampleChunks": [
+      "Dad",
+      "reads",
+      "a",
+      "newspaper."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030859_4a8ef19c-5012-4e67-85bf-0c458581e710.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030859_4a8ef19c-5012-4e67-85bf-0c458581e710.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/336b09ca-42ae-40c1-9f80-121fd504b679.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_006_read_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_006_read_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "work",
+    "word": "work",
+    "pos": "v.",
+    "meaning": "일하다",
+    "example": "She works at the library.",
+    "exampleChunks": [
+      "She",
+      "works",
+      "at",
+      "the",
+      "library."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030901_55d9beef-fc9a-4945-87f9-666b388418bb.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030901_55d9beef-fc9a-4945-87f9-666b388418bb.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/d85c66e9-29d1-4cf0-984e-c635b0263600.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_007_work_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_007_work_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "sing",
+    "word": "sing",
+    "pos": "v.",
+    "meaning": "노래를 부르다",
+    "example": "We sing a song.",
+    "exampleChunks": [
+      "We",
+      "sing",
+      "a",
+      "song."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030902_fef7f087-3339-41bb-8255-bb9d33262a4c.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030902_fef7f087-3339-41bb-8255-bb9d33262a4c.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/da140ee5-8b0d-4977-ac08-08118437b8ef.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_008_sing_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_008_sing_sentence.mp3"
       }
     }
   },
@@ -701,7 +1038,7 @@ window.VOCAB_WORDS = [
     "id": "click",
     "word": "click",
     "pos": "v.",
-    "meaning": "버튼을 누르다",
+    "meaning": "버튼을 누르다, 찰칵 소리가 나다",
     "example": "He clicks the button.",
     "exampleChunks": [
       "He",
@@ -717,6 +1054,33 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_008_click_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_008_click_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "come",
+    "word": "come",
+    "pos": "v.",
+    "meaning": "오다",
+    "example": "She comes to the front of the class.",
+    "exampleChunks": [
+      "She",
+      "comes",
+      "to",
+      "the",
+      "front",
+      "of",
+      "the",
+      "class."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054635_f6698e63-6ef4-4462-a0f2-9996bd227ca2.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054635_f6698e63-6ef4-4462-a0f2-9996bd227ca2.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/b4765185-03f9-418e-b274-d667bf628225.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_009_come_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_009_come_sentence.mp3"
       }
     }
   },
@@ -746,395 +1110,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "know",
-    "word": "know",
-    "pos": "v.",
-    "meaning": "",
-    "example": "I know how to cook noodle.",
-    "exampleChunks": [
-      "I",
-      "know",
-      "how",
-      "to",
-      "cook",
-      "noodle."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020921_c6da759e-3898-4054-9c27-8b5c7a6d25a1.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020921_c6da759e-3898-4054-9c27-8b5c7a6d25a1.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/2d86e062-1304-445f-b129-20ce99320c7e.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_006_know_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_006_know_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "sit_on",
-    "word": "sit on",
-    "pos": "v.",
-    "meaning": "",
-    "example": "She sits on the chair.",
-    "exampleChunks": [
-      "She",
-      "sits",
-      "on",
-      "the",
-      "chair."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020923_3bc8ff07-a9f8-4276-928b-c978bc83322a.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020923_3bc8ff07-a9f8-4276-928b-c978bc83322a.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/98941d29-61e1-4aee-b400-a48b602227ac.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_007_sit%20on_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_007_sit%20on_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "move",
-    "word": "move",
-    "pos": "v.",
-    "meaning": "",
-    "example": "The snail moves really slow.",
-    "exampleChunks": [
-      "The",
-      "snail",
-      "moves",
-      "really",
-      "slow."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020925_46585567-2abc-432d-b2dd-fa93e281138e.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_020925_46585567-2abc-432d-b2dd-fa93e281138e.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/0688160c-fb7d-4ba4-94a0-654a0f260971.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_008_move_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_008_move_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "fall_down",
-    "word": "fall down",
-    "pos": "v.",
-    "meaning": "",
-    "example": "The monkey falls down from the tree.",
-    "exampleChunks": [
-      "The",
-      "monkey",
-      "falls",
-      "down",
-      "from",
-      "the",
-      "tree."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021239_b30ad879-c25b-4416-b90e-399656e8db76.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021239_b30ad879-c25b-4416-b90e-399656e8db76.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/10d8c8dc-d26a-4f9b-9bb5-ead87264ed86.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_009_fall%20down_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_009_fall%20down_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "see",
-    "word": "see",
-    "pos": "v.",
-    "meaning": "",
-    "example": "I see you.",
-    "exampleChunks": [
-      "I",
-      "see",
-      "you."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021241_5129f0f8-0005-4655-b9d0-59bd4a763720.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021241_5129f0f8-0005-4655-b9d0-59bd4a763720.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/2c3a2885-9b70-473f-8184-5901c042b4d3.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_010_see_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_010_see_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "open",
-    "word": "open",
-    "pos": "v.",
-    "meaning": "",
-    "example": "She opens the window.",
-    "exampleChunks": [
-      "She",
-      "opens",
-      "the",
-      "window."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021247_a606c35e-5832-4958-8a0d-bbd418557d77.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021247_a606c35e-5832-4958-8a0d-bbd418557d77.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/f32ab09c-1aa1-4247-983c-705a8ab17740.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_013_open_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_013_open_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "wash",
-    "word": "wash",
-    "pos": "v.",
-    "meaning": "",
-    "example": "I wash my hands.",
-    "exampleChunks": [
-      "I",
-      "wash",
-      "my",
-      "hands."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021417_fd3ad5c8-d362-48d4-9f2e-1f825030be79.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021417_fd3ad5c8-d362-48d4-9f2e-1f825030be79.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/3f86e989-ea1f-4d64-a57f-d448e5cd7820.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_014_wash_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_014_wash_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "wake",
-    "word": "wake",
-    "pos": "v.",
-    "meaning": "",
-    "example": "Mom wakes my sister.",
-    "exampleChunks": [
-      "Mom",
-      "wakes",
-      "my",
-      "sister."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021419_e765b7a6-34b0-45c7-ab7e-f023607f6cc7.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021419_e765b7a6-34b0-45c7-ab7e-f023607f6cc7.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/4a59257f-116f-4872-a28f-6bcfc3dfdff6.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_015_wake_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_015_wake_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "want",
-    "word": "want",
-    "pos": "v.",
-    "meaning": "",
-    "example": "He wants to play at the playground.",
-    "exampleChunks": [
-      "He",
-      "wants",
-      "to",
-      "play",
-      "at",
-      "the",
-      "playground."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021526_02ade6cb-cc22-4f39-8532-fa3f8b611da9.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021526_02ade6cb-cc22-4f39-8532-fa3f8b611da9.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/dd4156fc-3874-4873-9b78-79ddb1e89b00.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_017_want_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_017_want_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "wait",
-    "word": "wait",
-    "pos": "v.",
-    "meaning": "",
-    "example": "He waits for his turn.",
-    "exampleChunks": [
-      "He",
-      "waits",
-      "for",
-      "his",
-      "turn."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021528_898dadd5-11b4-49b5-9871-83ec8d18e819.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021528_898dadd5-11b4-49b5-9871-83ec8d18e819.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/707c702b-a3b3-4188-a88a-b1d078907c4b.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_018_wait_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_018_wait_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "say",
-    "word": "say",
-    "pos": "v.",
-    "meaning": "",
-    "example": "She says sorry to me.",
-    "exampleChunks": [
-      "She",
-      "says",
-      "sorry",
-      "to",
-      "me."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021530_f2db7fec-6459-48eb-a41e-eca3dcb6a5a7.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021530_f2db7fec-6459-48eb-a41e-eca3dcb6a5a7.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/b239ab83-c3b6-4fcd-9c6d-863b60e36828.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_019_say_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_019_say_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "blow",
-    "word": "blow",
-    "pos": "v.",
-    "meaning": "",
-    "example": "I blow up the balloon.",
-    "exampleChunks": [
-      "I",
-      "blow",
-      "up",
-      "the",
-      "balloon."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021532_3ff66c45-1800-41d8-ad70-5d279a3efc38.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_021532_3ff66c45-1800-41d8-ad70-5d279a3efc38.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/89984b58-b3b7-438d-abee-c5e3e2890ea9.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_020_blow_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%201_020_blow_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "read",
-    "word": "read",
-    "pos": "v.",
-    "meaning": "",
-    "example": "Dad reads a newspaper.",
-    "exampleChunks": [
-      "Dad",
-      "reads",
-      "a",
-      "newspaper."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030859_4a8ef19c-5012-4e67-85bf-0c458581e710.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030859_4a8ef19c-5012-4e67-85bf-0c458581e710.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/336b09ca-42ae-40c1-9f80-121fd504b679.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_006_read_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_006_read_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "work",
-    "word": "work",
-    "pos": "v.",
-    "meaning": "",
-    "example": "She works at the library.",
-    "exampleChunks": [
-      "She",
-      "works",
-      "at",
-      "the",
-      "library."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030901_55d9beef-fc9a-4945-87f9-666b388418bb.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030901_55d9beef-fc9a-4945-87f9-666b388418bb.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/d85c66e9-29d1-4cf0-984e-c635b0263600.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_007_work_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_007_work_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "sing",
-    "word": "sing",
-    "pos": "v.",
-    "meaning": "",
-    "example": "We sing a song.",
-    "exampleChunks": [
-      "We",
-      "sing",
-      "a",
-      "song."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030902_fef7f087-3339-41bb-8255-bb9d33262a4c.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260624_030902_fef7f087-3339-41bb-8255-bb9d33262a4c.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/da140ee5-8b0d-4977-ac08-08118437b8ef.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_008_sing_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_008_sing_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "come",
-    "word": "come",
-    "pos": "v.",
-    "meaning": "",
-    "example": "She comes to the front of the class.",
-    "exampleChunks": [
-      "She",
-      "comes",
-      "to",
-      "the",
-      "front",
-      "of",
-      "the",
-      "class."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054635_f6698e63-6ef4-4462-a0f2-9996bd227ca2.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054635_f6698e63-6ef4-4462-a0f2-9996bd227ca2.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/b4765185-03f9-418e-b274-d667bf628225.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_009_come_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_009_come_sentence.mp3"
-      }
-    }
-  },
-  {
     "id": "hold",
     "word": "hold",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "듣다, 잡다",
     "example": "She holds a picture of a tiger.",
     "exampleChunks": [
       "She",
@@ -1160,7 +1139,7 @@ window.VOCAB_WORDS = [
     "id": "fight",
     "word": "fight",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "싸우다, 다투다",
     "example": "My children sometimes fight one another.",
     "exampleChunks": [
       "My",
@@ -1185,7 +1164,7 @@ window.VOCAB_WORDS = [
     "id": "like",
     "word": "like",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "좋아하다",
     "example": "He likes strawberry candy.",
     "exampleChunks": [
       "He",
@@ -1208,7 +1187,7 @@ window.VOCAB_WORDS = [
     "id": "enjoy",
     "word": "enjoy",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "즐기다",
     "example": "She enjoys classic music.",
     "exampleChunks": [
       "She",
@@ -1231,7 +1210,7 @@ window.VOCAB_WORDS = [
     "id": "follow",
     "word": "follow",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "따라가다, 따라오다",
     "example": "We follow the lines.",
     "exampleChunks": [
       "We",
@@ -1254,7 +1233,7 @@ window.VOCAB_WORDS = [
     "id": "look_out",
     "word": "look out",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "주의하세요, 조심하세요",
     "example": "We need to look out while crossing the road.",
     "exampleChunks": [
       "We",
@@ -1282,7 +1261,7 @@ window.VOCAB_WORDS = [
     "id": "put",
     "word": "put",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "두다, 놓다",
     "example": "Dad puts his phone on the table.",
     "exampleChunks": [
       "Dad",
@@ -1308,7 +1287,7 @@ window.VOCAB_WORDS = [
     "id": "turn_on",
     "word": "turn on",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "켜다, ~에 달려 있다",
     "example": "Mom turns on the lights.",
     "exampleChunks": [
       "Mom",
@@ -1332,7 +1311,7 @@ window.VOCAB_WORDS = [
     "id": "color",
     "word": "color",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "~에 색칠하다, 붉어지다",
     "example": "She colors the table brown.",
     "exampleChunks": [
       "She",
@@ -1356,7 +1335,7 @@ window.VOCAB_WORDS = [
     "id": "jump",
     "word": "jump",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "뛰다",
     "example": "He jumps into the water.",
     "exampleChunks": [
       "He",
@@ -1380,7 +1359,7 @@ window.VOCAB_WORDS = [
     "id": "share",
     "word": "share",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "나누다, 공유하다",
     "example": "I share snacks with my sister.",
     "exampleChunks": [
       "I",
@@ -1405,7 +1384,7 @@ window.VOCAB_WORDS = [
     "id": "show",
     "word": "show",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "보여주다",
     "example": "He shows me his cat.",
     "exampleChunks": [
       "He",
@@ -1429,7 +1408,7 @@ window.VOCAB_WORDS = [
     "id": "stand",
     "word": "stand",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "서다",
     "example": "Kids usually stand in line.",
     "exampleChunks": [
       "Kids",
@@ -1453,7 +1432,7 @@ window.VOCAB_WORDS = [
     "id": "put_on",
     "word": "put on",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "~을 입다, ~을 바르다",
     "example": "Dad puts on his glasses.",
     "exampleChunks": [
       "Dad",
@@ -1477,7 +1456,7 @@ window.VOCAB_WORDS = [
     "id": "swim",
     "word": "swim",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "수영하다",
     "example": "She swims in the pool.",
     "exampleChunks": [
       "She",
@@ -1501,7 +1480,7 @@ window.VOCAB_WORDS = [
     "id": "plant",
     "word": "plant",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(씨앗 등을) 심다",
     "example": "Mom plants flowers in the garden.",
     "exampleChunks": [
       "Mom",
@@ -1526,7 +1505,7 @@ window.VOCAB_WORDS = [
     "id": "grow",
     "word": "grow",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "자라다, 기르다",
     "example": "My brother grows his hair.",
     "exampleChunks": [
       "My",
@@ -1550,7 +1529,7 @@ window.VOCAB_WORDS = [
     "id": "bounce",
     "word": "bounce",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "튀다, 튀기다",
     "example": "He bounces the ball.",
     "exampleChunks": [
       "He",
@@ -1570,10 +1549,35 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "kick",
+    "word": "kick",
+    "pos": "v.",
+    "meaning": "차다",
+    "example": "She kicks the ball to me.",
+    "exampleChunks": [
+      "She",
+      "kicks",
+      "the",
+      "ball",
+      "to",
+      "me."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_145857_55735918-58f9-430d-8cd8-d3d29cef1cc1.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_145857_55735918-58f9-430d-8cd8-d3d29cef1cc1.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/56156047-ad0e-45e0-a342-1374df9f052c.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://drive.google.com/uc?export=download&id=1U9r_qjuAAt7KgqmoErAcd_wr7hQkW6ON",
+        "example": "https://drive.google.com/uc?export=download&id=1FptrbaBXYXvlR__vDHLlpPnk6Bs5X00J"
+      }
+    }
+  },
+  {
     "id": "feed",
     "word": "feed",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "먹이를 주다, 먹이다",
     "example": "He feeds his cat.",
     "exampleChunks": [
       "He",
@@ -1596,7 +1600,7 @@ window.VOCAB_WORDS = [
     "id": "use",
     "word": "use",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "사용하다",
     "example": "He uses his phone in the class.",
     "exampleChunks": [
       "He",
@@ -1622,7 +1626,7 @@ window.VOCAB_WORDS = [
     "id": "paint",
     "word": "paint",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(그림 물감으로)\n그리다",
     "example": "She paints a beautiful picture.",
     "exampleChunks": [
       "She",
@@ -1646,7 +1650,7 @@ window.VOCAB_WORDS = [
     "id": "turn",
     "word": "turn",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "돌다, 돌리다",
     "example": "She turns around.",
     "exampleChunks": [
       "She",
@@ -1668,7 +1672,7 @@ window.VOCAB_WORDS = [
     "id": "mix",
     "word": "mix",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "섞다, 섞이다",
     "example": "I mix red and blue color.",
     "exampleChunks": [
       "I",
@@ -1693,7 +1697,7 @@ window.VOCAB_WORDS = [
     "id": "throw",
     "word": "throw",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "던지다",
     "example": "He throws a ball.",
     "exampleChunks": [
       "He",
@@ -1716,7 +1720,7 @@ window.VOCAB_WORDS = [
     "id": "walk",
     "word": "walk",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "걷다",
     "example": "He walks with his dog.",
     "exampleChunks": [
       "He",
@@ -1740,7 +1744,7 @@ window.VOCAB_WORDS = [
     "id": "taste",
     "word": "taste",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "맛이 나다",
     "example": "The pizza tastes good.",
     "exampleChunks": [
       "The",
@@ -1763,7 +1767,7 @@ window.VOCAB_WORDS = [
     "id": "sit",
     "word": "sit",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "앉다",
     "example": "I sit next to my brother.",
     "exampleChunks": [
       "I",
@@ -1788,7 +1792,7 @@ window.VOCAB_WORDS = [
     "id": "call",
     "word": "call",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "외치다[부르다], 전화하다",
     "example": "Mom calls my name.",
     "exampleChunks": [
       "Mom",
@@ -1811,7 +1815,7 @@ window.VOCAB_WORDS = [
     "id": "snow",
     "word": "snow",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "눈이 내리다",
     "example": "In winter, it snows often in Korea.",
     "exampleChunks": [
       "In",
@@ -1837,7 +1841,7 @@ window.VOCAB_WORDS = [
     "id": "curl",
     "word": "curl",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "곱슬곱슬하게하다",
     "example": "She curls her hair with a hot iron.",
     "exampleChunks": [
       "She",
@@ -1864,7 +1868,7 @@ window.VOCAB_WORDS = [
     "id": "sound",
     "word": "sound",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "~처럼 들리다",
     "example": "He sounds angry.",
     "exampleChunks": [
       "He",
@@ -1886,7 +1890,7 @@ window.VOCAB_WORDS = [
     "id": "shop",
     "word": "shop",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "물건을 사다",
     "example": "Mom shops at the market.",
     "exampleChunks": [
       "Mom",
@@ -1910,7 +1914,7 @@ window.VOCAB_WORDS = [
     "id": "fall",
     "word": "fall",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "떨어지다, 내리다",
     "example": "She falls from the bed.",
     "exampleChunks": [
       "She",
@@ -1934,7 +1938,7 @@ window.VOCAB_WORDS = [
     "id": "stop",
     "word": "stop",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "멈추다, 막다",
     "example": "She stops the taxi.",
     "exampleChunks": [
       "She",
@@ -1957,7 +1961,7 @@ window.VOCAB_WORDS = [
     "id": "drink",
     "word": "drink",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "마시다",
     "example": "Dad drinks coffee.",
     "exampleChunks": [
       "Dad",
@@ -1976,10 +1980,35 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "think",
+    "word": "think",
+    "pos": "v.",
+    "meaning": "생각하다, 상상하다",
+    "example": "She always thinks carefully before speaking.",
+    "exampleChunks": [
+      "She",
+      "always",
+      "thinks",
+      "carefully",
+      "before",
+      "speaking."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_184313_ef7cb066-8d94-4e66-932b-70d6e20e07bc.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_184313_ef7cb066-8d94-4e66-932b-70d6e20e07bc.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/49084566-b4cd-4595-9a35-ea72d6eca386.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://drive.google.com/uc?export=download&id=1LqVtBD94OL3Y_yL6GZl0fTzKPPWAeKZC",
+        "example": "https://drive.google.com/uc?export=download&id=1jOSoQkP9GWUx0r8ToYOKnqD7KwmN1hn9"
+      }
+    }
+  },
+  {
     "id": "speak",
     "word": "speak",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "말하다, 이야기하다",
     "example": "She speaks English well.",
     "exampleChunks": [
       "She",
@@ -2002,7 +2031,7 @@ window.VOCAB_WORDS = [
     "id": "stay",
     "word": "stay",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "머물다, 지내다",
     "example": "He stays at my house.",
     "exampleChunks": [
       "He",
@@ -2026,7 +2055,7 @@ window.VOCAB_WORDS = [
     "id": "touch",
     "word": "touch",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "만지다",
     "example": "She touches the cat.",
     "exampleChunks": [
       "She",
@@ -2049,7 +2078,7 @@ window.VOCAB_WORDS = [
     "id": "try",
     "word": "try",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "노력하다, 시도하다",
     "example": "I try my best on the math test.",
     "exampleChunks": [
       "I",
@@ -2076,7 +2105,7 @@ window.VOCAB_WORDS = [
     "id": "miss",
     "word": "miss",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "놓치다, 그리워하다",
     "example": "I sometimes miss school bus.",
     "exampleChunks": [
       "I",
@@ -2100,7 +2129,7 @@ window.VOCAB_WORDS = [
     "id": "visit",
     "word": "visit",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "방문하다",
     "example": "My brother and I visit grandmother's home.",
     "exampleChunks": [
       "My",
@@ -2126,7 +2155,7 @@ window.VOCAB_WORDS = [
     "id": "join",
     "word": "join",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "참여하다, 가입하다",
     "example": "He joins the party.",
     "exampleChunks": [
       "He",
@@ -2149,7 +2178,7 @@ window.VOCAB_WORDS = [
     "id": "keep",
     "word": "keep",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "지키다, 유지하다",
     "example": "She keeps a snack in her backpack.",
     "exampleChunks": [
       "She",
@@ -2175,7 +2204,7 @@ window.VOCAB_WORDS = [
     "id": "laugh",
     "word": "laugh",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "웃다",
     "example": "Mom laughs loudly.",
     "exampleChunks": [
       "Mom",
@@ -2197,7 +2226,7 @@ window.VOCAB_WORDS = [
     "id": "learn",
     "word": "learn",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "배우다",
     "example": "Kids learn English at school.",
     "exampleChunks": [
       "Kids",
@@ -2221,7 +2250,7 @@ window.VOCAB_WORDS = [
     "id": "leave",
     "word": "leave",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "떠나다",
     "example": "He leaves his hometown.",
     "exampleChunks": [
       "He",
@@ -2244,7 +2273,7 @@ window.VOCAB_WORDS = [
     "id": "travel",
     "word": "travel",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "여행하다",
     "example": "My brother travels all over the world.",
     "exampleChunks": [
       "My",
@@ -2270,7 +2299,7 @@ window.VOCAB_WORDS = [
     "id": "feel",
     "word": "feel",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "느끼다",
     "example": "She feels happy.",
     "exampleChunks": [
       "She",
@@ -2292,7 +2321,7 @@ window.VOCAB_WORDS = [
     "id": "teach",
     "word": "teach",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "가르치다",
     "example": "My sister teaches me math.",
     "exampleChunks": [
       "My",
@@ -2316,7 +2345,7 @@ window.VOCAB_WORDS = [
     "id": "annoy",
     "word": "annoy",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "짜증나게 하다",
     "example": "My little brother annoys me.",
     "exampleChunks": [
       "My",
@@ -2340,7 +2369,7 @@ window.VOCAB_WORDS = [
     "id": "pay_attention",
     "word": "pay attention",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "주의하다, 주목하다",
     "example": "Students should pay attention to teachers.",
     "exampleChunks": [
       "Students",
@@ -2365,7 +2394,7 @@ window.VOCAB_WORDS = [
     "id": "comfort",
     "word": "comfort",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "편안하게 하다",
     "example": "My best friends always comfort me.",
     "exampleChunks": [
       "My",
@@ -2390,7 +2419,7 @@ window.VOCAB_WORDS = [
     "id": "wonder",
     "word": "wonder",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "궁금해 하다",
     "example": "The children wonder the strange noise.",
     "exampleChunks": [
       "The",
@@ -2415,7 +2444,7 @@ window.VOCAB_WORDS = [
     "id": "curve",
     "word": "curve",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "구부리다",
     "example": "She curves the ribbon around the box.",
     "exampleChunks": [
       "She",
@@ -2441,7 +2470,7 @@ window.VOCAB_WORDS = [
     "id": "decide",
     "word": "decide",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "결정하다",
     "example": "He decides to drink milk.",
     "exampleChunks": [
       "He",
@@ -2465,7 +2494,7 @@ window.VOCAB_WORDS = [
     "id": "drop",
     "word": "drop",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "떨어지다",
     "example": "The leaves drop from the trees.",
     "exampleChunks": [
       "The",
@@ -2490,7 +2519,7 @@ window.VOCAB_WORDS = [
     "id": "discover",
     "word": "discover",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "발견하다, 알아차리다",
     "example": "She discovers a hidden treasure",
     "exampleChunks": [
       "She",
@@ -2514,7 +2543,7 @@ window.VOCAB_WORDS = [
     "id": "disappoint",
     "word": "disappoint",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "실망시키다, 실망을 안겨 주다",
     "example": "He disappointes to his sister.",
     "exampleChunks": [
       "He",
@@ -2538,7 +2567,7 @@ window.VOCAB_WORDS = [
     "id": "pat",
     "word": "pat",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "두드리다",
     "example": "Dad pats his pockets.",
     "exampleChunks": [
       "Dad",
@@ -2585,7 +2614,7 @@ window.VOCAB_WORDS = [
     "id": "fascinate",
     "word": "fascinate",
     "pos": "v.",
-    "meaning": "마음을 사로잡다",
+    "meaning": "마음을 사로잡다, 매혹하다",
     "example": "The magic show fascinates the audience.",
     "exampleChunks": [
       "The",
@@ -2659,7 +2688,7 @@ window.VOCAB_WORDS = [
     "id": "frustrate",
     "word": "frustrate",
     "pos": "v.",
-    "meaning": "좌절하다",
+    "meaning": "좌절하다, 낙담하다",
     "example": "The test result frustrates me.",
     "exampleChunks": [
       "The",
@@ -2683,7 +2712,7 @@ window.VOCAB_WORDS = [
     "id": "punish",
     "word": "punish",
     "pos": "v.",
-    "meaning": "처벌하다",
+    "meaning": "처벌하다, 벌을 주다",
     "example": "The teacher punishes the students.",
     "exampleChunks": [
       "The",
@@ -2707,7 +2736,7 @@ window.VOCAB_WORDS = [
     "id": "ignore",
     "word": "ignore",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "무시하다",
     "example": "My sister oftne ignore my words.",
     "exampleChunks": [
       "My",
@@ -2732,7 +2761,7 @@ window.VOCAB_WORDS = [
     "id": "spell",
     "word": "spell",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "철자를 말하다",
     "example": "Lucy spells her name correctly.",
     "exampleChunks": [
       "Lucy",
@@ -2756,7 +2785,7 @@ window.VOCAB_WORDS = [
     "id": "investigate",
     "word": "investigate",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "조사하다, 수사하다",
     "example": "The police officer investigates the crime.",
     "exampleChunks": [
       "The",
@@ -2781,7 +2810,7 @@ window.VOCAB_WORDS = [
     "id": "invite",
     "word": "invite",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "초대하다",
     "example": "My sister invites her friends to party.",
     "exampleChunks": [
       "My",
@@ -2807,7 +2836,7 @@ window.VOCAB_WORDS = [
     "id": "matter",
     "word": "matter",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "중요하다",
     "example": "Your opinion matters to me.",
     "exampleChunks": [
       "Your",
@@ -2831,7 +2860,7 @@ window.VOCAB_WORDS = [
     "id": "envy",
     "word": "envy",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "질투하다",
     "example": "I sometimes envy my brother.",
     "exampleChunks": [
       "I",
@@ -2855,7 +2884,7 @@ window.VOCAB_WORDS = [
     "id": "swing",
     "word": "swing",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "흔들리다",
     "example": "She swings her arms.",
     "exampleChunks": [
       "She",
@@ -2878,7 +2907,7 @@ window.VOCAB_WORDS = [
     "id": "list",
     "word": "list",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "목록에 포함시키다, 나열하다",
     "example": "She lists all the items for her trip.",
     "exampleChunks": [
       "She",
@@ -2905,7 +2934,7 @@ window.VOCAB_WORDS = [
     "id": "measure",
     "word": "measure",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "측정하다, 정량하다",
     "example": "She measures the length of the table.",
     "exampleChunks": [
       "She",
@@ -2931,7 +2960,7 @@ window.VOCAB_WORDS = [
     "id": "grieve",
     "word": "grieve",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "슬픔에 잠기다, 비통하다",
     "example": "I grieve when I miss my grandma.",
     "exampleChunks": [
       "I",
@@ -2957,7 +2986,7 @@ window.VOCAB_WORDS = [
     "id": "tap",
     "word": "tap",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "톡톡 두드리다",
     "example": "My mom taps on the door.",
     "exampleChunks": [
       "My",
@@ -2982,7 +3011,7 @@ window.VOCAB_WORDS = [
     "id": "stress_out",
     "word": "stress out",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "긴장하다",
     "example": "The team stresses out before the game.",
     "exampleChunks": [
       "The",
@@ -3008,7 +3037,7 @@ window.VOCAB_WORDS = [
     "id": "nibble",
     "word": "nibble",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "조금씩 먹다, 조금씩 물어먹다",
     "example": "My sister nibbles on a cookie.",
     "exampleChunks": [
       "My",
@@ -3033,7 +3062,7 @@ window.VOCAB_WORDS = [
     "id": "note",
     "word": "note",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "기록하다, 주목하다",
     "example": "I will note the homework in my notebook.",
     "exampleChunks": [
       "I",
@@ -3060,7 +3089,7 @@ window.VOCAB_WORDS = [
     "id": "notice",
     "word": "notice",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "주목하다, 알아차리다",
     "example": "He notices the error in the report.",
     "exampleChunks": [
       "He",
@@ -3086,7 +3115,7 @@ window.VOCAB_WORDS = [
     "id": "observe",
     "word": "observe",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "~을 보다, 관찰하다",
     "example": "She likes to observe the stars at night.",
     "exampleChunks": [
       "She",
@@ -3113,7 +3142,7 @@ window.VOCAB_WORDS = [
     "id": "stuff",
     "word": "stuff",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "채워 넣다",
     "example": "He stuffs his backpack with books.",
     "exampleChunks": [
       "He",
@@ -3138,7 +3167,7 @@ window.VOCAB_WORDS = [
     "id": "hop",
     "word": "hop",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "한발로 깡충깡충 뛰다",
     "example": "The rabbit hops across the field.",
     "exampleChunks": [
       "The",
@@ -3163,7 +3192,7 @@ window.VOCAB_WORDS = [
     "id": "prefer",
     "word": "prefer",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "선택하다, 선호하다",
     "example": "I prefer apples over bananas.",
     "exampleChunks": [
       "I",
@@ -3187,7 +3216,7 @@ window.VOCAB_WORDS = [
     "id": "break",
     "word": "break",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "깨어지다, 부서지다",
     "example": "I break the class rule.",
     "exampleChunks": [
       "I",
@@ -3211,7 +3240,7 @@ window.VOCAB_WORDS = [
     "id": "protect",
     "word": "protect",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "지키다, 보호하다",
     "example": "The police officer protects the citizens from danger.",
     "exampleChunks": [
       "The",
@@ -3238,7 +3267,7 @@ window.VOCAB_WORDS = [
     "id": "take_pride_in",
     "word": "take pride in",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "자랑스럽게 여기다",
     "example": "She takes pride in her artwork.",
     "exampleChunks": [
       "She",
@@ -3263,7 +3292,7 @@ window.VOCAB_WORDS = [
     "id": "question",
     "word": "question",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "의문을 제기하다, 질문하다",
     "example": "The child questions why the sky is blue.",
     "exampleChunks": [
       "The",
@@ -3290,7 +3319,7 @@ window.VOCAB_WORDS = [
     "id": "reminds",
     "word": "reminds",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "기억하다, 상기시키다",
     "example": "His smile reminds me of my grandfather.",
     "exampleChunks": [
       "His",
@@ -3316,7 +3345,7 @@ window.VOCAB_WORDS = [
     "id": "repeat",
     "word": "repeat",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "되풀이하다, 반복하다",
     "example": "She asks him to repeat his answer.",
     "exampleChunks": [
       "She",
@@ -3342,7 +3371,7 @@ window.VOCAB_WORDS = [
     "id": "borrow",
     "word": "borrow",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "빌리다",
     "example": "He borrows a book from the library.",
     "exampleChunks": [
       "He",
@@ -3368,7 +3397,7 @@ window.VOCAB_WORDS = [
     "id": "respect",
     "word": "respect",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "존중하다",
     "example": "The students respect the rules of the classroom.",
     "exampleChunks": [
       "The",
@@ -3395,7 +3424,7 @@ window.VOCAB_WORDS = [
     "id": "search_for",
     "word": "search for",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "조사하다, 찾는다",
     "example": "She searches for the information.",
     "exampleChunks": [
       "She",
@@ -3419,7 +3448,7 @@ window.VOCAB_WORDS = [
     "id": "check",
     "word": "check",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "살피다",
     "example": "The doctor checks her temperature.",
     "exampleChunks": [
       "The",
@@ -3443,7 +3472,7 @@ window.VOCAB_WORDS = [
     "id": "boost",
     "word": "boost",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "신장시키다",
     "example": "Exercise can boost your mood.",
     "exampleChunks": [
       "Exercise",
@@ -3467,7 +3496,7 @@ window.VOCAB_WORDS = [
     "id": "squirm",
     "word": "squirm",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "꿈틀 대다",
     "example": "I squirm in my seat when I'm excited.",
     "exampleChunks": [
       "I",
@@ -3494,7 +3523,7 @@ window.VOCAB_WORDS = [
     "id": "stomp",
     "word": "stomp",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "쿵쿵 거리며 걷다, 발을 구르며 춤추다",
     "example": "The man stomps out of the room.",
     "exampleChunks": [
       "The",
@@ -3520,7 +3549,7 @@ window.VOCAB_WORDS = [
     "id": "fear",
     "word": "fear",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "두려워하다, 무서워하다",
     "example": "She fears walking alone in the dark.",
     "exampleChunks": [
       "She",
@@ -3546,7 +3575,7 @@ window.VOCAB_WORDS = [
     "id": "suggest",
     "word": "suggest",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "제안하다, 추천하다",
     "example": "Dad suggests having a picnic at park.",
     "exampleChunks": [
       "Dad",
@@ -3572,7 +3601,7 @@ window.VOCAB_WORDS = [
     "id": "surprise",
     "word": "surprise",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "놀라게 하다, 기습하다",
     "example": "Students surprise their teacher with a gift.",
     "exampleChunks": [
       "Students",
@@ -3598,7 +3627,7 @@ window.VOCAB_WORDS = [
     "id": "reach",
     "word": "reach",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "~에 이르다",
     "example": "He finally reaches his goal.",
     "exampleChunks": [
       "He",
@@ -3622,7 +3651,7 @@ window.VOCAB_WORDS = [
     "id": "worry",
     "word": "worry",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "걱정하다",
     "example": "The students worry about the exam.",
     "exampleChunks": [
       "The",
@@ -3644,10 +3673,59 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "act",
+    "word": "act",
+    "pos": "v.",
+    "meaning": "행동하다",
+    "example": "We must act now.",
+    "exampleChunks": [
+      "We",
+      "must",
+      "act",
+      "now."
+    ],
+    "media": {
+      "gif": "assets/gif/act.gif",
+      "video": "assets/video/act.mp4",
+      "thumb": "assets/thumb/act-thumb.jpg",
+      "placeholder": "🏃",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%209_014_act_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%209_014_act_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "add",
+    "word": "add",
+    "pos": "v.",
+    "meaning": "첨가하다, 덧붙이다",
+    "example": "She adds some salt in her soup.",
+    "exampleChunks": [
+      "She",
+      "adds",
+      "some",
+      "salt",
+      "in",
+      "her",
+      "soup."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_124932_30984066-07a6-4387-92a1-0aeb8c29084b.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_124932_30984066-07a6-4387-92a1-0aeb8c29084b.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/aa0e693c-72b4-478d-aeaf-8a01cadf28c0.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://drive.google.com/uc?export=download&id=12mEtR82niXT841B1766gj2WxqfeLqIQ5",
+        "example": "https://drive.google.com/uc?export=download&id=1sQ8M_aPAu6K31jG-kE-vWNSKM3NgTVxK"
+      }
+    }
+  },
+  {
     "id": "float",
     "word": "float",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "떠가다",
     "example": "The boat floats on the lake.",
     "exampleChunks": [
       "The",
@@ -3672,7 +3750,7 @@ window.VOCAB_WORDS = [
     "id": "should",
     "word": "should",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "~해야 한다",
     "example": "He should apologize for his behavior.",
     "exampleChunks": [
       "He",
@@ -3697,7 +3775,7 @@ window.VOCAB_WORDS = [
     "id": "is_called",
     "word": "is called",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "~라는 이름으로 \n불리다",
     "example": "The city is called New York City.",
     "exampleChunks": [
       "The",
@@ -3723,7 +3801,7 @@ window.VOCAB_WORDS = [
     "id": "catch",
     "word": "catch",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "잡다",
     "example": "The cat catches a mouse in the backyard.",
     "exampleChunks": [
       "The",
@@ -3750,7 +3828,7 @@ window.VOCAB_WORDS = [
     "id": "celebrate",
     "word": "celebrate",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "기념하다, 축하하다",
     "example": "We celebrate New Year's Eve.",
     "exampleChunks": [
       "We",
@@ -3771,10 +3849,162 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "close",
+    "word": "close",
+    "pos": "v.",
+    "meaning": "닫다",
+    "example": "My sister closes the closet door.",
+    "exampleChunks": [
+      "My",
+      "sister",
+      "closes",
+      "the",
+      "closet",
+      "door."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260702_085238_e8a01239-0d1f-4e92-8c0f-710c094d13c9.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260702_085238_e8a01239-0d1f-4e92-8c0f-710c094d13c9.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/873f0731-0091-4c22-9f72-429187dbb117.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_001_close_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_001_close_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "cry",
+    "word": "cry",
+    "pos": "v.",
+    "meaning": "울다",
+    "example": "My sister cries under the blanket.",
+    "exampleChunks": [
+      "My",
+      "sister",
+      "cries",
+      "under",
+      "the",
+      "blanket."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260630_034639_3c06ce6a-8bd3-4c23-b4e8-23a3e5be1166.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260630_034639_3c06ce6a-8bd3-4c23-b4e8-23a3e5be1166.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/bd51f347-aa87-4297-89dc-66de7be5c814.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_002_cry_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_002_cry_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "push",
+    "word": "push",
+    "pos": "v.",
+    "meaning": "밀다",
+    "example": "He pushes the door to enter the room.",
+    "exampleChunks": [
+      "He",
+      "pushes",
+      "the",
+      "door",
+      "to",
+      "enter",
+      "the",
+      "room."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260629_204331_ed1c69d4-305a-47d0-ae25-dbb6d33b8627.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260629_204331_ed1c69d4-305a-47d0-ae25-dbb6d33b8627.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/80b0a333-a0c5-447f-b893-a260834d7f27.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_010_push_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_010_push_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "rip",
+    "word": "rip",
+    "pos": "v.",
+    "meaning": "찢다",
+    "example": "She rips the paper in half.",
+    "exampleChunks": [
+      "She",
+      "rips",
+      "the",
+      "paper",
+      "in",
+      "half."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260630_135555_ebd8bb3d-7b56-42d5-8078-a70eb76abf93.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260630_135555_ebd8bb3d-7b56-42d5-8078-a70eb76abf93.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/e491bfc6-0b5d-4058-ae5f-0f759d1f711f.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_011_rip_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_011_rip_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "stare",
+    "word": "stare",
+    "pos": "v.",
+    "meaning": "응시하다, 빤히 쳐다보다",
+    "example": "She stares at me for a long time.",
+    "exampleChunks": [
+      "She",
+      "stares",
+      "at",
+      "me",
+      "for",
+      "a",
+      "long",
+      "time."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_105556_7a37acf0-e0c4-4548-a16b-ddf2918481dd.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_105556_7a37acf0-e0c4-4548-a16b-ddf2918481dd.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/f6b18ec6-a973-4976-a8c9-89b2fcaf5167.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_016_stare_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_016_stare_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "gasp",
+    "word": "gasp",
+    "pos": "v.",
+    "meaning": "숨이 턱 막히다, 숨을 제대로 못 쉬다",
+    "example": "He gasps for breath.",
+    "exampleChunks": [
+      "He",
+      "gasps",
+      "for",
+      "breath."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185709_bf93e586-b890-4a7c-9242-8d8f04707587.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185709_bf93e586-b890-4a7c-9242-8d8f04707587.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/8459ceaf-6ecf-4955-86ad-22b809c579c7.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_019_gasp_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_019_gasp_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "bark",
     "word": "bark",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "짖는다",
     "example": "Two dogs bark at my dog.",
     "exampleChunks": [
       "Two",
@@ -3799,7 +4029,7 @@ window.VOCAB_WORDS = [
     "id": "wipe",
     "word": "wipe",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(곤, 헝겊으로) 닦다",
     "example": "Mom wipes the floor.",
     "exampleChunks": [
       "Mom",
@@ -3822,7 +4052,7 @@ window.VOCAB_WORDS = [
     "id": "spill",
     "word": "spill",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "흘리다, 쏟다",
     "example": "My brother spills the milk on the table.",
     "exampleChunks": [
       "My",
@@ -3849,7 +4079,7 @@ window.VOCAB_WORDS = [
     "id": "bring",
     "word": "bring",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "가져오다",
     "example": "Kids bring their lunch to school.",
     "exampleChunks": [
       "Kids",
@@ -3874,7 +4104,7 @@ window.VOCAB_WORDS = [
     "id": "scream",
     "word": "scream",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "비명을 지르다",
     "example": "The girl screams to her dad.",
     "exampleChunks": [
       "The",
@@ -3899,7 +4129,7 @@ window.VOCAB_WORDS = [
     "id": "burp",
     "word": "burp",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "트림하다",
     "example": "He burps in front of me.",
     "exampleChunks": [
       "He",
@@ -3924,7 +4154,7 @@ window.VOCAB_WORDS = [
     "id": "fart",
     "word": "fart",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "방귀를 뀌다",
     "example": "Dad farts in the living room.",
     "exampleChunks": [
       "Dad",
@@ -3949,7 +4179,7 @@ window.VOCAB_WORDS = [
     "id": "yawn",
     "word": "yawn",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "하품하다",
     "example": "She yawns in English class.",
     "exampleChunks": [
       "She",
@@ -3973,7 +4203,7 @@ window.VOCAB_WORDS = [
     "id": "crawl",
     "word": "crawl",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(엎드려)기다, 기어가다",
     "example": "The kid crawls on the floor.",
     "exampleChunks": [
       "The",
@@ -3998,7 +4228,7 @@ window.VOCAB_WORDS = [
     "id": "tickle",
     "word": "tickle",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "간지럽히다",
     "example": "My sister tickles me.",
     "exampleChunks": [
       "My",
@@ -4021,7 +4251,7 @@ window.VOCAB_WORDS = [
     "id": "poke",
     "word": "poke",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "찌르다",
     "example": "He pokes my face.",
     "exampleChunks": [
       "He",
@@ -4044,7 +4274,7 @@ window.VOCAB_WORDS = [
     "id": "train",
     "word": "train",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "훈련[교육]받다, 훈련[교육]시키다",
     "example": "He trains the dog.",
     "exampleChunks": [
       "He",
@@ -4067,7 +4297,7 @@ window.VOCAB_WORDS = [
     "id": "brush",
     "word": "brush",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "이를 닦다, 닦다",
     "example": "He brushes his teeth.",
     "exampleChunks": [
       "He",
@@ -4090,7 +4320,7 @@ window.VOCAB_WORDS = [
     "id": "chase",
     "word": "chase",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "쫓다",
     "example": "Two dogs chase the ball.",
     "exampleChunks": [
       "Two",
@@ -4111,35 +4341,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "kick",
-    "word": "kick",
-    "pos": "v.",
-    "meaning": "",
-    "example": "She kicks the ball to me.",
-    "exampleChunks": [
-      "She",
-      "kicks",
-      "the",
-      "ball",
-      "to",
-      "me."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_145857_55735918-58f9-430d-8cd8-d3d29cef1cc1.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_145857_55735918-58f9-430d-8cd8-d3d29cef1cc1.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/56156047-ad0e-45e0-a342-1374df9f052c.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1U9r_qjuAAt7KgqmoErAcd_wr7hQkW6ON",
-        "example": "https://drive.google.com/uc?export=download&id=1FptrbaBXYXvlR__vDHLlpPnk6Bs5X00J"
-      }
-    }
-  },
-  {
     "id": "hit",
     "word": "hit",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "때리다, 치다",
     "example": "He hits the door.",
     "exampleChunks": [
       "He",
@@ -4162,7 +4367,7 @@ window.VOCAB_WORDS = [
     "id": "grab",
     "word": "grab",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "꽉 잡다, 움켜쥐다",
     "example": "Mom grabs my hands.",
     "exampleChunks": [
       "Mom",
@@ -4185,7 +4390,7 @@ window.VOCAB_WORDS = [
     "id": "win",
     "word": "win",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "이기다, 우승하다",
     "example": "My team wins at science contest.",
     "exampleChunks": [
       "My",
@@ -4210,7 +4415,7 @@ window.VOCAB_WORDS = [
     "id": "sketch",
     "word": "sketch",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "스케치하다",
     "example": "I sketch a bird on my canvas.",
     "exampleChunks": [
       "I",
@@ -4236,7 +4441,7 @@ window.VOCAB_WORDS = [
     "id": "lick",
     "word": "lick",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "햝다",
     "example": "The cat licks my hands.",
     "exampleChunks": [
       "The",
@@ -4260,7 +4465,7 @@ window.VOCAB_WORDS = [
     "id": "bite",
     "word": "bite",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(이로)물다, 물어뜯다",
     "example": "The dog bites my finger.",
     "exampleChunks": [
       "The",
@@ -4281,36 +4486,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "add",
-    "word": "add",
-    "pos": "v.",
-    "meaning": "",
-    "example": "She adds some salt in her soup.",
-    "exampleChunks": [
-      "She",
-      "adds",
-      "some",
-      "salt",
-      "in",
-      "her",
-      "soup."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_124932_30984066-07a6-4387-92a1-0aeb8c29084b.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_124932_30984066-07a6-4387-92a1-0aeb8c29084b.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/aa0e693c-72b4-478d-aeaf-8a01cadf28c0.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=12mEtR82niXT841B1766gj2WxqfeLqIQ5",
-        "example": "https://drive.google.com/uc?export=download&id=1sQ8M_aPAu6K31jG-kE-vWNSKM3NgTVxK"
-      }
-    }
-  },
-  {
     "id": "pick_up",
     "word": "pick up",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "찾아오다, 태우러 가다",
     "example": "Mom picks up my sister to school.",
     "exampleChunks": [
       "Mom",
@@ -4336,7 +4515,7 @@ window.VOCAB_WORDS = [
     "id": "knock",
     "word": "knock",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "두드리다, 노크하다",
     "example": "He knocks the door.",
     "exampleChunks": [
       "He",
@@ -4359,7 +4538,7 @@ window.VOCAB_WORDS = [
     "id": "give",
     "word": "give",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "주다",
     "example": "She gives me cherry candy.",
     "exampleChunks": [
       "She",
@@ -4383,7 +4562,7 @@ window.VOCAB_WORDS = [
     "id": "shoot",
     "word": "shoot",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(총 등을)쏘다",
     "example": "He shoots water guns at his brother",
     "exampleChunks": [
       "He",
@@ -4409,7 +4588,7 @@ window.VOCAB_WORDS = [
     "id": "spray",
     "word": "spray",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "뿌리다",
     "example": "I spray my favorite plants with water.",
     "exampleChunks": [
       "I",
@@ -4435,7 +4614,7 @@ window.VOCAB_WORDS = [
     "id": "splash",
     "word": "splash",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(물 등을)\n튀기다",
     "example": "She splashes coffee on me.",
     "exampleChunks": [
       "She",
@@ -4459,7 +4638,7 @@ window.VOCAB_WORDS = [
     "id": "shine",
     "word": "shine",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "빛나다",
     "example": "The sun shines brightly.",
     "exampleChunks": [
       "The",
@@ -4482,7 +4661,7 @@ window.VOCAB_WORDS = [
     "id": "take_out",
     "word": "take out",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "가지고 나가다, 꺼내다",
     "example": "She takes out her mirror.",
     "exampleChunks": [
       "She",
@@ -4506,7 +4685,7 @@ window.VOCAB_WORDS = [
     "id": "start",
     "word": "start",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "시작하다",
     "example": "The baby starts to cry.",
     "exampleChunks": [
       "The",
@@ -4530,7 +4709,7 @@ window.VOCAB_WORDS = [
     "id": "shake",
     "word": "shake",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "흔들(리)다",
     "example": "He shakes his head.",
     "exampleChunks": [
       "He",
@@ -4553,7 +4732,7 @@ window.VOCAB_WORDS = [
     "id": "bake",
     "word": "bake",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "굽다",
     "example": "Dad bakes cookies for us.",
     "exampleChunks": [
       "Dad",
@@ -4577,7 +4756,7 @@ window.VOCAB_WORDS = [
     "id": "stir",
     "word": "stir",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "젓다, (저어가며) 섞다",
     "example": "She stirs strawberry jam.",
     "exampleChunks": [
       "She",
@@ -4600,7 +4779,7 @@ window.VOCAB_WORDS = [
     "id": "cool",
     "word": "cool",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "식히다",
     "example": "He cools his coffee.",
     "exampleChunks": [
       "He",
@@ -4623,7 +4802,7 @@ window.VOCAB_WORDS = [
     "id": "finish",
     "word": "finish",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "끝나다, 마치다",
     "example": "We finish our math homework.",
     "exampleChunks": [
       "We",
@@ -4647,7 +4826,7 @@ window.VOCAB_WORDS = [
     "id": "hug",
     "word": "hug",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "껴안다",
     "example": "The kid hugs his mom.",
     "exampleChunks": [
       "The",
@@ -4671,7 +4850,7 @@ window.VOCAB_WORDS = [
     "id": "step",
     "word": "step",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "움직이다, 서다[디디다]",
     "example": "He steps into the room.",
     "exampleChunks": [
       "He",
@@ -4695,7 +4874,7 @@ window.VOCAB_WORDS = [
     "id": "fly",
     "word": "fly",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "날다",
     "example": "Birds fly high into the sky.",
     "exampleChunks": [
       "Birds",
@@ -4720,7 +4899,7 @@ window.VOCAB_WORDS = [
     "id": "water",
     "word": "water",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "물을 주다",
     "example": "Dad waters the flowers in the garden.",
     "exampleChunks": [
       "Dad",
@@ -4743,29 +4922,25 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "stare",
-    "word": "stare",
+    "id": "growl",
+    "word": "growl",
     "pos": "v.",
-    "meaning": "",
-    "example": "She stares at me for a long time.",
+    "meaning": "으르릉거리다",
+    "example": "The dog growls loudly.",
     "exampleChunks": [
-      "She",
-      "stares",
-      "at",
-      "me",
-      "for",
-      "a",
-      "long",
-      "time."
+      "The",
+      "dog",
+      "growls",
+      "loudly."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_105556_7a37acf0-e0c4-4548-a16b-ddf2918481dd.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_105556_7a37acf0-e0c4-4548-a16b-ddf2918481dd.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/f6b18ec6-a973-4976-a8c9-89b2fcaf5167.png",
-      "placeholder": "📖",
+      "gif": "assets/gif/growl.gif",
+      "video": "assets/video/growl.mp4",
+      "thumb": "assets/thumb/growl-thumb.jpg",
+      "placeholder": "🐺",
       "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_016_stare_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_016_stare_sentence.mp3"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%203_011_growl_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%203_011_growl_sentence.mp3"
       }
     }
   },
@@ -4773,7 +4948,7 @@ window.VOCAB_WORDS = [
     "id": "blink",
     "word": "blink",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "눈을 깜빡이다",
     "example": "The baby blinks at me.",
     "exampleChunks": [
       "The",
@@ -4797,7 +4972,7 @@ window.VOCAB_WORDS = [
     "id": "boil",
     "word": "boil",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "끓다, 끓이다",
     "example": "I boil the soup.",
     "exampleChunks": [
       "I",
@@ -4820,7 +4995,7 @@ window.VOCAB_WORDS = [
     "id": "kill",
     "word": "kill",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "죽이다",
     "example": "My dad kills a bug.",
     "exampleChunks": [
       "My",
@@ -4844,7 +5019,7 @@ window.VOCAB_WORDS = [
     "id": "choose",
     "word": "choose",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "고르다, 선택하다",
     "example": "My brother chooses a blue car toy.",
     "exampleChunks": [
       "My",
@@ -4870,7 +5045,7 @@ window.VOCAB_WORDS = [
     "id": "keep_away",
     "word": "keep away",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "가까이 가지 않는다, 멀리하다",
     "example": "Dad keeps away from cats.",
     "exampleChunks": [
       "Dad",
@@ -4894,7 +5069,7 @@ window.VOCAB_WORDS = [
     "id": "dream",
     "word": "dream",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "꿈꾸다",
     "example": "My sister dreams of becoming a doctor.",
     "exampleChunks": [
       "My",
@@ -4920,7 +5095,7 @@ window.VOCAB_WORDS = [
     "id": "giggle",
     "word": "giggle",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "피식 웃다, 킥킥거리다",
     "example": "She giggles at her little brother.",
     "exampleChunks": [
       "She",
@@ -4945,7 +5120,7 @@ window.VOCAB_WORDS = [
     "id": "order",
     "word": "order",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "주문하다",
     "example": "I order pizza and pasta for dinner.",
     "exampleChunks": [
       "I",
@@ -4971,7 +5146,7 @@ window.VOCAB_WORDS = [
     "id": "cover",
     "word": "cover",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "덮다, 다루다",
     "example": "She covers her hands with gloves.",
     "exampleChunks": [
       "She",
@@ -4996,7 +5171,7 @@ window.VOCAB_WORDS = [
     "id": "ring",
     "word": "ring",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(소리가)울리다",
     "example": "The school bell rings loudly.",
     "exampleChunks": [
       "The",
@@ -5020,7 +5195,7 @@ window.VOCAB_WORDS = [
     "id": "crash",
     "word": "crash",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "충돌하다, 추락하다",
     "example": "Two cars crash on the highway",
     "exampleChunks": [
       "Two",
@@ -5045,7 +5220,7 @@ window.VOCAB_WORDS = [
     "id": "wake_up",
     "word": "wake up",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "정신차리다, 일어나다",
     "example": "My brother wakes up at 7 o'clock.",
     "exampleChunks": [
       "My",
@@ -5071,7 +5246,7 @@ window.VOCAB_WORDS = [
     "id": "smell",
     "word": "smell",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "냄새(나다)",
     "example": "The flowers smell sweet.",
     "exampleChunks": [
       "The",
@@ -5094,7 +5269,7 @@ window.VOCAB_WORDS = [
     "id": "sweat",
     "word": "sweat",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "땀을 흘리다",
     "example": "He sweats a lot after running.",
     "exampleChunks": [
       "He",
@@ -5119,7 +5294,7 @@ window.VOCAB_WORDS = [
     "id": "beat",
     "word": "beat",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "치다, 두드리다",
     "example": "The children beats the desk.",
     "exampleChunks": [
       "The",
@@ -5143,7 +5318,7 @@ window.VOCAB_WORDS = [
     "id": "pick",
     "word": "pick",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "고르다, 선택하다",
     "example": "My mom picks apples at the mart.",
     "exampleChunks": [
       "My",
@@ -5169,7 +5344,7 @@ window.VOCAB_WORDS = [
     "id": "plan",
     "word": "plan",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "계획(하다)",
     "example": "My family plans a trip to China.",
     "exampleChunks": [
       "My",
@@ -5195,7 +5370,7 @@ window.VOCAB_WORDS = [
     "id": "build",
     "word": "build",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "건축(하다)",
     "example": "The bird builds a nest.",
     "exampleChunks": [
       "The",
@@ -5219,7 +5394,7 @@ window.VOCAB_WORDS = [
     "id": "analyze",
     "word": "analyze",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "분석하다",
     "example": "The scientist analyzes the data.",
     "exampleChunks": [
       "The",
@@ -5243,7 +5418,7 @@ window.VOCAB_WORDS = [
     "id": "arrange",
     "word": "arrange",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "마련하다, 정리하다",
     "example": "She arranges the chairs in a circle.",
     "exampleChunks": [
       "She",
@@ -5269,7 +5444,7 @@ window.VOCAB_WORDS = [
     "id": "avoid",
     "word": "avoid",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "방지하다, 막다",
     "example": "The cat avoids the dog.",
     "exampleChunks": [
       "The",
@@ -5293,7 +5468,7 @@ window.VOCAB_WORDS = [
     "id": "cause",
     "word": "cause",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "~을 야기하다",
     "example": "Stress can cause health problems.",
     "exampleChunks": [
       "Stress",
@@ -5317,7 +5492,7 @@ window.VOCAB_WORDS = [
     "id": "classify",
     "word": "classify",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "분류하다, 구분하다",
     "example": "We classify animals into groups at school.",
     "exampleChunks": [
       "We",
@@ -5343,7 +5518,7 @@ window.VOCAB_WORDS = [
     "id": "conclude",
     "word": "conclude",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "결론을 내리다, 판단을 내리다",
     "example": "I conclude my story with a happy ending.",
     "exampleChunks": [
       "I",
@@ -5370,7 +5545,7 @@ window.VOCAB_WORDS = [
     "id": "continue",
     "word": "continue",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "계속되다, 계속하다",
     "example": "She continues to study for her exams.",
     "exampleChunks": [
       "She",
@@ -5396,7 +5571,7 @@ window.VOCAB_WORDS = [
     "id": "cooperate",
     "word": "cooperate",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "협조하다, 합동하다",
     "example": "The students cooperate with each other.",
     "exampleChunks": [
       "The",
@@ -5421,7 +5596,7 @@ window.VOCAB_WORDS = [
     "id": "cycle",
     "word": "cycle",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "순환하다, 주기를 이루다",
     "example": "Water cycles between the land and oceans.",
     "exampleChunks": [
       "Water",
@@ -5447,7 +5622,7 @@ window.VOCAB_WORDS = [
     "id": "describe",
     "word": "describe",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "말하다, 묘사하다",
     "example": "He describes the taste of the food.",
     "exampleChunks": [
       "He",
@@ -5473,7 +5648,7 @@ window.VOCAB_WORDS = [
     "id": "detail",
     "word": "detail",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "상세히 알리다",
     "example": "She details her plans.",
     "exampleChunks": [
       "She",
@@ -5496,7 +5671,7 @@ window.VOCAB_WORDS = [
     "id": "edit",
     "word": "edit",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "수정하다, 편집하다",
     "example": "The film director edits the scenes.",
     "exampleChunks": [
       "The",
@@ -5521,7 +5696,7 @@ window.VOCAB_WORDS = [
     "id": "guide",
     "word": "guide",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "안내하다",
     "example": "He guides the team to victory.",
     "exampleChunks": [
       "He",
@@ -5546,7 +5721,7 @@ window.VOCAB_WORDS = [
     "id": "escape",
     "word": "escape",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "달아나다, 탈출하다",
     "example": "The thief escapes from the police.",
     "exampleChunks": [
       "The",
@@ -5571,7 +5746,7 @@ window.VOCAB_WORDS = [
     "id": "estimate",
     "word": "estimate",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "추정하다",
     "example": "I estimate how many jellybeans are in the jar.",
     "exampleChunks": [
       "I",
@@ -5599,7 +5774,7 @@ window.VOCAB_WORDS = [
     "id": "exercise",
     "word": "exercise",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "운동하다",
     "example": "I exercise every morning to stay healthy.",
     "exampleChunks": [
       "I",
@@ -5625,7 +5800,7 @@ window.VOCAB_WORDS = [
     "id": "expect",
     "word": "expect",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "예상하다, 기대하다",
     "example": "He expects her to be there on time.",
     "exampleChunks": [
       "He",
@@ -5652,7 +5827,7 @@ window.VOCAB_WORDS = [
     "id": "flock",
     "word": "flock",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "모이다, 떼 지어 가다",
     "example": "Students flock to the library.",
     "exampleChunks": [
       "Students",
@@ -5676,7 +5851,7 @@ window.VOCAB_WORDS = [
     "id": "frighten",
     "word": "frighten",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "겁먹게 만들다, 놀라게 만들다",
     "example": "The loud noise frightenes the cat.",
     "exampleChunks": [
       "The",
@@ -5701,7 +5876,7 @@ window.VOCAB_WORDS = [
     "id": "frown",
     "word": "frown",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "얼굴을 찌푸리다, 찡그리다",
     "example": "I frown when I don't understand the question.",
     "exampleChunks": [
       "I",
@@ -5725,33 +5900,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "gasp",
-    "word": "gasp",
-    "pos": "v.",
-    "meaning": "",
-    "example": "He gasps for breath.",
-    "exampleChunks": [
-      "He",
-      "gasps",
-      "for",
-      "breath."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185709_bf93e586-b890-4a7c-9242-8d8f04707587.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185709_bf93e586-b890-4a7c-9242-8d8f04707587.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/8459ceaf-6ecf-4955-86ad-22b809c579c7.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_019_gasp_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_019_gasp_sentence.mp3"
-      }
-    }
-  },
-  {
     "id": "gather",
     "word": "gather",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(사람들이)모이다",
     "example": "Students gather in the park after school.",
     "exampleChunks": [
       "Students",
@@ -5777,7 +5929,7 @@ window.VOCAB_WORDS = [
     "id": "gust",
     "word": "gust",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "(갑자기)몰아치다",
     "example": "The storm gusts through the city.",
     "exampleChunks": [
       "The",
@@ -5802,7 +5954,7 @@ window.VOCAB_WORDS = [
     "id": "include",
     "word": "include",
     "pos": "v.",
-    "meaning": "",
+    "meaning": "포함하다",
     "example": "We include everyone in our game.",
     "exampleChunks": [
       "We",
@@ -5827,7 +5979,7 @@ window.VOCAB_WORDS = [
     "id": "insist",
     "word": "insist",
     "pos": "v.",
-    "meaning": "고집하다 주장하다",
+    "meaning": "고집하다, 주장하다",
     "example": "I insist that you finish the project.",
     "exampleChunks": [
       "I",
@@ -5853,7 +6005,7 @@ window.VOCAB_WORDS = [
     "id": "label",
     "word": "label",
     "pos": "v.",
-    "meaning": "(라벨)붙이다 (상표를)붙이다",
+    "meaning": "(라벨)붙이다, (상표를)붙이다",
     "example": "She labels each box with its contents.",
     "exampleChunks": [
       "She",
@@ -5879,7 +6031,7 @@ window.VOCAB_WORDS = [
     "id": "lean",
     "word": "lean",
     "pos": "v.",
-    "meaning": "기울다 ~에 기대다",
+    "meaning": "기울다, ~에 기대다",
     "example": "The child leans against the door.",
     "exampleChunks": [
       "The",
@@ -5904,7 +6056,7 @@ window.VOCAB_WORDS = [
     "id": "march",
     "word": "march",
     "pos": "v.",
-    "meaning": "행진하다 행군하듯 걷다",
+    "meaning": "행진하다, 행군하듯 걷다",
     "example": "The soldiers march in a straight line.",
     "exampleChunks": [
       "The",
@@ -5930,7 +6082,7 @@ window.VOCAB_WORDS = [
     "id": "predict",
     "word": "predict",
     "pos": "v.",
-    "meaning": "예측하다 예견하다",
+    "meaning": "예측하다, 예견하다",
     "example": "She predicts a win for her team.",
     "exampleChunks": [
       "She",
@@ -5956,7 +6108,7 @@ window.VOCAB_WORDS = [
     "id": "process",
     "word": "process",
     "pos": "v.",
-    "meaning": "가공하다 처리하다",
+    "meaning": "가공하다, 처리하다",
     "example": "The chef processes fresh ingredients.",
     "exampleChunks": [
       "The",
@@ -5980,7 +6132,7 @@ window.VOCAB_WORDS = [
     "id": "publish",
     "word": "publish",
     "pos": "v.",
-    "meaning": "출판하다 발행하다",
+    "meaning": "출판하다, 발행하다",
     "example": "The author publishes her first novel last year.",
     "exampleChunks": [
       "The",
@@ -6007,7 +6159,7 @@ window.VOCAB_WORDS = [
     "id": "record",
     "word": "record",
     "pos": "v.",
-    "meaning": "기록하다 녹화하다",
+    "meaning": "기록하다, 녹화하다",
     "example": "The musician records a new song in the studio.",
     "exampleChunks": [
       "The",
@@ -6035,7 +6187,7 @@ window.VOCAB_WORDS = [
     "id": "revise",
     "word": "revise",
     "pos": "v.",
-    "meaning": "변경하다 수정하다",
+    "meaning": "변경하다, 수정하다",
     "example": "The teacher revises the lesson plan.",
     "exampleChunks": [
       "The",
@@ -6060,7 +6212,7 @@ window.VOCAB_WORDS = [
     "id": "separate",
     "word": "separate",
     "pos": "v.",
-    "meaning": "갈라지다 분리되다",
+    "meaning": "갈라지다, 분리되다",
     "example": "The river separates the two towns.",
     "exampleChunks": [
       "The",
@@ -6137,7 +6289,7 @@ window.VOCAB_WORDS = [
     "id": "suppose",
     "word": "suppose",
     "pos": "v.",
-    "meaning": "생각하다 추정하다",
+    "meaning": "생각하다, 추정하다",
     "example": "I suppose it will snow tomorrow.",
     "exampleChunks": [
       "I",
@@ -6187,7 +6339,7 @@ window.VOCAB_WORDS = [
     "id": "swoop",
     "word": "swoop",
     "pos": "v.",
-    "meaning": "급습하다 기습하다",
+    "meaning": "급습하다, 기습하다",
     "example": "The superhero swoops in to save the day.",
     "exampleChunks": [
       "The",
@@ -6238,7 +6390,7 @@ window.VOCAB_WORDS = [
     "id": "vanish",
     "word": "vanish",
     "pos": "v.",
-    "meaning": "사라지다 없어지다",
+    "meaning": "사라지다, 없어지다",
     "example": "The balloon will vanish in the sky.",
     "exampleChunks": [
       "The",
@@ -6264,7 +6416,7 @@ window.VOCAB_WORDS = [
     "id": "volunteer",
     "word": "volunteer",
     "pos": "v.",
-    "meaning": "자원하다 자진해서 말하다",
+    "meaning": "자원하다, 자진해서 말하다",
     "example": "He volunteers his help.",
     "exampleChunks": [
       "He",
@@ -6284,36 +6436,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "wear",
-    "word": "wear",
-    "pos": "v.",
-    "meaning": "입다[신다] 쓰다",
-    "example": "The children wear their costumes for Halloween.",
-    "exampleChunks": [
-      "The",
-      "children",
-      "wear",
-      "their",
-      "costumes",
-      "for",
-      "Halloween."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260626_052218_fd6482f9-7b15-4933-b074-c55dbd315c44.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260626_052218_fd6482f9-7b15-4933-b074-c55dbd315c44.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/e5d93684-2aa2-415c-bcb7-af8c63e44065.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1h3NaXHLu7DopVUUuDkHjfAMS0s_AL2PD",
-        "example": "https://drive.google.com/uc?export=download&id=1RHUL22ecManjQcKvujcSfKme-5DTuHZo"
-      }
-    }
-  },
-  {
     "id": "express",
     "word": "express",
     "pos": "v.",
-    "meaning": "표현하다 나타내다",
+    "meaning": "표현하다, 나타내다",
     "example": "She expresses her disappointment with a sigh.",
     "exampleChunks": [
       "She",
@@ -6363,7 +6489,7 @@ window.VOCAB_WORDS = [
     "id": "stretch",
     "word": "stretch",
     "pos": "v.",
-    "meaning": "늘이다 펴다[뻗다]",
+    "meaning": "늘이다, 펴다[뻗다]",
     "example": "She stretches her arms above her head.",
     "exampleChunks": [
       "She",
@@ -6521,7 +6647,7 @@ window.VOCAB_WORDS = [
     "id": "wrap",
     "word": "wrap",
     "pos": "v.",
-    "meaning": "싸다 포장하다",
+    "meaning": "싸다, 포장하다",
     "example": "He wraps a scarf around his neck.",
     "exampleChunks": [
       "He",
@@ -6672,7 +6798,7 @@ window.VOCAB_WORDS = [
     "id": "lie",
     "word": "lie",
     "pos": "v.",
-    "meaning": "거짓말하다 눕다",
+    "meaning": "거짓말하다, 눕다",
     "example": "The child lies about eating the cookies.",
     "exampleChunks": [
       "The",
@@ -6691,6 +6817,32 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_015_lie_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_015_lie_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "hang",
+    "word": "hang",
+    "pos": "v.",
+    "meaning": "걸다, 매달다",
+    "example": "She hangs the clock on the wall.",
+    "exampleChunks": [
+      "She",
+      "hangs",
+      "the",
+      "clock",
+      "on",
+      "the",
+      "wall."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260701_213233_8c998f32-82a2-4b9e-8b01-798c4df72b23.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260701_213233_8c998f32-82a2-4b9e-8b01-798c4df72b23.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/6730b439-3e9c-4fba-818d-7966970716e1.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://drive.google.com/uc?export=download&id=1Qt6GsBCTjbgC2xYVCbfMj6ZBerZ1w0Lq",
+        "example": "https://drive.google.com/uc?export=download&id=1LgAfirrZOz0apDHeNhy5aysm0HEHyCJw"
       }
     }
   },
@@ -6776,7 +6928,7 @@ window.VOCAB_WORDS = [
     "id": "return",
     "word": "return",
     "pos": "v.",
-    "meaning": "돌아오다 돌아가다",
+    "meaning": "돌아오다, 돌아가다",
     "example": "The students return to school.",
     "exampleChunks": [
       "The",
@@ -6800,7 +6952,7 @@ window.VOCAB_WORDS = [
     "id": "create",
     "word": "create",
     "pos": "v.",
-    "meaning": "창조하다 만들다",
+    "meaning": "창조하다, 만들다",
     "example": "We create art in class every Friday.",
     "exampleChunks": [
       "We",
@@ -6848,10 +7000,36 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "lay",
+    "word": "lay",
+    "pos": "v.",
+    "meaning": "(알을) 낳다, 놓다[두다]",
+    "example": "I lay my books on the table.",
+    "exampleChunks": [
+      "I",
+      "lay",
+      "my",
+      "books",
+      "on",
+      "the",
+      "table."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260704_083258_65560cd1-ab3a-4e45-bd67-e05c70230795.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260704_083258_65560cd1-ab3a-4e45-bd67-e05c70230795.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/f2e92f3f-2135-4e27-a8b0-435028f9b14f.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://drive.google.com/uc?export=download&id=1skG1Yr4_PaUr7P56LoqXnwH6e0w4z4rq",
+        "example": "https://drive.google.com/uc?export=download&id=1tq0nCNVmSGMg3y5m9-bDYNoZOth_xsdQ"
+      }
+    }
+  },
+  {
     "id": "weary_of",
     "word": "weary of",
     "pos": "v.",
-    "meaning": "지치게 하다 ~에 싫증나다",
+    "meaning": "지치게 하다, ~에 싫증나다",
     "example": "I weary of the endless meetings.",
     "exampleChunks": [
       "I",
@@ -6929,7 +7107,7 @@ window.VOCAB_WORDS = [
     "id": "price",
     "word": "price",
     "pos": "v.",
-    "meaning": "값[가격]을 매기다 가격을 정하다",
+    "meaning": "값[가격]을 매기다, 가격을 정하다",
     "example": "He prices the items for sale.",
     "exampleChunks": [
       "He",
@@ -6954,7 +7132,7 @@ window.VOCAB_WORDS = [
     "id": "complain",
     "word": "complain",
     "pos": "v.",
-    "meaning": "불평하다 항의하다",
+    "meaning": "불평하다, 항의하다",
     "example": "He complains about the noise.",
     "exampleChunks": [
       "He",
@@ -7002,7 +7180,7 @@ window.VOCAB_WORDS = [
     "id": "hunt",
     "word": "hunt",
     "pos": "v.",
-    "meaning": "사냥하다 찾다[뒤지다]",
+    "meaning": "사냥하다, 찾다[뒤지다]",
     "example": "The lioness hunts for food.",
     "exampleChunks": [
       "The",
@@ -7026,7 +7204,7 @@ window.VOCAB_WORDS = [
     "id": "howl",
     "word": "howl",
     "pos": "v.",
-    "meaning": "(길게)울다[울부짖다] 울부짖다",
+    "meaning": "(길게)울다[울부짖다], 울부짖다",
     "example": "The wolf howls at the moon in the night.",
     "exampleChunks": [
       "The",
@@ -7051,10 +7229,60 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "slide",
+    "word": "slide",
+    "pos": "v.",
+    "meaning": "미끄러지다, 미끄러뜨리다",
+    "example": "I slide down the slide.",
+    "exampleChunks": [
+      "I",
+      "slide",
+      "down",
+      "the",
+      "slide."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260629_215137_c3b081d7-4258-4af7-9dd5-98402827778d.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260629_215137_c3b081d7-4258-4af7-9dd5-98402827778d.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/20d24721-63b4-4156-989c-d6363cd76048.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_001_slide_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_001_slide_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "startle",
+    "word": "startle",
+    "pos": "v.",
+    "meaning": "깜짝 놀라게 하다",
+    "example": "The owl’s hoot startles me every night.",
+    "exampleChunks": [
+      "The",
+      "owl’s",
+      "hoot",
+      "startles",
+      "me",
+      "every",
+      "night."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_134217_ca79664e-0cbc-4797-8573-a4b94a1bdfcf.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_134217_ca79664e-0cbc-4797-8573-a4b94a1bdfcf.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/fd956376-e457-45c3-9864-9ec3551bc831.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_005_startle_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_005_startle_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "dip",
     "word": "dip",
     "pos": "v.",
-    "meaning": "살짝 담그다 적시다",
+    "meaning": "살짝 담그다, 적시다",
     "example": "I dip the bread in hot chocolate.",
     "exampleChunks": [
       "I",
@@ -7104,7 +7332,7 @@ window.VOCAB_WORDS = [
     "id": "roar",
     "word": "roar",
     "pos": "v.",
-    "meaning": "으르렁거리다 고함치다",
+    "meaning": "으르렁거리다, 고함치다",
     "example": "Two dogs roar at each other.",
     "exampleChunks": [
       "Two",
@@ -7129,7 +7357,7 @@ window.VOCAB_WORDS = [
     "id": "cross",
     "word": "cross",
     "pos": "v.",
-    "meaning": "건너다 가로지르다",
+    "meaning": "건너다, 가로지르다",
     "example": "He crosses the traffic light.",
     "exampleChunks": [
       "He",
@@ -7153,7 +7381,7 @@ window.VOCAB_WORDS = [
     "id": "whisper",
     "word": "whisper",
     "pos": "v.",
-    "meaning": "속삭이다 귓속말을 하다",
+    "meaning": "속삭이다, 귓속말을 하다",
     "example": "He whispers in my ear.",
     "exampleChunks": [
       "He",
@@ -7177,7 +7405,7 @@ window.VOCAB_WORDS = [
     "id": "happen",
     "word": "happen",
     "pos": "v.",
-    "meaning": "일어나다 발생하다",
+    "meaning": "일어나다, 발생하다",
     "example": "Something exciting will happen at the party.",
     "exampleChunks": [
       "Something",
@@ -7203,7 +7431,7 @@ window.VOCAB_WORDS = [
     "id": "bump",
     "word": "bump",
     "pos": "v.",
-    "meaning": "부딫히다 충돌하다",
+    "meaning": "부딫히다, 충돌하다",
     "example": "I bump into a man on the street.",
     "exampleChunks": [
       "I",
@@ -7230,7 +7458,7 @@ window.VOCAB_WORDS = [
     "id": "pin",
     "word": "pin",
     "pos": "v.",
-    "meaning": "꽂다 고정시키다",
+    "meaning": "꽂다, 고정시키다",
     "example": "My dad pins the picture to the wall.",
     "exampleChunks": [
       "My",
@@ -7257,7 +7485,7 @@ window.VOCAB_WORDS = [
     "id": "ask",
     "word": "ask",
     "pos": "v.",
-    "meaning": "묻다 질문하다",
+    "meaning": "묻다, 질문하다",
     "example": "He asks me about my hobby.",
     "exampleChunks": [
       "He",
@@ -7282,7 +7510,7 @@ window.VOCAB_WORDS = [
     "id": "study",
     "word": "study",
     "pos": "v.",
-    "meaning": "공부하다 연구하다",
+    "meaning": "공부하다, 연구하다",
     "example": "He studies about the universe.",
     "exampleChunks": [
       "He",
@@ -7331,7 +7559,7 @@ window.VOCAB_WORDS = [
     "id": "count",
     "word": "count",
     "pos": "v.",
-    "meaning": "세다 계산하다",
+    "meaning": "세다, 계산하다",
     "example": "He counts the money.",
     "exampleChunks": [
       "He",
@@ -7454,7 +7682,7 @@ window.VOCAB_WORDS = [
     "id": "zoom",
     "word": "zoom",
     "pos": "v.",
-    "meaning": "(빠르게)가다 질주하다",
+    "meaning": "(빠르게)가다, 질주하다",
     "example": "The car zooms down the highway.",
     "exampleChunks": [
       "The",
@@ -7503,7 +7731,7 @@ window.VOCAB_WORDS = [
     "id": "paddle",
     "word": "paddle",
     "pos": "v.",
-    "meaning": "첨벙거리며 다니다 물장난하다",
+    "meaning": "첨벙거리며 다니다, 물장난하다",
     "example": "The children paddle the boat in the pond.",
     "exampleChunks": [
       "The",
@@ -7530,7 +7758,7 @@ window.VOCAB_WORDS = [
     "id": "spin",
     "word": "spin",
     "pos": "v.",
-    "meaning": "돌다 회전하다",
+    "meaning": "돌다, 회전하다",
     "example": "The girl spins three times.",
     "exampleChunks": [
       "The",
@@ -7551,37 +7779,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "push",
-    "word": "push",
-    "pos": "v.",
-    "meaning": "밀다",
-    "example": "He pushes the door to enter the room.",
-    "exampleChunks": [
-      "He",
-      "pushes",
-      "the",
-      "door",
-      "to",
-      "enter",
-      "the",
-      "room."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260629_204331_ed1c69d4-305a-47d0-ae25-dbb6d33b8627.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260629_204331_ed1c69d4-305a-47d0-ae25-dbb6d33b8627.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/80b0a333-a0c5-447f-b893-a260834d7f27.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_010_push_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_010_push_sentence.mp3"
-      }
-    }
-  },
-  {
     "id": "wave",
     "word": "wave",
     "pos": "v.",
-    "meaning": "흔들다 손짓하다",
+    "meaning": "흔들다, 손짓하다",
     "example": "My mom waves her hand at me.",
     "exampleChunks": [
       "My",
@@ -7604,34 +7805,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "slide",
-    "word": "slide",
-    "pos": "v.",
-    "meaning": "미끄러지다",
-    "example": "I slide down the slide.",
-    "exampleChunks": [
-      "I",
-      "slide",
-      "down",
-      "the",
-      "slide."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260629_215137_c3b081d7-4258-4af7-9dd5-98402827778d.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260629_215137_c3b081d7-4258-4af7-9dd5-98402827778d.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/20d24721-63b4-4156-989c-d6363cd76048.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_001_slide_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_001_slide_sentence.mp3"
-      }
-    }
-  },
-  {
     "id": "connect",
     "word": "connect",
     "pos": "v.",
-    "meaning": "연결하다 접속하다",
+    "meaning": "연결하다, 접속하다",
     "example": "She connects the computer to the internet.",
     "exampleChunks": [
       "She",
@@ -7684,7 +7861,7 @@ window.VOCAB_WORDS = [
     "id": "change",
     "word": "change",
     "pos": "v.",
-    "meaning": "변화시키다 변하다",
+    "meaning": "변화시키다, 변하다",
     "example": "He changes his mind.",
     "exampleChunks": [
       "He",
@@ -7707,7 +7884,7 @@ window.VOCAB_WORDS = [
     "id": "tape",
     "word": "tape",
     "pos": "v.",
-    "meaning": "테이프[끈]로 묶다 녹음[녹화]하다",
+    "meaning": "테이프[끈]로 묶다, 녹음[녹화]하다",
     "example": "I sometimes tape my picture to the wall.",
     "exampleChunks": [
       "I",
@@ -7757,35 +7934,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "cry",
-    "word": "cry",
-    "pos": "v.",
-    "meaning": "울다",
-    "example": "My sister cries under the blanket.",
-    "exampleChunks": [
-      "My",
-      "sister",
-      "cries",
-      "under",
-      "the",
-      "blanket."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260630_034639_3c06ce6a-8bd3-4c23-b4e8-23a3e5be1166.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260630_034639_3c06ce6a-8bd3-4c23-b4e8-23a3e5be1166.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/bd51f347-aa87-4297-89dc-66de7be5c814.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_002_cry_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_002_cry_sentence.mp3"
-      }
-    }
-  },
-  {
     "id": "place",
     "word": "place",
     "pos": "v.",
-    "meaning": "~에 두다 놓다",
+    "meaning": "~에 두다, 놓다",
     "example": "He places the vase on the table.",
     "exampleChunks": [
       "He",
@@ -7811,7 +7963,7 @@ window.VOCAB_WORDS = [
     "id": "flick",
     "word": "flick",
     "pos": "v.",
-    "meaning": "(손가락으로)튀기다 잽싸게 움직이다",
+    "meaning": "(손가락으로)튀기다, 잽싸게 움직이다",
     "example": "She flicks the right switch.",
     "exampleChunks": [
       "She",
@@ -7882,7 +8034,7 @@ window.VOCAB_WORDS = [
     "id": "scrub",
     "word": "scrub",
     "pos": "v.",
-    "meaning": "문질러 씻다 청소하다",
+    "meaning": "문질러 씻다, 청소하다",
     "example": "I scrub the dishes after dinner.",
     "exampleChunks": [
       "I",
@@ -7907,7 +8059,7 @@ window.VOCAB_WORDS = [
     "id": "rinse",
     "word": "rinse",
     "pos": "v.",
-    "meaning": "헹구다 씻다",
+    "meaning": "헹구다, 씻다",
     "example": "I rinse my hands before eating.",
     "exampleChunks": [
       "I",
@@ -7955,7 +8107,7 @@ window.VOCAB_WORDS = [
     "id": "pass",
     "word": "pass",
     "pos": "v.",
-    "meaning": "지나가다[통과하다] 합격하다",
+    "meaning": "지나가다[통과하다], 합격하다",
     "example": "I pass the ball to my friend.",
     "exampleChunks": [
       "I",
@@ -7978,35 +8130,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "rip",
-    "word": "rip",
-    "pos": "v.",
-    "meaning": "찢다 뜯어 내다",
-    "example": "She rips the paper in half.",
-    "exampleChunks": [
-      "She",
-      "rips",
-      "the",
-      "paper",
-      "in",
-      "half."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260630_135555_ebd8bb3d-7b56-42d5-8078-a70eb76abf93.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260630_135555_ebd8bb3d-7b56-42d5-8078-a70eb76abf93.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/e491bfc6-0b5d-4058-ae5f-0f759d1f711f.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_011_rip_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_011_rip_sentence.mp3"
-      }
-    }
-  },
-  {
     "id": "pull",
     "word": "pull",
     "pos": "v.",
-    "meaning": "당기다 끌다",
+    "meaning": "당기다, 끌다",
     "example": "I pull the door open.",
     "exampleChunks": [
       "I",
@@ -8030,7 +8157,7 @@ window.VOCAB_WORDS = [
     "id": "glow",
     "word": "glow",
     "pos": "v.",
-    "meaning": "빛나다 타다",
+    "meaning": "빛나다, 타다",
     "example": "The stars glow brightly at night.",
     "exampleChunks": [
       "The",
@@ -8055,7 +8182,7 @@ window.VOCAB_WORDS = [
     "id": "dive",
     "word": "dive",
     "pos": "v.",
-    "meaning": "(물속으로)뛰어들다 다이빙하다",
+    "meaning": "(물속으로)뛰어들다, 다이빙하다",
     "example": "He dives into the pool.",
     "exampleChunks": [
       "He",
@@ -8105,7 +8232,7 @@ window.VOCAB_WORDS = [
     "id": "wag",
     "word": "wag",
     "pos": "v.",
-    "meaning": "흔들다 흔들리다",
+    "meaning": "흔들다, 흔들리다",
     "example": "Two dogs wag their tails.",
     "exampleChunks": [
       "Two",
@@ -8129,7 +8256,7 @@ window.VOCAB_WORDS = [
     "id": "climb",
     "word": "climb",
     "pos": "v.",
-    "meaning": "오르다 등반하다",
+    "meaning": "오르다, 등반하다",
     "example": "The monkey climbs the tree.",
     "exampleChunks": [
       "The",
@@ -8228,7 +8355,7 @@ window.VOCAB_WORDS = [
     "id": "pull_out",
     "word": "pull out",
     "pos": "v.",
-    "meaning": "옆으로 빠져나가다 떠나다",
+    "meaning": "옆으로 빠져나가다, 떠나다",
     "example": "I pull out the books from the shelf.",
     "exampleChunks": [
       "I",
@@ -8255,7 +8382,7 @@ window.VOCAB_WORDS = [
     "id": "get_out",
     "word": "get out",
     "pos": "v.",
-    "meaning": "알려지다 나가다",
+    "meaning": "알려지다, 나가다",
     "example": "Please get out of the car.",
     "exampleChunks": [
       "Please",
@@ -8304,7 +8431,7 @@ window.VOCAB_WORDS = [
     "id": "snap",
     "word": "snap",
     "pos": "v.",
-    "meaning": "부러뜨리다 부러지다",
+    "meaning": "부러뜨리다, 부러지다",
     "example": "The branch snaps when I step on it.",
     "exampleChunks": [
       "The",
@@ -8356,7 +8483,7 @@ window.VOCAB_WORDS = [
     "id": "rub",
     "word": "rub",
     "pos": "v.",
-    "meaning": "비비다 문지르다",
+    "meaning": "비비다, 문지르다",
     "example": "The dog rubs its head on my hand.",
     "exampleChunks": [
       "The",
@@ -8383,7 +8510,7 @@ window.VOCAB_WORDS = [
     "id": "stick",
     "word": "stick",
     "pos": "v.",
-    "meaning": "붙이다 붙다",
+    "meaning": "붙이다, 붙다",
     "example": "I stick the paper on the wall.",
     "exampleChunks": [
       "I",
@@ -8409,7 +8536,7 @@ window.VOCAB_WORDS = [
     "id": "roll",
     "word": "roll",
     "pos": "v.",
-    "meaning": "구르다 굴리다",
+    "meaning": "구르다, 굴리다",
     "example": "Three little monkeys roll over the bed.",
     "exampleChunks": [
       "Three",
@@ -8458,7 +8585,7 @@ window.VOCAB_WORDS = [
     "id": "duck",
     "word": "duck",
     "pos": "v.",
-    "meaning": "휙[쑥]수그리다[숨기다] 피하다",
+    "meaning": "휙[쑥]수그리다[숨기다], 피하다",
     "example": "My brother ducks his body under the desk.",
     "exampleChunks": [
       "My",
@@ -8482,36 +8609,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "hang",
-    "word": "hang",
-    "pos": "v.",
-    "meaning": "걸다 매달다",
-    "example": "She hangs the clock on the wall.",
-    "exampleChunks": [
-      "She",
-      "hangs",
-      "the",
-      "clock",
-      "on",
-      "the",
-      "wall."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260701_213233_8c998f32-82a2-4b9e-8b01-798c4df72b23.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260701_213233_8c998f32-82a2-4b9e-8b01-798c4df72b23.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/6730b439-3e9c-4fba-818d-7966970716e1.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1Qt6GsBCTjbgC2xYVCbfMj6ZBerZ1w0Lq",
-        "example": "https://drive.google.com/uc?export=download&id=1LgAfirrZOz0apDHeNhy5aysm0HEHyCJw"
-      }
-    }
-  },
-  {
     "id": "stick_up_for",
     "word": "stick up for",
     "pos": "v.",
-    "meaning": "옹호하다 변호하다",
+    "meaning": "옹호하다, 변호하다",
     "example": "He always sticks up for his little sister.",
     "exampleChunks": [
       "He",
@@ -8589,7 +8690,7 @@ window.VOCAB_WORDS = [
     "id": "wobble",
     "word": "wobble",
     "pos": "v.",
-    "meaning": "흔들리다[흔들다] 떨다",
+    "meaning": "흔들리다[흔들다], 떨다",
     "example": "The table wobbles when I touch it.",
     "exampleChunks": [
       "The",
@@ -8639,7 +8740,7 @@ window.VOCAB_WORDS = [
     "id": "squirt",
     "word": "squirt",
     "pos": "v.",
-    "meaning": "찍 짜다 쏘다",
+    "meaning": "찍 짜다, 쏘다",
     "example": "She squirts ketchup on her fries.",
     "exampleChunks": [
       "She",
@@ -8689,7 +8790,7 @@ window.VOCAB_WORDS = [
     "id": "clear",
     "word": "clear",
     "pos": "v.",
-    "meaning": "치우다 내보내다",
+    "meaning": "치우다, 내보내다",
     "example": "I clear my desk before I leave school.",
     "exampleChunks": [
       "I",
@@ -8716,7 +8817,7 @@ window.VOCAB_WORDS = [
     "id": "rake",
     "word": "rake",
     "pos": "v.",
-    "meaning": "갈퀴질을 하다 갈퀴로 모으다",
+    "meaning": "갈퀴질을 하다, 갈퀴로 모으다",
     "example": "He rakes the fallen leaves.",
     "exampleChunks": [
       "He",
@@ -8764,7 +8865,7 @@ window.VOCAB_WORDS = [
     "id": "spend",
     "word": "spend",
     "pos": "v.",
-    "meaning": "(돈을)쓰다 소비하다",
+    "meaning": "(돈을)쓰다, 소비하다",
     "example": "I spend time with my family.",
     "exampleChunks": [
       "I",
@@ -8789,7 +8890,7 @@ window.VOCAB_WORDS = [
     "id": "fix",
     "word": "fix",
     "pos": "v.",
-    "meaning": "고정시키다 정하다",
+    "meaning": "고정시키다, 정하다",
     "example": "I fix my toy when it breaks.",
     "exampleChunks": [
       "I",
@@ -8815,7 +8916,7 @@ window.VOCAB_WORDS = [
     "id": "tighten",
     "word": "tighten",
     "pos": "v.",
-    "meaning": "팽팽해지다 더 엄격하게 하다",
+    "meaning": "팽팽해지다, 더 엄격하게\n하다",
     "example": "I tighten my shoes before running.",
     "exampleChunks": [
       "I",
@@ -8840,7 +8941,7 @@ window.VOCAB_WORDS = [
     "id": "surf",
     "word": "surf",
     "pos": "v.",
-    "meaning": "서핑을 하다 인터넷을 검색하다",
+    "meaning": "서핑을 하다, 인터넷을\n검색하다",
     "example": "They surf at the beach.",
     "exampleChunks": [
       "They",
@@ -8864,7 +8965,7 @@ window.VOCAB_WORDS = [
     "id": "serve",
     "word": "serve",
     "pos": "v.",
-    "meaning": "(음식을)제공하다 차려주다",
+    "meaning": "(음식을)제공하다, 차려주다",
     "example": "I serve vegetable soup.",
     "exampleChunks": [
       "I",
@@ -8910,7 +9011,7 @@ window.VOCAB_WORDS = [
     "id": "warm_up",
     "word": "warm up",
     "pos": "v.",
-    "meaning": "몸을 천천히 풀다 적당히 열을  오르다",
+    "meaning": "몸을 천천히 풀다, 적당히 열을 \n오르다",
     "example": "The players warm up before the game.",
     "exampleChunks": [
       "The",
@@ -8936,7 +9037,7 @@ window.VOCAB_WORDS = [
     "id": "tilt",
     "word": "tilt",
     "pos": "v.",
-    "meaning": "기울다 젖혀지다",
+    "meaning": "기울다, 젖혀지다",
     "example": "She tilts her head to the side.",
     "exampleChunks": [
       "She",
@@ -8988,7 +9089,7 @@ window.VOCAB_WORDS = [
     "id": "raise",
     "word": "raise",
     "pos": "v.",
-    "meaning": "올리다[들다] 키우다",
+    "meaning": "올리다[들다], 키우다",
     "example": "He raises two black cats in his house.",
     "exampleChunks": [
       "He",
@@ -9015,7 +9116,7 @@ window.VOCAB_WORDS = [
     "id": "stick_out",
     "word": "stick out",
     "pos": "v.",
-    "meaning": "눈에 띄다 잘 보이다",
+    "meaning": "눈에 띄다, 잘 보이다",
     "example": "His ears stick out a little.",
     "exampleChunks": [
       "His",
@@ -9099,7 +9200,7 @@ window.VOCAB_WORDS = [
     "id": "lock",
     "word": "lock",
     "pos": "v.",
-    "meaning": "잠그다 잠가 두다",
+    "meaning": "잠그다, 잠가 두다",
     "example": "He locks the door and the window.",
     "exampleChunks": [
       "He",
@@ -9122,35 +9223,10 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "close",
-    "word": "close",
-    "pos": "v.",
-    "meaning": "닫다",
-    "example": "My sister closes the closet door.",
-    "exampleChunks": [
-      "My",
-      "sister",
-      "closes",
-      "the",
-      "closet",
-      "door."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260702_085238_e8a01239-0d1f-4e92-8c0f-710c094d13c9.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260702_085238_e8a01239-0d1f-4e92-8c0f-710c094d13c9.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/873f0731-0091-4c22-9f72-429187dbb117.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_001_close_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_001_close_sentence.mp3"
-      }
-    }
-  },
-  {
     "id": "scare",
     "word": "scare",
     "pos": "v.",
-    "meaning": "무섭게하다 겁주다[겁나게 하다]",
+    "meaning": "무섭게하다, 겁주다[겁나게 하다]",
     "example": "Loud noises scare the baby.",
     "exampleChunks": [
       "Loud",
@@ -9174,7 +9250,7 @@ window.VOCAB_WORDS = [
     "id": "go_away",
     "word": "go away",
     "pos": "v.",
-    "meaning": "(떠나) 가다 집을 떠나다",
+    "meaning": "(떠나) 가다, 집을 떠나다",
     "example": "The dog will go away when it hears a loud sound.",
     "exampleChunks": [
       "The",
@@ -9204,7 +9280,7 @@ window.VOCAB_WORDS = [
     "id": "sand",
     "word": "sand",
     "pos": "v.",
-    "meaning": "사포로 닦다 모래로 닦다",
+    "meaning": "사포로 닦다, 모래로 닦다",
     "example": "The workers sand the wooden surface.",
     "exampleChunks": [
       "The",
@@ -9229,7 +9305,7 @@ window.VOCAB_WORDS = [
     "id": "kiss",
     "word": "kiss",
     "pos": "v.",
-    "meaning": "입 맞추다 키스하다",
+    "meaning": "입 맞추다, 키스하다",
     "example": "She kisses her grandma on the cheek.",
     "exampleChunks": [
       "She",
@@ -9255,7 +9331,7 @@ window.VOCAB_WORDS = [
     "id": "bow",
     "word": "bow",
     "pos": "v.",
-    "meaning": "절하다 숙이다",
+    "meaning": "절하다, 숙이다",
     "example": "He bows before the job interview.",
     "exampleChunks": [
       "He",
@@ -9357,7 +9433,7 @@ window.VOCAB_WORDS = [
     "id": "care",
     "word": "care",
     "pos": "v.",
-    "meaning": "관심을 가지다 상관하다 [배려하다]",
+    "meaning": "관심을 가지다, 상관하다\n[배려하다]",
     "example": "She cares deeply for her plants.",
     "exampleChunks": [
       "She",
@@ -9382,7 +9458,7 @@ window.VOCAB_WORDS = [
     "id": "accept",
     "word": "accept",
     "pos": "v.",
-    "meaning": "받아들이다 인정하다",
+    "meaning": "받아들이다, 인정하다",
     "example": "She accepts the company's offering.",
     "exampleChunks": [
       "She",
@@ -9399,32 +9475,6 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%208_007_accept_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%208_007_accept_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "startle",
-    "word": "startle",
-    "pos": "v.",
-    "meaning": "깜짝 놀라게 하다",
-    "example": "The owl’s hoot startles me every night.",
-    "exampleChunks": [
-      "The",
-      "owl’s",
-      "hoot",
-      "startles",
-      "me",
-      "every",
-      "night."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_134217_ca79664e-0cbc-4797-8573-a4b94a1bdfcf.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_134217_ca79664e-0cbc-4797-8573-a4b94a1bdfcf.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/fd956376-e457-45c3-9864-9ec3551bc831.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_005_startle_word.mp3",
-        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_005_startle_sentence.mp3"
       }
     }
   },
@@ -9483,7 +9533,7 @@ window.VOCAB_WORDS = [
     "id": "save",
     "word": "save",
     "pos": "v.",
-    "meaning": "구하다 저축(절약)하다",
+    "meaning": "구하다, 저축(절약)하다",
     "example": "Dad saves the kitten.",
     "exampleChunks": [
       "Dad",
@@ -9506,7 +9556,7 @@ window.VOCAB_WORDS = [
     "id": "invent",
     "word": "invent",
     "pos": "v.",
-    "meaning": "발명하다 지어내다",
+    "meaning": "발명하다, 지어내다",
     "example": "He will invent a robot.",
     "exampleChunks": [
       "He",
@@ -9554,7 +9604,7 @@ window.VOCAB_WORDS = [
     "id": "send",
     "word": "send",
     "pos": "v.",
-    "meaning": "보내다 발송하다",
+    "meaning": "보내다, 발송하다",
     "example": "The company sends a new copy of contract.",
     "exampleChunks": [
       "The",
@@ -9574,31 +9624,6 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%208_016_send_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%208_016_send_sentence.mp3"
-      }
-    }
-  },
-  {
-    "id": "think",
-    "word": "think",
-    "pos": "v.",
-    "meaning": "생각하다",
-    "example": "She always thinks carefully before speaking.",
-    "exampleChunks": [
-      "She",
-      "always",
-      "thinks",
-      "carefully",
-      "before",
-      "speaking."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_184313_ef7cb066-8d94-4e66-932b-70d6e20e07bc.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_184313_ef7cb066-8d94-4e66-932b-70d6e20e07bc.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/49084566-b4cd-4595-9a35-ea72d6eca386.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1LqVtBD94OL3Y_yL6GZl0fTzKPPWAeKZC",
-        "example": "https://drive.google.com/uc?export=download&id=1jOSoQkP9GWUx0r8ToYOKnqD7KwmN1hn9"
       }
     }
   },
@@ -9632,7 +9657,7 @@ window.VOCAB_WORDS = [
     "id": "carry",
     "word": "carry",
     "pos": "v.",
-    "meaning": "나르다 싣다",
+    "meaning": "나르다, 싣다",
     "example": "The ants carry food to their nest.",
     "exampleChunks": [
       "The",
@@ -9658,7 +9683,7 @@ window.VOCAB_WORDS = [
     "id": "run_away",
     "word": "run away",
     "pos": "v.",
-    "meaning": "도망치다[탈주하다] 가출하다",
+    "meaning": "도망치다[탈주하다], 가출하다",
     "example": "The rabbit runs away from its cage.",
     "exampleChunks": [
       "The",
@@ -9684,7 +9709,7 @@ window.VOCAB_WORDS = [
     "id": "hurt",
     "word": "hurt",
     "pos": "v.",
-    "meaning": "다치게 하다 아프다",
+    "meaning": "다치게 하다, 아프다",
     "example": "He hurts his leg while playing.",
     "exampleChunks": [
       "He",
@@ -9709,7 +9734,7 @@ window.VOCAB_WORDS = [
     "id": "lose",
     "word": "lose",
     "pos": "v.",
-    "meaning": "지다 잃어버리다 [잃다]",
+    "meaning": "지다, 잃어버리다\n[잃다]",
     "example": "I lose my pencil every day.",
     "exampleChunks": [
       "I",
@@ -9781,32 +9806,6 @@ window.VOCAB_WORDS = [
     }
   },
   {
-    "id": "lay",
-    "word": "lay",
-    "pos": "v.",
-    "meaning": "놓다 두다",
-    "example": "I lay my books on the table.",
-    "exampleChunks": [
-      "I",
-      "lay",
-      "my",
-      "books",
-      "on",
-      "the",
-      "table."
-    ],
-    "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260704_083258_65560cd1-ab3a-4e45-bd67-e05c70230795.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260704_083258_65560cd1-ab3a-4e45-bd67-e05c70230795.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/f2e92f3f-2135-4e27-a8b0-435028f9b14f.png",
-      "placeholder": "📖",
-      "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1skG1Yr4_PaUr7P56LoqXnwH6e0w4z4rq",
-        "example": "https://drive.google.com/uc?export=download&id=1tq0nCNVmSGMg3y5m9-bDYNoZOth_xsdQ"
-      }
-    }
-  },
-  {
     "id": "take_care_of",
     "word": "take care of",
     "pos": "v.",
@@ -9837,7 +9836,7 @@ window.VOCAB_WORDS = [
     "id": "solve",
     "word": "solve",
     "pos": "v.",
-    "meaning": "해결하다 풀다",
+    "meaning": "해결하다, 풀다",
     "example": "Dad always sloves the problems at home.",
     "exampleChunks": [
       "Dad",
@@ -9890,7 +9889,7 @@ window.VOCAB_WORDS = [
     "id": "sprinkle",
     "word": "sprinkle",
     "pos": "v.",
-    "meaning": "뿌리다 간간이 섞다",
+    "meaning": "뿌리다, 간간이 섞다",
     "example": "I sprinkle sugar on my cereal.",
     "exampleChunks": [
       "I",
@@ -9915,7 +9914,7 @@ window.VOCAB_WORDS = [
     "id": "complete",
     "word": "complete",
     "pos": "v.",
-    "meaning": "완성하다 작성하다",
+    "meaning": "완성하다, 작성하다",
     "example": "She completes her puzzle quickly.",
     "exampleChunks": [
       "She",
@@ -9939,7 +9938,7 @@ window.VOCAB_WORDS = [
     "id": "edge",
     "word": "edge",
     "pos": "v.",
-    "meaning": "조금씩[살살]움직이다 이동시키다",
+    "meaning": "조금씩[살살]움직이다, 이동시키다",
     "example": "I edge closer to the door.",
     "exampleChunks": [
       "I",
@@ -9964,7 +9963,7 @@ window.VOCAB_WORDS = [
     "id": "attach",
     "word": "attach",
     "pos": "v.",
-    "meaning": "붙이다 첨부하다",
+    "meaning": "붙이다, 첨부하다",
     "example": "She attaches the photo to the scrapbook.",
     "exampleChunks": [
       "She",
@@ -9990,7 +9989,7 @@ window.VOCAB_WORDS = [
     "id": "damage",
     "word": "damage",
     "pos": "v.",
-    "meaning": "손상을 주다 피해를 입히다",
+    "meaning": "손상을 주다, 피해를 입히다",
     "example": "The rain can damage the plants.",
     "exampleChunks": [
       "The",
@@ -10015,7 +10014,7 @@ window.VOCAB_WORDS = [
     "id": "whimper",
     "word": "whimper",
     "pos": "v.",
-    "meaning": "훌쩍거리다 훌쩍이며 말하다",
+    "meaning": "훌쩍거리다, 훌쩍이며 말하다",
     "example": "The dog whimpers at the door.",
     "exampleChunks": [
       "The",
@@ -10040,7 +10039,7 @@ window.VOCAB_WORDS = [
     "id": "plead",
     "word": "plead",
     "pos": "v.",
-    "meaning": "애원하다 답변하다",
+    "meaning": "애원하다, 답변하다",
     "example": "She pleads with her parents.",
     "exampleChunks": [
       "She",
@@ -10064,7 +10063,7 @@ window.VOCAB_WORDS = [
     "id": "limp",
     "word": "limp",
     "pos": "v.",
-    "meaning": "다리를 절다[절뚝거리다] 느릿느릿 나아가다",
+    "meaning": "다리를 절다[절뚝거리다], 느릿느릿 나아가다",
     "example": "The hiker limps down the trail.",
     "exampleChunks": [
       "The",
@@ -10089,7 +10088,7 @@ window.VOCAB_WORDS = [
     "id": "trust",
     "word": "trust",
     "pos": "v.",
-    "meaning": "(사람을)신뢰하다 믿다",
+    "meaning": "(사람을)신뢰하다, 믿다",
     "example": "I trust my friend to be kind.",
     "exampleChunks": [
       "I",
@@ -10115,7 +10114,7 @@ window.VOCAB_WORDS = [
     "id": "exchange",
     "word": "exchange",
     "pos": "v.",
-    "meaning": "교환하다 주고받다",
+    "meaning": "교환하다, 주고받다",
     "example": "We exchange gifts on Christmas.",
     "exampleChunks": [
       "We",
@@ -10139,7 +10138,7 @@ window.VOCAB_WORDS = [
     "id": "polish",
     "word": "polish",
     "pos": "v.",
-    "meaning": "닦다 (좋아지도록)다듬다",
+    "meaning": "닦다, (좋아지도록)다듬다",
     "example": "She polishes her shoes.",
     "exampleChunks": [
       "She",
@@ -10162,7 +10161,7 @@ window.VOCAB_WORDS = [
     "id": "destroy",
     "word": "destroy",
     "pos": "v.",
-    "meaning": "파괴하다 말살하다",
+    "meaning": "파괴하다, 말살하다",
     "example": "The fire destroys the old building.",
     "exampleChunks": [
       "The",
@@ -10187,7 +10186,7 @@ window.VOCAB_WORDS = [
     "id": "rescue",
     "word": "rescue",
     "pos": "v.",
-    "meaning": "(위험에서)구하다 구조[구출]하다",
+    "meaning": "(위험에서)구하다, 구조[구출]하다",
     "example": "The firefighters rescue the family.",
     "exampleChunks": [
       "The",
@@ -10211,7 +10210,7 @@ window.VOCAB_WORDS = [
     "id": "seek",
     "word": "seek",
     "pos": "v.",
-    "meaning": "찾다 구하다",
+    "meaning": "찾다, 구하다",
     "example": "He seeks adventure in his travels.",
     "exampleChunks": [
       "He",
@@ -10236,7 +10235,7 @@ window.VOCAB_WORDS = [
     "id": "argue",
     "word": "argue",
     "pos": "v.",
-    "meaning": "언쟁을 하다 다투다",
+    "meaning": "언쟁을 하다, 다투다",
     "example": "My sister and I argue over the TV remote.",
     "exampleChunks": [
       "My",
@@ -10264,7 +10263,7 @@ window.VOCAB_WORDS = [
     "id": "journey",
     "word": "journey",
     "pos": "v.",
-    "meaning": "여행하다 이동하다",
+    "meaning": "여행하다, 이동하다",
     "example": "He journeys through the mountains.",
     "exampleChunks": [
       "He",
@@ -10288,7 +10287,7 @@ window.VOCAB_WORDS = [
     "id": "remove",
     "word": "remove",
     "pos": "v.",
-    "meaning": "치우다[내보내다] 벗다",
+    "meaning": "치우다[내보내다], 벗다",
     "example": "Please remove the books from the table.",
     "exampleChunks": [
       "Please",
@@ -10314,7 +10313,7 @@ window.VOCAB_WORDS = [
     "id": "clutch",
     "word": "clutch",
     "pos": "v.",
-    "meaning": "(꽉)움켜잡다 와락 움켜잡다",
+    "meaning": "(꽉)움켜잡다, 와락 움켜잡다",
     "example": "I clutch my teddy bear when I sleep.",
     "exampleChunks": [
       "I",
