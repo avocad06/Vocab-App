@@ -654,3 +654,281 @@ body {
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
 }
+
+/* ================================================================
+   학년·Day 선택 화면
+   ================================================================ */
+
+#vocab-start-wrap {
+  width: 92%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.select-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--c-text);
+}
+
+.select-sub {
+  font-size: 0.9rem;
+  color: var(--c-muted);
+  margin-top: -0.9rem;
+}
+
+/* 학년 탭 */
+.grade-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.grade-tab {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.95rem;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  color: var(--c-muted);
+  background: transparent;
+  border: 1.5px solid var(--c-blank);
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.grade-tab:hover {
+  border-color: var(--c-accent);
+  color: var(--c-accent);
+}
+.grade-tab.is-selected {
+  background: var(--c-accent);
+  border-color: var(--c-accent);
+  color: #ffffff;
+}
+
+/* Day 그리드 */
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.day-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.85rem 0.5rem;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+}
+.day-btn:hover {
+  border-color: var(--c-accent);
+  box-shadow: 0 2px 10px rgba(29, 158, 117, 0.15);
+  transform: translateY(-1px);
+}
+
+.day-btn__label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+.day-btn__count {
+  font-size: 0.72rem;
+  color: var(--c-muted);
+}
+
+/* 완료 버튼 2개 (처음부터 / 다른 Day) */
+#vocab-restart-wrap {
+  gap: 0.75rem;
+}
+
+#btn-day-select {
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  color: var(--c-muted);
+  background: transparent;
+  border: 1.5px solid var(--c-muted);
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+#btn-day-select:hover {
+  background: var(--c-muted);
+  color: #ffffff;
+}
+
+/* ================================================================
+   Day 인디케이터 · Day 변경 모달 · 단어 목록 모달
+   ================================================================ */
+
+/* ── 현재 Day 인디케이터 (상단 중앙) ── */
+#day-indicator-wrap {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  visibility: hidden;      /* 학습 시작 전 숨김 */
+}
+
+#day-indicator {
+  padding: 0.4rem 1.1rem;
+  font-size: 0.85rem;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  color: var(--c-accent);
+  background: var(--c-surface);
+  border: 1.5px solid var(--c-accent);
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+#day-indicator:hover {
+  background: var(--c-accent);
+  color: #ffffff;
+}
+
+/* ── 공용 모달 (Day 변경 / 단어 목록) ── */
+.vc-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.vc-modal[hidden] { display: none; }
+
+/* 단어 목록 모달은 Day 변경 모달 위에 겹칠 수 있음 */
+#wordlist-modal { z-index: 7; }
+
+.vc-modal__box {
+  background: var(--c-surface);
+  border-radius: var(--radius-card);
+  padding: 1.75rem;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+.vc-modal__box--picker { max-width: 560px; }
+.vc-modal__box--list   { max-width: 420px; }
+
+.vc-modal__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--c-text);
+}
+
+.vc-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.vc-modal__close,
+.vc-modal__primary {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.88rem;
+  font-family: 'Georgia', serif;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.vc-modal__close {
+  color: var(--c-muted);
+  background: transparent;
+  border: 1.5px solid var(--c-muted);
+}
+.vc-modal__close:hover { background: var(--c-muted); color: #ffffff; }
+
+.vc-modal__primary {
+  color: var(--c-accent);
+  background: transparent;
+  border: 1.5px solid var(--c-accent);
+}
+.vc-modal__primary:hover { background: var(--c-accent); color: #ffffff; }
+
+/* ── 단어 목록 ── */
+.wordlist {
+  max-height: 55vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.wordlist__item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid var(--c-border);
+}
+.wordlist__item:last-child { border-bottom: none; }
+
+.wordlist__num {
+  flex: 0 0 1.5rem;
+  font-size: 0.75rem;
+  color: var(--c-muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.wordlist__word {
+  flex: 0 0 40%;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+.wordlist__meaning {
+  flex: 1;
+  font-size: 0.88rem;
+  color: var(--c-muted);
+}
+
+/* ── Day 버튼 보강: 목록 아이콘 + 현재 학습 중 표시 ── */
+.day-btn { position: relative; }
+
+.day-btn__list {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.45rem;
+  padding: 0.1rem 0.25rem;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: var(--c-blank);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.day-btn:hover .day-btn__list { color: var(--c-muted); }
+.day-btn__list:hover { color: var(--c-accent) !important; }
+
+.day-btn.is-current {
+  border-color: var(--c-accent);
+  background: rgba(29, 158, 117, 0.07);
+}
+.day-btn.is-current .day-btn__label { color: var(--c-accent); }

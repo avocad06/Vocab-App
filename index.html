@@ -9,16 +9,12 @@
 </head>
 
 <body>
-  <!-- 로딩 오버레이 -->
-  <div id="vocab-loading" class="vocab-loading">
-    <div class="vocab-loading__spinner"></div>
-    <p class="vocab-loading__text">단어장을 불러오는 중…</p>
-    <p id="vocab-loading-progress" class="vocab-loading__progress">0%</p>
-  </div>
-
-  <!-- 시작 버튼 -->
+  <!-- 학년·Day 선택 화면 -->
   <div id="vocab-start-wrap">
-    <button id="vocab-start">▶ 시작</button>
+    <p class="select-title">Vocab Card</p>
+    <p class="select-sub">학년과 Day를 선택하면 바로 시작돼요</p>
+    <div id="grade-tabs" class="grade-tabs"></div>
+    <div id="day-grid" class="day-grid"></div>
   </div>
 
   <!-- 자동재생 토글 버튼 -->
@@ -30,6 +26,11 @@
       </span>
     </button>
     <button id="btn-help" class="help-btn" aria-label="도움말">?</button>
+  </div>
+
+  <!-- 현재 Day 인디케이터 (학습 중 상단 중앙) -->
+  <div id="day-indicator-wrap">
+    <button id="day-indicator" title="Day 변경">G1 · Day 1 ▾</button>
   </div>
 
   <!-- 도움말 모달 (z-index 최우선) -->
@@ -47,6 +48,30 @@
     </div>
   </div>
 
+  <!-- Day 변경 모달 (학습 중) -->
+  <div id="day-modal" class="vc-modal" hidden>
+    <div class="vc-modal__box vc-modal__box--picker">
+      <p class="vc-modal__title">어떤 Day를 학습할까요?</p>
+      <div id="modal-grade-tabs" class="grade-tabs"></div>
+      <div id="modal-day-grid" class="day-grid"></div>
+      <div class="vc-modal__actions">
+        <button id="btn-day-modal-close" class="vc-modal__close">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 단어 목록 모달 -->
+  <div id="wordlist-modal" class="vc-modal" hidden>
+    <div class="vc-modal__box vc-modal__box--list">
+      <p id="wordlist-title" class="vc-modal__title"></p>
+      <div id="wordlist-body" class="wordlist"></div>
+      <div class="vc-modal__actions">
+        <button id="btn-wordlist-start" class="vc-modal__primary">▶ 이 Day 시작</button>
+        <button id="btn-wordlist-close" class="vc-modal__close">닫기</button>
+      </div>
+    </div>
+  </div>
+
   <!-- 카드 + 이전/다음 버튼 레이아웃 -->
   <div id="vocab-layout">
     <button id="btn-prev" class="nav-btn" aria-label="이전">◀ 이전</button>
@@ -54,9 +79,10 @@
     <button id="btn-next" class="nav-btn" aria-label="다음">다음 ▶</button>
   </div>
 
-  <!-- 처음으로 버튼 (마지막 페이지에만 표시) -->
+  <!-- 완료 버튼들 (마지막 페이지에만 표시) -->
   <div id="vocab-restart-wrap">
-    <button id="btn-restart">↩ 처음으로</button>
+    <button id="btn-restart">↩ 처음부터</button>
+    <button id="btn-day-select">📚 다른 Day</button>
   </div>
 
   <script src="data/words.js"></script>
@@ -65,6 +91,7 @@
   <script src="js/audio-player.js"></script>
   <script src="js/vocab-card.js"></script>
   <script src="js/vocab-player.js"></script>
+  <script src="js/day-select.js"></script>
   <script src="js/main.js"></script>
 </body>
 

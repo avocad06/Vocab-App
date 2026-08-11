@@ -8,6 +8,9 @@
 window.VOCAB_WORDS = [
   {
     "id": "watch",
+    "grade": 1,
+    "day": 1,
+    "seq": 1,
     "word": "watch",
     "pos": "v.",
     "meaning": "보다",
@@ -32,6 +35,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "look_for",
+    "grade": 1,
+    "day": 1,
+    "seq": 2,
     "word": "look for",
     "pos": "v.",
     "meaning": "찾다",
@@ -55,6 +61,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "make",
+    "grade": 1,
+    "day": 1,
+    "seq": 3,
     "word": "make",
     "pos": "v.",
     "meaning": "만들다",
@@ -79,6 +88,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "have",
+    "grade": 1,
+    "day": 1,
+    "seq": 4,
     "word": "have",
     "pos": "v.",
     "meaning": "가지다",
@@ -102,6 +114,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "do",
+    "grade": 1,
+    "day": 1,
+    "seq": 5,
     "word": "do",
     "pos": "v.",
     "meaning": "하다",
@@ -126,6 +141,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "know",
+    "grade": 1,
+    "day": 1,
+    "seq": 6,
     "word": "know",
     "pos": "v.",
     "meaning": "알다, 이해하다",
@@ -151,6 +169,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sit_on",
+    "grade": 1,
+    "day": 1,
+    "seq": 7,
     "word": "sit on",
     "pos": "v.",
     "meaning": "앉다",
@@ -175,6 +196,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "move",
+    "grade": 1,
+    "day": 1,
+    "seq": 8,
     "word": "move",
     "pos": "v.",
     "meaning": "움직이다",
@@ -199,6 +223,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fall_down",
+    "grade": 1,
+    "day": 1,
+    "seq": 9,
     "word": "fall down",
     "pos": "v.",
     "meaning": "떨어진다",
@@ -225,6 +252,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "see",
+    "grade": 1,
+    "day": 1,
+    "seq": 10,
     "word": "see",
     "pos": "v.",
     "meaning": "~을 보다",
@@ -247,6 +277,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "open",
+    "grade": 1,
+    "day": 1,
+    "seq": 13,
     "word": "open",
     "pos": "v.",
     "meaning": "열다",
@@ -270,6 +303,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wash",
+    "grade": 1,
+    "day": 1,
+    "seq": 14,
     "word": "wash",
     "pos": "v.",
     "meaning": "씻다",
@@ -293,6 +329,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wake",
+    "grade": 1,
+    "day": 1,
+    "seq": 15,
     "word": "wake",
     "pos": "v.",
     "meaning": "잠에서 깨다",
@@ -316,6 +355,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wear",
+    "grade": 1,
+    "day": 1,
+    "seq": 16,
     "word": "wear",
     "pos": "v.",
     "meaning": "입다",
@@ -342,6 +384,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "want",
+    "grade": 1,
+    "day": 1,
+    "seq": 17,
     "word": "want",
     "pos": "v.",
     "meaning": "원하다",
@@ -368,6 +413,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wait",
+    "grade": 1,
+    "day": 1,
+    "seq": 18,
     "word": "wait",
     "pos": "v.",
     "meaning": "기다리다",
@@ -392,6 +440,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "say",
+    "grade": 1,
+    "day": 1,
+    "seq": 19,
     "word": "say",
     "pos": "v.",
     "meaning": "말하다",
@@ -416,6 +467,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "blow",
+    "grade": 1,
+    "day": 1,
+    "seq": 20,
     "word": "blow",
     "pos": "v.",
     "meaning": "불다",
@@ -440,6 +494,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "draw",
+    "grade": 1,
+    "day": 2,
+    "seq": 1,
     "word": "draw",
     "pos": "v.",
     "meaning": "그리다",
@@ -463,6 +520,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "play",
+    "grade": 1,
+    "day": 2,
+    "seq": 2,
     "word": "play",
     "pos": "v.",
     "meaning": "놀다, (경기를)하다",
@@ -486,6 +546,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cook",
+    "grade": 1,
+    "day": 2,
+    "seq": 3,
     "word": "cook",
     "pos": "v.",
     "meaning": "요리하다",
@@ -508,6 +571,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "buy",
+    "grade": 1,
+    "day": 2,
+    "seq": 4,
     "word": "buy",
     "pos": "v.",
     "meaning": "사다",
@@ -533,6 +599,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wink",
+    "grade": 1,
+    "day": 2,
+    "seq": 5,
     "word": "wink",
     "pos": "v.",
     "meaning": "윙크하다",
@@ -557,6 +626,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "read",
+    "grade": 1,
+    "day": 2,
+    "seq": 6,
     "word": "read",
     "pos": "v.",
     "meaning": "읽다",
@@ -580,6 +652,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "work",
+    "grade": 1,
+    "day": 2,
+    "seq": 7,
     "word": "work",
     "pos": "v.",
     "meaning": "일하다",
@@ -604,6 +679,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sing",
+    "grade": 1,
+    "day": 2,
+    "seq": 8,
     "word": "sing",
     "pos": "v.",
     "meaning": "노래를 부르다",
@@ -627,6 +705,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "listen",
+    "grade": 1,
+    "day": 2,
+    "seq": 9,
     "word": "listen",
     "pos": "v.",
     "meaning": "듣다",
@@ -650,6 +731,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "talk",
+    "grade": 1,
+    "day": 2,
+    "seq": 10,
     "word": "talk",
     "pos": "v.",
     "meaning": "말하다, 이야기하다",
@@ -673,6 +757,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hide",
+    "grade": 1,
+    "day": 2,
+    "seq": 11,
     "word": "hide",
     "pos": "v.",
     "meaning": "감추다, 숨다",
@@ -698,6 +785,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "run",
+    "grade": 1,
+    "day": 2,
+    "seq": 13,
     "word": "run",
     "pos": "v.",
     "meaning": "달리다",
@@ -721,6 +811,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "live",
+    "grade": 1,
+    "day": 2,
+    "seq": 14,
     "word": "live",
     "pos": "v.",
     "meaning": "살다",
@@ -744,6 +837,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "thank",
+    "grade": 1,
+    "day": 2,
+    "seq": 15,
     "word": "thank",
     "pos": "v.",
     "meaning": "고마워하다, 감사하다",
@@ -772,6 +868,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "ride",
+    "grade": 1,
+    "day": 2,
+    "seq": 16,
     "word": "ride",
     "pos": "v.",
     "meaning": "~을 타다",
@@ -797,6 +896,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "let",
+    "grade": 1,
+    "day": 2,
+    "seq": 18,
     "word": "let",
     "pos": "v.",
     "meaning": "허락하다, 놓아두다",
@@ -823,6 +925,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "need",
+    "grade": 1,
+    "day": 2,
+    "seq": 19,
     "word": "need",
     "pos": "v.",
     "meaning": "필요하다",
@@ -845,6 +950,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sell",
+    "grade": 1,
+    "day": 2,
+    "seq": 20,
     "word": "sell",
     "pos": "v.",
     "meaning": "팔다",
@@ -867,6 +975,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "help",
+    "grade": 1,
+    "day": 3,
+    "seq": 1,
     "word": "help",
     "pos": "v.",
     "meaning": "도와주다, 돕다",
@@ -890,6 +1001,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "eat",
+    "grade": 1,
+    "day": 3,
+    "seq": 2,
     "word": "eat",
     "pos": "v.",
     "meaning": "먹다",
@@ -914,6 +1028,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "clean",
+    "grade": 1,
+    "day": 3,
+    "seq": 3,
     "word": "clean",
     "pos": "v.",
     "meaning": "청소하다",
@@ -937,6 +1054,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "dry",
+    "grade": 1,
+    "day": 3,
+    "seq": 4,
     "word": "dry",
     "pos": "v.",
     "meaning": "말리다",
@@ -960,6 +1080,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "smile",
+    "grade": 1,
+    "day": 3,
+    "seq": 5,
     "word": "smile",
     "pos": "v.",
     "meaning": "웃다",
@@ -984,6 +1107,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "get",
+    "grade": 1,
+    "day": 3,
+    "seq": 6,
     "word": "get",
     "pos": "v.",
     "meaning": "받다, 얻다",
@@ -1010,6 +1136,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "take",
+    "grade": 1,
+    "day": 3,
+    "seq": 7,
     "word": "take",
     "pos": "v.",
     "meaning": "가지고 가다, 데리고 가다",
@@ -1036,6 +1165,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "click",
+    "grade": 1,
+    "day": 3,
+    "seq": 8,
     "word": "click",
     "pos": "v.",
     "meaning": "버튼을 누르다, 찰칵 소리가 나다",
@@ -1059,6 +1191,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "come",
+    "grade": 1,
+    "day": 3,
+    "seq": 9,
     "word": "come",
     "pos": "v.",
     "meaning": "오다",
@@ -1086,6 +1221,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "love",
+    "grade": 1,
+    "day": 3,
+    "seq": 10,
     "word": "love",
     "pos": "v.",
     "meaning": "사랑하다",
@@ -1111,6 +1249,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hold",
+    "grade": 1,
+    "day": 3,
+    "seq": 11,
     "word": "hold",
     "pos": "v.",
     "meaning": "듣다, 잡다",
@@ -1137,6 +1278,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fight",
+    "grade": 1,
+    "day": 3,
+    "seq": 12,
     "word": "fight",
     "pos": "v.",
     "meaning": "싸우다, 다투다",
@@ -1162,6 +1306,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "like",
+    "grade": 1,
+    "day": 3,
+    "seq": 13,
     "word": "like",
     "pos": "v.",
     "meaning": "좋아하다",
@@ -1185,6 +1332,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "enjoy",
+    "grade": 1,
+    "day": 3,
+    "seq": 14,
     "word": "enjoy",
     "pos": "v.",
     "meaning": "즐기다",
@@ -1208,6 +1358,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "follow",
+    "grade": 1,
+    "day": 3,
+    "seq": 15,
     "word": "follow",
     "pos": "v.",
     "meaning": "따라가다, 따라오다",
@@ -1231,6 +1384,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "look_out",
+    "grade": 1,
+    "day": 3,
+    "seq": 16,
     "word": "look out",
     "pos": "v.",
     "meaning": "주의하세요, 조심하세요",
@@ -1259,6 +1415,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "put",
+    "grade": 1,
+    "day": 3,
+    "seq": 17,
     "word": "put",
     "pos": "v.",
     "meaning": "두다, 놓다",
@@ -1285,6 +1444,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "turn_on",
+    "grade": 1,
+    "day": 3,
+    "seq": 19,
     "word": "turn on",
     "pos": "v.",
     "meaning": "켜다, ~에 달려 있다",
@@ -1309,6 +1471,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "color",
+    "grade": 1,
+    "day": 3,
+    "seq": 20,
     "word": "color",
     "pos": "v.",
     "meaning": "~에 색칠하다, 붉어지다",
@@ -1333,6 +1498,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "jump",
+    "grade": 1,
+    "day": 4,
+    "seq": 2,
     "word": "jump",
     "pos": "v.",
     "meaning": "뛰다",
@@ -1357,6 +1525,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "share",
+    "grade": 1,
+    "day": 4,
+    "seq": 3,
     "word": "share",
     "pos": "v.",
     "meaning": "나누다, 공유하다",
@@ -1382,6 +1553,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "show",
+    "grade": 1,
+    "day": 4,
+    "seq": 4,
     "word": "show",
     "pos": "v.",
     "meaning": "보여주다",
@@ -1406,6 +1580,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stand",
+    "grade": 1,
+    "day": 4,
+    "seq": 5,
     "word": "stand",
     "pos": "v.",
     "meaning": "서다",
@@ -1430,6 +1607,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "put_on",
+    "grade": 1,
+    "day": 4,
+    "seq": 6,
     "word": "put on",
     "pos": "v.",
     "meaning": "~을 입다, ~을 바르다",
@@ -1454,6 +1634,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "swim",
+    "grade": 1,
+    "day": 4,
+    "seq": 7,
     "word": "swim",
     "pos": "v.",
     "meaning": "수영하다",
@@ -1478,6 +1661,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "plant",
+    "grade": 1,
+    "day": 4,
+    "seq": 8,
     "word": "plant",
     "pos": "v.",
     "meaning": "(씨앗 등을) 심다",
@@ -1503,6 +1689,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "grow",
+    "grade": 1,
+    "day": 4,
+    "seq": 9,
     "word": "grow",
     "pos": "v.",
     "meaning": "자라다, 기르다",
@@ -1527,6 +1716,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "bounce",
+    "grade": 1,
+    "day": 4,
+    "seq": 10,
     "word": "bounce",
     "pos": "v.",
     "meaning": "튀다, 튀기다",
@@ -1550,6 +1742,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "kick",
+    "grade": 1,
+    "day": 4,
+    "seq": 11,
     "word": "kick",
     "pos": "v.",
     "meaning": "차다",
@@ -1575,6 +1770,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "feed",
+    "grade": 1,
+    "day": 4,
+    "seq": 12,
     "word": "feed",
     "pos": "v.",
     "meaning": "먹이를 주다, 먹이다",
@@ -1598,6 +1796,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "use",
+    "grade": 1,
+    "day": 4,
+    "seq": 13,
     "word": "use",
     "pos": "v.",
     "meaning": "사용하다",
@@ -1624,6 +1825,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "paint",
+    "grade": 1,
+    "day": 4,
+    "seq": 15,
     "word": "paint",
     "pos": "v.",
     "meaning": "(그림 물감으로)\n그리다",
@@ -1648,6 +1852,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "turn",
+    "grade": 1,
+    "day": 4,
+    "seq": 16,
     "word": "turn",
     "pos": "v.",
     "meaning": "돌다, 돌리다",
@@ -1670,6 +1877,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "mix",
+    "grade": 1,
+    "day": 4,
+    "seq": 17,
     "word": "mix",
     "pos": "v.",
     "meaning": "섞다, 섞이다",
@@ -1695,6 +1905,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "throw",
+    "grade": 1,
+    "day": 4,
+    "seq": 18,
     "word": "throw",
     "pos": "v.",
     "meaning": "던지다",
@@ -1718,6 +1931,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "walk",
+    "grade": 1,
+    "day": 4,
+    "seq": 19,
     "word": "walk",
     "pos": "v.",
     "meaning": "걷다",
@@ -1742,6 +1958,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "taste",
+    "grade": 1,
+    "day": 4,
+    "seq": 20,
     "word": "taste",
     "pos": "v.",
     "meaning": "맛이 나다",
@@ -1765,6 +1984,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sit",
+    "grade": 1,
+    "day": 5,
+    "seq": 1,
     "word": "sit",
     "pos": "v.",
     "meaning": "앉다",
@@ -1790,6 +2012,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "call",
+    "grade": 1,
+    "day": 5,
+    "seq": 2,
     "word": "call",
     "pos": "v.",
     "meaning": "외치다[부르다], 전화하다",
@@ -1813,6 +2038,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "snow",
+    "grade": 1,
+    "day": 5,
+    "seq": 3,
     "word": "snow",
     "pos": "v.",
     "meaning": "눈이 내리다",
@@ -1839,6 +2067,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "curl",
+    "grade": 1,
+    "day": 5,
+    "seq": 4,
     "word": "curl",
     "pos": "v.",
     "meaning": "곱슬곱슬하게하다",
@@ -1866,6 +2097,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sound",
+    "grade": 1,
+    "day": 5,
+    "seq": 5,
     "word": "sound",
     "pos": "v.",
     "meaning": "~처럼 들리다",
@@ -1888,6 +2122,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "shop",
+    "grade": 1,
+    "day": 5,
+    "seq": 6,
     "word": "shop",
     "pos": "v.",
     "meaning": "물건을 사다",
@@ -1912,6 +2149,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fall",
+    "grade": 1,
+    "day": 5,
+    "seq": 7,
     "word": "fall",
     "pos": "v.",
     "meaning": "떨어지다, 내리다",
@@ -1936,6 +2176,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stop",
+    "grade": 1,
+    "day": 5,
+    "seq": 8,
     "word": "stop",
     "pos": "v.",
     "meaning": "멈추다, 막다",
@@ -1959,6 +2202,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "drink",
+    "grade": 1,
+    "day": 5,
+    "seq": 9,
     "word": "drink",
     "pos": "v.",
     "meaning": "마시다",
@@ -1981,6 +2227,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "think",
+    "grade": 1,
+    "day": 5,
+    "seq": 10,
     "word": "think",
     "pos": "v.",
     "meaning": "생각하다, 상상하다",
@@ -2006,6 +2255,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "speak",
+    "grade": 1,
+    "day": 5,
+    "seq": 12,
     "word": "speak",
     "pos": "v.",
     "meaning": "말하다, 이야기하다",
@@ -2029,6 +2281,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stay",
+    "grade": 1,
+    "day": 5,
+    "seq": 13,
     "word": "stay",
     "pos": "v.",
     "meaning": "머물다, 지내다",
@@ -2053,6 +2308,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "touch",
+    "grade": 1,
+    "day": 5,
+    "seq": 14,
     "word": "touch",
     "pos": "v.",
     "meaning": "만지다",
@@ -2076,6 +2334,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "try",
+    "grade": 1,
+    "day": 5,
+    "seq": 15,
     "word": "try",
     "pos": "v.",
     "meaning": "노력하다, 시도하다",
@@ -2103,6 +2364,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "miss",
+    "grade": 1,
+    "day": 5,
+    "seq": 16,
     "word": "miss",
     "pos": "v.",
     "meaning": "놓치다, 그리워하다",
@@ -2127,6 +2391,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "visit",
+    "grade": 1,
+    "day": 5,
+    "seq": 17,
     "word": "visit",
     "pos": "v.",
     "meaning": "방문하다",
@@ -2153,6 +2420,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "join",
+    "grade": 1,
+    "day": 5,
+    "seq": 18,
     "word": "join",
     "pos": "v.",
     "meaning": "참여하다, 가입하다",
@@ -2176,6 +2446,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "keep",
+    "grade": 1,
+    "day": 5,
+    "seq": 19,
     "word": "keep",
     "pos": "v.",
     "meaning": "지키다, 유지하다",
@@ -2202,6 +2475,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "laugh",
+    "grade": 1,
+    "day": 5,
+    "seq": 20,
     "word": "laugh",
     "pos": "v.",
     "meaning": "웃다",
@@ -2224,6 +2500,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "learn",
+    "grade": 1,
+    "day": 6,
+    "seq": 1,
     "word": "learn",
     "pos": "v.",
     "meaning": "배우다",
@@ -2248,6 +2527,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "leave",
+    "grade": 1,
+    "day": 6,
+    "seq": 2,
     "word": "leave",
     "pos": "v.",
     "meaning": "떠나다",
@@ -2271,6 +2553,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "travel",
+    "grade": 1,
+    "day": 6,
+    "seq": 3,
     "word": "travel",
     "pos": "v.",
     "meaning": "여행하다",
@@ -2297,6 +2582,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "feel",
+    "grade": 1,
+    "day": 6,
+    "seq": 4,
     "word": "feel",
     "pos": "v.",
     "meaning": "느끼다",
@@ -2319,6 +2607,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "teach",
+    "grade": 1,
+    "day": 6,
+    "seq": 5,
     "word": "teach",
     "pos": "v.",
     "meaning": "가르치다",
@@ -2343,6 +2634,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "annoy",
+    "grade": 1,
+    "day": 6,
+    "seq": 6,
     "word": "annoy",
     "pos": "v.",
     "meaning": "짜증나게 하다",
@@ -2367,6 +2661,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "pay_attention",
+    "grade": 1,
+    "day": 6,
+    "seq": 7,
     "word": "pay attention",
     "pos": "v.",
     "meaning": "주의하다, 주목하다",
@@ -2392,6 +2689,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "comfort",
+    "grade": 1,
+    "day": 6,
+    "seq": 9,
     "word": "comfort",
     "pos": "v.",
     "meaning": "편안하게 하다",
@@ -2417,6 +2717,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wonder",
+    "grade": 1,
+    "day": 6,
+    "seq": 11,
     "word": "wonder",
     "pos": "v.",
     "meaning": "궁금해 하다",
@@ -2442,6 +2745,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "curve",
+    "grade": 1,
+    "day": 6,
+    "seq": 12,
     "word": "curve",
     "pos": "v.",
     "meaning": "구부리다",
@@ -2468,6 +2774,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "decide",
+    "grade": 1,
+    "day": 6,
+    "seq": 13,
     "word": "decide",
     "pos": "v.",
     "meaning": "결정하다",
@@ -2492,6 +2801,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "drop",
+    "grade": 1,
+    "day": 6,
+    "seq": 14,
     "word": "drop",
     "pos": "v.",
     "meaning": "떨어지다",
@@ -2517,6 +2829,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "discover",
+    "grade": 1,
+    "day": 6,
+    "seq": 15,
     "word": "discover",
     "pos": "v.",
     "meaning": "발견하다, 알아차리다",
@@ -2541,6 +2856,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "disappoint",
+    "grade": 1,
+    "day": 6,
+    "seq": 16,
     "word": "disappoint",
     "pos": "v.",
     "meaning": "실망시키다, 실망을 안겨 주다",
@@ -2565,6 +2883,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "pat",
+    "grade": 1,
+    "day": 6,
+    "seq": 18,
     "word": "pat",
     "pos": "v.",
     "meaning": "두드리다",
@@ -2588,6 +2909,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "equal",
+    "grade": 1,
+    "day": 7,
+    "seq": 1,
     "word": "equal",
     "pos": "v.",
     "meaning": "같다",
@@ -2612,6 +2936,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fascinate",
+    "grade": 1,
+    "day": 7,
+    "seq": 2,
     "word": "fascinate",
     "pos": "v.",
     "meaning": "마음을 사로잡다, 매혹하다",
@@ -2637,6 +2964,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "feast",
+    "grade": 1,
+    "day": 7,
+    "seq": 3,
     "word": "feast",
     "pos": "v.",
     "meaning": "풍성한 식사를 하다",
@@ -2662,6 +2992,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "focus",
+    "grade": 1,
+    "day": 7,
+    "seq": 4,
     "word": "focus",
     "pos": "v.",
     "meaning": "집중하다",
@@ -2686,6 +3019,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "frustrate",
+    "grade": 1,
+    "day": 7,
+    "seq": 5,
     "word": "frustrate",
     "pos": "v.",
     "meaning": "좌절하다, 낙담하다",
@@ -2710,6 +3046,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "punish",
+    "grade": 1,
+    "day": 7,
+    "seq": 6,
     "word": "punish",
     "pos": "v.",
     "meaning": "처벌하다, 벌을 주다",
@@ -2734,6 +3073,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "ignore",
+    "grade": 1,
+    "day": 7,
+    "seq": 9,
     "word": "ignore",
     "pos": "v.",
     "meaning": "무시하다",
@@ -2759,6 +3101,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "spell",
+    "grade": 1,
+    "day": 7,
+    "seq": 10,
     "word": "spell",
     "pos": "v.",
     "meaning": "철자를 말하다",
@@ -2783,6 +3128,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "investigate",
+    "grade": 1,
+    "day": 7,
+    "seq": 11,
     "word": "investigate",
     "pos": "v.",
     "meaning": "조사하다, 수사하다",
@@ -2808,6 +3156,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "invite",
+    "grade": 1,
+    "day": 7,
+    "seq": 12,
     "word": "invite",
     "pos": "v.",
     "meaning": "초대하다",
@@ -2834,6 +3185,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "matter",
+    "grade": 1,
+    "day": 7,
+    "seq": 13,
     "word": "matter",
     "pos": "v.",
     "meaning": "중요하다",
@@ -2858,6 +3212,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "envy",
+    "grade": 1,
+    "day": 7,
+    "seq": 14,
     "word": "envy",
     "pos": "v.",
     "meaning": "질투하다",
@@ -2882,6 +3239,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "swing",
+    "grade": 1,
+    "day": 7,
+    "seq": 15,
     "word": "swing",
     "pos": "v.",
     "meaning": "흔들리다",
@@ -2905,6 +3265,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "list",
+    "grade": 1,
+    "day": 7,
+    "seq": 16,
     "word": "list",
     "pos": "v.",
     "meaning": "목록에 포함시키다, 나열하다",
@@ -2932,6 +3295,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "measure",
+    "grade": 1,
+    "day": 7,
+    "seq": 19,
     "word": "measure",
     "pos": "v.",
     "meaning": "측정하다, 정량하다",
@@ -2958,6 +3324,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "grieve",
+    "grade": 1,
+    "day": 7,
+    "seq": 20,
     "word": "grieve",
     "pos": "v.",
     "meaning": "슬픔에 잠기다, 비통하다",
@@ -2984,6 +3353,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "tap",
+    "grade": 1,
+    "day": 8,
+    "seq": 2,
     "word": "tap",
     "pos": "v.",
     "meaning": "톡톡 두드리다",
@@ -3009,6 +3381,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stress_out",
+    "grade": 1,
+    "day": 8,
+    "seq": 3,
     "word": "stress out",
     "pos": "v.",
     "meaning": "긴장하다",
@@ -3035,6 +3410,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "nibble",
+    "grade": 1,
+    "day": 8,
+    "seq": 4,
     "word": "nibble",
     "pos": "v.",
     "meaning": "조금씩 먹다, 조금씩 물어먹다",
@@ -3060,6 +3438,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "note",
+    "grade": 1,
+    "day": 8,
+    "seq": 5,
     "word": "note",
     "pos": "v.",
     "meaning": "기록하다, 주목하다",
@@ -3087,6 +3468,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "notice",
+    "grade": 1,
+    "day": 8,
+    "seq": 6,
     "word": "notice",
     "pos": "v.",
     "meaning": "주목하다, 알아차리다",
@@ -3113,6 +3497,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "observe",
+    "grade": 1,
+    "day": 8,
+    "seq": 7,
     "word": "observe",
     "pos": "v.",
     "meaning": "~을 보다, 관찰하다",
@@ -3140,6 +3527,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stuff",
+    "grade": 1,
+    "day": 8,
+    "seq": 8,
     "word": "stuff",
     "pos": "v.",
     "meaning": "채워 넣다",
@@ -3165,6 +3555,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hop",
+    "grade": 1,
+    "day": 8,
+    "seq": 10,
     "word": "hop",
     "pos": "v.",
     "meaning": "한발로 깡충깡충 뛰다",
@@ -3190,6 +3583,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "prefer",
+    "grade": 1,
+    "day": 8,
+    "seq": 11,
     "word": "prefer",
     "pos": "v.",
     "meaning": "선택하다, 선호하다",
@@ -3214,6 +3610,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "break",
+    "grade": 1,
+    "day": 8,
+    "seq": 12,
     "word": "break",
     "pos": "v.",
     "meaning": "깨어지다, 부서지다",
@@ -3238,6 +3637,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "protect",
+    "grade": 1,
+    "day": 8,
+    "seq": 13,
     "word": "protect",
     "pos": "v.",
     "meaning": "지키다, 보호하다",
@@ -3265,6 +3667,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "take_pride_in",
+    "grade": 1,
+    "day": 8,
+    "seq": 14,
     "word": "take pride in",
     "pos": "v.",
     "meaning": "자랑스럽게 여기다",
@@ -3290,6 +3695,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "question",
+    "grade": 1,
+    "day": 8,
+    "seq": 15,
     "word": "question",
     "pos": "v.",
     "meaning": "의문을 제기하다, 질문하다",
@@ -3317,6 +3725,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "reminds",
+    "grade": 1,
+    "day": 8,
+    "seq": 16,
     "word": "reminds",
     "pos": "v.",
     "meaning": "기억하다, 상기시키다",
@@ -3343,6 +3754,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "repeat",
+    "grade": 1,
+    "day": 8,
+    "seq": 17,
     "word": "repeat",
     "pos": "v.",
     "meaning": "되풀이하다, 반복하다",
@@ -3369,6 +3783,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "borrow",
+    "grade": 1,
+    "day": 8,
+    "seq": 19,
     "word": "borrow",
     "pos": "v.",
     "meaning": "빌리다",
@@ -3395,6 +3812,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "respect",
+    "grade": 1,
+    "day": 8,
+    "seq": 20,
     "word": "respect",
     "pos": "v.",
     "meaning": "존중하다",
@@ -3422,6 +3842,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "search_for",
+    "grade": 1,
+    "day": 9,
+    "seq": 1,
     "word": "search for",
     "pos": "v.",
     "meaning": "조사하다, 찾는다",
@@ -3446,6 +3869,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "check",
+    "grade": 1,
+    "day": 9,
+    "seq": 2,
     "word": "check",
     "pos": "v.",
     "meaning": "살피다",
@@ -3470,6 +3896,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "boost",
+    "grade": 1,
+    "day": 9,
+    "seq": 3,
     "word": "boost",
     "pos": "v.",
     "meaning": "신장시키다",
@@ -3494,6 +3923,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "squirm",
+    "grade": 1,
+    "day": 9,
+    "seq": 4,
     "word": "squirm",
     "pos": "v.",
     "meaning": "꿈틀 대다",
@@ -3521,6 +3953,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stomp",
+    "grade": 1,
+    "day": 9,
+    "seq": 5,
     "word": "stomp",
     "pos": "v.",
     "meaning": "쿵쿵 거리며 걷다, 발을 구르며 춤추다",
@@ -3547,6 +3982,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fear",
+    "grade": 1,
+    "day": 9,
+    "seq": 6,
     "word": "fear",
     "pos": "v.",
     "meaning": "두려워하다, 무서워하다",
@@ -3573,6 +4011,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "suggest",
+    "grade": 1,
+    "day": 9,
+    "seq": 7,
     "word": "suggest",
     "pos": "v.",
     "meaning": "제안하다, 추천하다",
@@ -3599,6 +4040,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "surprise",
+    "grade": 1,
+    "day": 9,
+    "seq": 8,
     "word": "surprise",
     "pos": "v.",
     "meaning": "놀라게 하다, 기습하다",
@@ -3625,6 +4069,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "reach",
+    "grade": 1,
+    "day": 9,
+    "seq": 9,
     "word": "reach",
     "pos": "v.",
     "meaning": "~에 이르다",
@@ -3649,6 +4096,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "worry",
+    "grade": 1,
+    "day": 9,
+    "seq": 11,
     "word": "worry",
     "pos": "v.",
     "meaning": "걱정하다",
@@ -3674,6 +4124,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "act",
+    "grade": 1,
+    "day": 9,
+    "seq": 14,
     "word": "act",
     "pos": "v.",
     "meaning": "행동하다",
@@ -3697,6 +4150,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "add",
+    "grade": 1,
+    "day": 9,
+    "seq": 15,
     "word": "add",
     "pos": "v.",
     "meaning": "첨가하다, 덧붙이다",
@@ -3723,6 +4179,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "float",
+    "grade": 1,
+    "day": 9,
+    "seq": 16,
     "word": "float",
     "pos": "v.",
     "meaning": "떠가다",
@@ -3748,6 +4207,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "should",
+    "grade": 1,
+    "day": 9,
+    "seq": 17,
     "word": "should",
     "pos": "v.",
     "meaning": "~해야 한다",
@@ -3773,6 +4235,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "is_called",
+    "grade": 1,
+    "day": 9,
+    "seq": 18,
     "word": "is called",
     "pos": "v.",
     "meaning": "~라는 이름으로 \n불리다",
@@ -3799,6 +4264,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "catch",
+    "grade": 1,
+    "day": 9,
+    "seq": 19,
     "word": "catch",
     "pos": "v.",
     "meaning": "잡다",
@@ -3826,6 +4294,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "celebrate",
+    "grade": 1,
+    "day": 9,
+    "seq": 20,
     "word": "celebrate",
     "pos": "v.",
     "meaning": "기념하다, 축하하다",
@@ -3850,6 +4321,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "close",
+    "grade": 1,
+    "day": 10,
+    "seq": 1,
     "word": "close",
     "pos": "v.",
     "meaning": "닫다",
@@ -3875,6 +4349,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cry",
+    "grade": 1,
+    "day": 10,
+    "seq": 2,
     "word": "cry",
     "pos": "v.",
     "meaning": "울다",
@@ -3900,6 +4377,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "push",
+    "grade": 1,
+    "day": 10,
+    "seq": 10,
     "word": "push",
     "pos": "v.",
     "meaning": "밀다",
@@ -3927,6 +4407,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "rip",
+    "grade": 1,
+    "day": 10,
+    "seq": 11,
     "word": "rip",
     "pos": "v.",
     "meaning": "찢다",
@@ -3952,6 +4435,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stare",
+    "grade": 1,
+    "day": 10,
+    "seq": 16,
     "word": "stare",
     "pos": "v.",
     "meaning": "응시하다, 빤히 쳐다보다",
@@ -3979,6 +4465,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "gasp",
+    "grade": 1,
+    "day": 10,
+    "seq": 19,
     "word": "gasp",
     "pos": "v.",
     "meaning": "숨이 턱 막히다, 숨을 제대로 못 쉬다",
@@ -4002,6 +4491,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "bark",
+    "grade": 2,
+    "day": 1,
+    "seq": 1,
     "word": "bark",
     "pos": "v.",
     "meaning": "짖는다",
@@ -4027,6 +4519,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wipe",
+    "grade": 2,
+    "day": 1,
+    "seq": 3,
     "word": "wipe",
     "pos": "v.",
     "meaning": "(곤, 헝겊으로) 닦다",
@@ -4050,6 +4545,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "spill",
+    "grade": 2,
+    "day": 1,
+    "seq": 4,
     "word": "spill",
     "pos": "v.",
     "meaning": "흘리다, 쏟다",
@@ -4077,6 +4575,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "bring",
+    "grade": 2,
+    "day": 1,
+    "seq": 5,
     "word": "bring",
     "pos": "v.",
     "meaning": "가져오다",
@@ -4102,6 +4603,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "scream",
+    "grade": 2,
+    "day": 1,
+    "seq": 6,
     "word": "scream",
     "pos": "v.",
     "meaning": "비명을 지르다",
@@ -4127,6 +4631,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "burp",
+    "grade": 2,
+    "day": 1,
+    "seq": 7,
     "word": "burp",
     "pos": "v.",
     "meaning": "트림하다",
@@ -4152,6 +4659,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fart",
+    "grade": 2,
+    "day": 1,
+    "seq": 8,
     "word": "fart",
     "pos": "v.",
     "meaning": "방귀를 뀌다",
@@ -4177,6 +4687,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "yawn",
+    "grade": 2,
+    "day": 1,
+    "seq": 9,
     "word": "yawn",
     "pos": "v.",
     "meaning": "하품하다",
@@ -4201,6 +4714,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "crawl",
+    "grade": 2,
+    "day": 1,
+    "seq": 10,
     "word": "crawl",
     "pos": "v.",
     "meaning": "(엎드려)기다, 기어가다",
@@ -4226,6 +4742,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "tickle",
+    "grade": 2,
+    "day": 1,
+    "seq": 12,
     "word": "tickle",
     "pos": "v.",
     "meaning": "간지럽히다",
@@ -4249,6 +4768,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "poke",
+    "grade": 2,
+    "day": 1,
+    "seq": 13,
     "word": "poke",
     "pos": "v.",
     "meaning": "찌르다",
@@ -4272,6 +4794,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "train",
+    "grade": 2,
+    "day": 1,
+    "seq": 15,
     "word": "train",
     "pos": "v.",
     "meaning": "훈련[교육]받다, 훈련[교육]시키다",
@@ -4295,6 +4820,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "brush",
+    "grade": 2,
+    "day": 1,
+    "seq": 17,
     "word": "brush",
     "pos": "v.",
     "meaning": "이를 닦다, 닦다",
@@ -4318,6 +4846,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "chase",
+    "grade": 2,
+    "day": 1,
+    "seq": 18,
     "word": "chase",
     "pos": "v.",
     "meaning": "쫓다",
@@ -4342,6 +4873,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hit",
+    "grade": 2,
+    "day": 1,
+    "seq": 20,
     "word": "hit",
     "pos": "v.",
     "meaning": "때리다, 치다",
@@ -4365,6 +4899,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "grab",
+    "grade": 2,
+    "day": 2,
+    "seq": 1,
     "word": "grab",
     "pos": "v.",
     "meaning": "꽉 잡다, 움켜쥐다",
@@ -4388,6 +4925,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "win",
+    "grade": 2,
+    "day": 2,
+    "seq": 2,
     "word": "win",
     "pos": "v.",
     "meaning": "이기다, 우승하다",
@@ -4413,6 +4953,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sketch",
+    "grade": 2,
+    "day": 2,
+    "seq": 3,
     "word": "sketch",
     "pos": "v.",
     "meaning": "스케치하다",
@@ -4439,6 +4982,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "lick",
+    "grade": 2,
+    "day": 2,
+    "seq": 4,
     "word": "lick",
     "pos": "v.",
     "meaning": "햝다",
@@ -4463,6 +5009,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "bite",
+    "grade": 2,
+    "day": 2,
+    "seq": 6,
     "word": "bite",
     "pos": "v.",
     "meaning": "(이로)물다, 물어뜯다",
@@ -4487,6 +5036,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "pick_up",
+    "grade": 2,
+    "day": 2,
+    "seq": 8,
     "word": "pick up",
     "pos": "v.",
     "meaning": "찾아오다, 태우러 가다",
@@ -4513,6 +5065,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "knock",
+    "grade": 2,
+    "day": 2,
+    "seq": 9,
     "word": "knock",
     "pos": "v.",
     "meaning": "두드리다, 노크하다",
@@ -4536,6 +5091,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "give",
+    "grade": 2,
+    "day": 2,
+    "seq": 10,
     "word": "give",
     "pos": "v.",
     "meaning": "주다",
@@ -4560,6 +5118,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "shoot",
+    "grade": 2,
+    "day": 2,
+    "seq": 11,
     "word": "shoot",
     "pos": "v.",
     "meaning": "(총 등을)쏘다",
@@ -4586,6 +5147,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "spray",
+    "grade": 2,
+    "day": 2,
+    "seq": 12,
     "word": "spray",
     "pos": "v.",
     "meaning": "뿌리다",
@@ -4612,6 +5176,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "splash",
+    "grade": 2,
+    "day": 2,
+    "seq": 13,
     "word": "splash",
     "pos": "v.",
     "meaning": "(물 등을)\n튀기다",
@@ -4636,6 +5203,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "shine",
+    "grade": 2,
+    "day": 2,
+    "seq": 17,
     "word": "shine",
     "pos": "v.",
     "meaning": "빛나다",
@@ -4659,6 +5229,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "take_out",
+    "grade": 2,
+    "day": 2,
+    "seq": 18,
     "word": "take out",
     "pos": "v.",
     "meaning": "가지고 나가다, 꺼내다",
@@ -4683,6 +5256,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "start",
+    "grade": 2,
+    "day": 2,
+    "seq": 19,
     "word": "start",
     "pos": "v.",
     "meaning": "시작하다",
@@ -4707,6 +5283,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "shake",
+    "grade": 2,
+    "day": 2,
+    "seq": 20,
     "word": "shake",
     "pos": "v.",
     "meaning": "흔들(리)다",
@@ -4730,6 +5309,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "bake",
+    "grade": 2,
+    "day": 3,
+    "seq": 2,
     "word": "bake",
     "pos": "v.",
     "meaning": "굽다",
@@ -4754,6 +5336,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stir",
+    "grade": 2,
+    "day": 3,
+    "seq": 3,
     "word": "stir",
     "pos": "v.",
     "meaning": "젓다, (저어가며) 섞다",
@@ -4777,6 +5362,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cool",
+    "grade": 2,
+    "day": 3,
+    "seq": 4,
     "word": "cool",
     "pos": "v.",
     "meaning": "식히다",
@@ -4800,6 +5388,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "finish",
+    "grade": 2,
+    "day": 3,
+    "seq": 5,
     "word": "finish",
     "pos": "v.",
     "meaning": "끝나다, 마치다",
@@ -4824,6 +5415,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hug",
+    "grade": 2,
+    "day": 3,
+    "seq": 6,
     "word": "hug",
     "pos": "v.",
     "meaning": "껴안다",
@@ -4848,6 +5442,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "step",
+    "grade": 2,
+    "day": 3,
+    "seq": 7,
     "word": "step",
     "pos": "v.",
     "meaning": "움직이다, 서다[디디다]",
@@ -4872,6 +5469,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fly",
+    "grade": 2,
+    "day": 3,
+    "seq": 8,
     "word": "fly",
     "pos": "v.",
     "meaning": "날다",
@@ -4897,6 +5497,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "water",
+    "grade": 2,
+    "day": 3,
+    "seq": 9,
     "word": "water",
     "pos": "v.",
     "meaning": "물을 주다",
@@ -4923,6 +5526,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "growl",
+    "grade": 2,
+    "day": 3,
+    "seq": 11,
     "word": "growl",
     "pos": "v.",
     "meaning": "으르릉거리다",
@@ -4946,6 +5552,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "blink",
+    "grade": 2,
+    "day": 3,
+    "seq": 12,
     "word": "blink",
     "pos": "v.",
     "meaning": "눈을 깜빡이다",
@@ -4970,6 +5579,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "boil",
+    "grade": 2,
+    "day": 3,
+    "seq": 13,
     "word": "boil",
     "pos": "v.",
     "meaning": "끓다, 끓이다",
@@ -4993,6 +5605,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "kill",
+    "grade": 2,
+    "day": 3,
+    "seq": 14,
     "word": "kill",
     "pos": "v.",
     "meaning": "죽이다",
@@ -5017,6 +5632,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "choose",
+    "grade": 2,
+    "day": 3,
+    "seq": 17,
     "word": "choose",
     "pos": "v.",
     "meaning": "고르다, 선택하다",
@@ -5043,6 +5661,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "keep_away",
+    "grade": 2,
+    "day": 3,
+    "seq": 18,
     "word": "keep away",
     "pos": "v.",
     "meaning": "가까이 가지 않는다, 멀리하다",
@@ -5067,6 +5688,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "dream",
+    "grade": 2,
+    "day": 4,
+    "seq": 1,
     "word": "dream",
     "pos": "v.",
     "meaning": "꿈꾸다",
@@ -5093,6 +5717,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "giggle",
+    "grade": 2,
+    "day": 4,
+    "seq": 2,
     "word": "giggle",
     "pos": "v.",
     "meaning": "피식 웃다, 킥킥거리다",
@@ -5118,6 +5745,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "order",
+    "grade": 2,
+    "day": 4,
+    "seq": 3,
     "word": "order",
     "pos": "v.",
     "meaning": "주문하다",
@@ -5144,6 +5774,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cover",
+    "grade": 2,
+    "day": 4,
+    "seq": 4,
     "word": "cover",
     "pos": "v.",
     "meaning": "덮다, 다루다",
@@ -5169,6 +5802,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "ring",
+    "grade": 2,
+    "day": 4,
+    "seq": 6,
     "word": "ring",
     "pos": "v.",
     "meaning": "(소리가)울리다",
@@ -5193,6 +5829,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "crash",
+    "grade": 2,
+    "day": 4,
+    "seq": 7,
     "word": "crash",
     "pos": "v.",
     "meaning": "충돌하다, 추락하다",
@@ -5218,6 +5857,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wake_up",
+    "grade": 2,
+    "day": 4,
+    "seq": 9,
     "word": "wake up",
     "pos": "v.",
     "meaning": "정신차리다, 일어나다",
@@ -5244,6 +5886,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "smell",
+    "grade": 2,
+    "day": 4,
+    "seq": 10,
     "word": "smell",
     "pos": "v.",
     "meaning": "냄새(나다)",
@@ -5267,6 +5912,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sweat",
+    "grade": 2,
+    "day": 4,
+    "seq": 11,
     "word": "sweat",
     "pos": "v.",
     "meaning": "땀을 흘리다",
@@ -5292,6 +5940,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "beat",
+    "grade": 2,
+    "day": 4,
+    "seq": 12,
     "word": "beat",
     "pos": "v.",
     "meaning": "치다, 두드리다",
@@ -5316,6 +5967,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "pick",
+    "grade": 2,
+    "day": 4,
+    "seq": 13,
     "word": "pick",
     "pos": "v.",
     "meaning": "고르다, 선택하다",
@@ -5342,6 +5996,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "plan",
+    "grade": 2,
+    "day": 4,
+    "seq": 14,
     "word": "plan",
     "pos": "v.",
     "meaning": "계획(하다)",
@@ -5368,6 +6025,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "build",
+    "grade": 2,
+    "day": 4,
+    "seq": 15,
     "word": "build",
     "pos": "v.",
     "meaning": "건축(하다)",
@@ -5392,6 +6052,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "analyze",
+    "grade": 2,
+    "day": 4,
+    "seq": 17,
     "word": "analyze",
     "pos": "v.",
     "meaning": "분석하다",
@@ -5416,6 +6079,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "arrange",
+    "grade": 2,
+    "day": 4,
+    "seq": 18,
     "word": "arrange",
     "pos": "v.",
     "meaning": "마련하다, 정리하다",
@@ -5442,6 +6108,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "avoid",
+    "grade": 2,
+    "day": 4,
+    "seq": 19,
     "word": "avoid",
     "pos": "v.",
     "meaning": "방지하다, 막다",
@@ -5466,6 +6135,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cause",
+    "grade": 2,
+    "day": 4,
+    "seq": 20,
     "word": "cause",
     "pos": "v.",
     "meaning": "~을 야기하다",
@@ -5490,6 +6162,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "classify",
+    "grade": 2,
+    "day": 5,
+    "seq": 1,
     "word": "classify",
     "pos": "v.",
     "meaning": "분류하다, 구분하다",
@@ -5516,6 +6191,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "conclude",
+    "grade": 2,
+    "day": 5,
+    "seq": 2,
     "word": "conclude",
     "pos": "v.",
     "meaning": "결론을 내리다, 판단을 내리다",
@@ -5543,6 +6221,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "continue",
+    "grade": 2,
+    "day": 5,
+    "seq": 3,
     "word": "continue",
     "pos": "v.",
     "meaning": "계속되다, 계속하다",
@@ -5569,6 +6250,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cooperate",
+    "grade": 2,
+    "day": 5,
+    "seq": 4,
     "word": "cooperate",
     "pos": "v.",
     "meaning": "협조하다, 합동하다",
@@ -5594,6 +6278,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cycle",
+    "grade": 2,
+    "day": 5,
+    "seq": 5,
     "word": "cycle",
     "pos": "v.",
     "meaning": "순환하다, 주기를 이루다",
@@ -5620,6 +6307,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "describe",
+    "grade": 2,
+    "day": 5,
+    "seq": 6,
     "word": "describe",
     "pos": "v.",
     "meaning": "말하다, 묘사하다",
@@ -5646,6 +6336,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "detail",
+    "grade": 2,
+    "day": 5,
+    "seq": 7,
     "word": "detail",
     "pos": "v.",
     "meaning": "상세히 알리다",
@@ -5669,6 +6362,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "edit",
+    "grade": 2,
+    "day": 5,
+    "seq": 8,
     "word": "edit",
     "pos": "v.",
     "meaning": "수정하다, 편집하다",
@@ -5694,6 +6390,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "guide",
+    "grade": 2,
+    "day": 5,
+    "seq": 9,
     "word": "guide",
     "pos": "v.",
     "meaning": "안내하다",
@@ -5719,6 +6418,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "escape",
+    "grade": 2,
+    "day": 5,
+    "seq": 10,
     "word": "escape",
     "pos": "v.",
     "meaning": "달아나다, 탈출하다",
@@ -5744,6 +6446,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "estimate",
+    "grade": 2,
+    "day": 5,
+    "seq": 11,
     "word": "estimate",
     "pos": "v.",
     "meaning": "추정하다",
@@ -5772,6 +6477,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "exercise",
+    "grade": 2,
+    "day": 5,
+    "seq": 12,
     "word": "exercise",
     "pos": "v.",
     "meaning": "운동하다",
@@ -5798,6 +6506,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "expect",
+    "grade": 2,
+    "day": 5,
+    "seq": 13,
     "word": "expect",
     "pos": "v.",
     "meaning": "예상하다, 기대하다",
@@ -5825,6 +6536,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "flock",
+    "grade": 2,
+    "day": 5,
+    "seq": 14,
     "word": "flock",
     "pos": "v.",
     "meaning": "모이다, 떼 지어 가다",
@@ -5849,6 +6563,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "frighten",
+    "grade": 2,
+    "day": 5,
+    "seq": 15,
     "word": "frighten",
     "pos": "v.",
     "meaning": "겁먹게 만들다, 놀라게 만들다",
@@ -5874,6 +6591,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "frown",
+    "grade": 2,
+    "day": 5,
+    "seq": 16,
     "word": "frown",
     "pos": "v.",
     "meaning": "얼굴을 찌푸리다, 찡그리다",
@@ -5901,6 +6621,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "gather",
+    "grade": 2,
+    "day": 5,
+    "seq": 18,
     "word": "gather",
     "pos": "v.",
     "meaning": "(사람들이)모이다",
@@ -5927,6 +6650,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "gust",
+    "grade": 2,
+    "day": 5,
+    "seq": 19,
     "word": "gust",
     "pos": "v.",
     "meaning": "(갑자기)몰아치다",
@@ -5952,6 +6678,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "include",
+    "grade": 2,
+    "day": 5,
+    "seq": 20,
     "word": "include",
     "pos": "v.",
     "meaning": "포함하다",
@@ -5977,6 +6706,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "insist",
+    "grade": 2,
+    "day": 6,
+    "seq": 1,
     "word": "insist",
     "pos": "v.",
     "meaning": "고집하다, 주장하다",
@@ -6003,6 +6735,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "label",
+    "grade": 2,
+    "day": 6,
+    "seq": 3,
     "word": "label",
     "pos": "v.",
     "meaning": "(라벨)붙이다, (상표를)붙이다",
@@ -6029,6 +6764,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "lean",
+    "grade": 2,
+    "day": 6,
+    "seq": 4,
     "word": "lean",
     "pos": "v.",
     "meaning": "기울다, ~에 기대다",
@@ -6054,6 +6792,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "march",
+    "grade": 2,
+    "day": 6,
+    "seq": 5,
     "word": "march",
     "pos": "v.",
     "meaning": "행진하다, 행군하듯 걷다",
@@ -6080,6 +6821,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "predict",
+    "grade": 2,
+    "day": 6,
+    "seq": 12,
     "word": "predict",
     "pos": "v.",
     "meaning": "예측하다, 예견하다",
@@ -6106,6 +6850,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "process",
+    "grade": 2,
+    "day": 6,
+    "seq": 14,
     "word": "process",
     "pos": "v.",
     "meaning": "가공하다, 처리하다",
@@ -6130,6 +6877,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "publish",
+    "grade": 2,
+    "day": 6,
+    "seq": 15,
     "word": "publish",
     "pos": "v.",
     "meaning": "출판하다, 발행하다",
@@ -6157,6 +6907,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "record",
+    "grade": 2,
+    "day": 6,
+    "seq": 16,
     "word": "record",
     "pos": "v.",
     "meaning": "기록하다, 녹화하다",
@@ -6185,6 +6938,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "revise",
+    "grade": 2,
+    "day": 6,
+    "seq": 17,
     "word": "revise",
     "pos": "v.",
     "meaning": "변경하다, 수정하다",
@@ -6210,6 +6966,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "separate",
+    "grade": 2,
+    "day": 6,
+    "seq": 18,
     "word": "separate",
     "pos": "v.",
     "meaning": "갈라지다, 분리되다",
@@ -6235,6 +6994,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "steam",
+    "grade": 2,
+    "day": 6,
+    "seq": 19,
     "word": "steam",
     "pos": "v.",
     "meaning": "(김을) 내뿜다",
@@ -6262,6 +7024,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "shiver",
+    "grade": 2,
+    "day": 6,
+    "seq": 20,
     "word": "shiver",
     "pos": "v.",
     "meaning": "(몸을)떨다",
@@ -6287,6 +7052,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "suppose",
+    "grade": 2,
+    "day": 7,
+    "seq": 1,
     "word": "suppose",
     "pos": "v.",
     "meaning": "생각하다, 추정하다",
@@ -6312,6 +7080,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sway",
+    "grade": 2,
+    "day": 7,
+    "seq": 2,
     "word": "sway",
     "pos": "v.",
     "meaning": "흔들리다",
@@ -6337,6 +7108,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "swoop",
+    "grade": 2,
+    "day": 7,
+    "seq": 3,
     "word": "swoop",
     "pos": "v.",
     "meaning": "급습하다, 기습하다",
@@ -6364,6 +7138,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "treasure",
+    "grade": 2,
+    "day": 7,
+    "seq": 4,
     "word": "treasure",
     "pos": "v.",
     "meaning": "소중히 여기다",
@@ -6388,6 +7165,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "vanish",
+    "grade": 2,
+    "day": 7,
+    "seq": 5,
     "word": "vanish",
     "pos": "v.",
     "meaning": "사라지다, 없어지다",
@@ -6414,6 +7194,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "volunteer",
+    "grade": 2,
+    "day": 7,
+    "seq": 6,
     "word": "volunteer",
     "pos": "v.",
     "meaning": "자원하다, 자진해서 말하다",
@@ -6437,6 +7220,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "express",
+    "grade": 2,
+    "day": 7,
+    "seq": 9,
     "word": "express",
     "pos": "v.",
     "meaning": "표현하다, 나타내다",
@@ -6463,6 +7249,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "camp",
+    "grade": 2,
+    "day": 7,
+    "seq": 15,
     "word": "camp",
     "pos": "v.",
     "meaning": "야영하다",
@@ -6487,6 +7276,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stretch",
+    "grade": 2,
+    "day": 7,
+    "seq": 17,
     "word": "stretch",
     "pos": "v.",
     "meaning": "늘이다, 펴다[뻗다]",
@@ -6513,6 +7305,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "heat",
+    "grade": 2,
+    "day": 7,
+    "seq": 18,
     "word": "heat",
     "pos": "v.",
     "meaning": "가열하다",
@@ -6542,6 +7337,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "end",
+    "grade": 2,
+    "day": 7,
+    "seq": 19,
     "word": "end",
     "pos": "v.",
     "meaning": "끝나다",
@@ -6568,6 +7366,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "shout",
+    "grade": 2,
+    "day": 7,
+    "seq": 20,
     "word": "shout",
     "pos": "v.",
     "meaning": "외치다",
@@ -6595,6 +7396,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "welcome",
+    "grade": 2,
+    "day": 8,
+    "seq": 1,
     "word": "welcome",
     "pos": "v.",
     "meaning": "환영하다",
@@ -6619,6 +7423,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "bloom",
+    "grade": 2,
+    "day": 8,
+    "seq": 2,
     "word": "bloom",
     "pos": "v.",
     "meaning": "꽃이 피다",
@@ -6645,6 +7452,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wrap",
+    "grade": 2,
+    "day": 8,
+    "seq": 4,
     "word": "wrap",
     "pos": "v.",
     "meaning": "싸다, 포장하다",
@@ -6671,6 +7481,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "snore",
+    "grade": 2,
+    "day": 8,
+    "seq": 6,
     "word": "snore",
     "pos": "v.",
     "meaning": "코를 골다",
@@ -6695,6 +7508,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "press",
+    "grade": 2,
+    "day": 8,
+    "seq": 7,
     "word": "press",
     "pos": "v.",
     "meaning": "누르다",
@@ -6722,6 +7538,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "practice",
+    "grade": 2,
+    "day": 8,
+    "seq": 8,
     "word": "practice",
     "pos": "v.",
     "meaning": "연습하다",
@@ -6747,6 +7566,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "honk",
+    "grade": 2,
+    "day": 8,
+    "seq": 12,
     "word": "honk",
     "pos": "v.",
     "meaning": "빵빵거리다",
@@ -6770,6 +7592,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "mean",
+    "grade": 2,
+    "day": 8,
+    "seq": 14,
     "word": "mean",
     "pos": "v.",
     "meaning": "의미하다",
@@ -6796,6 +7621,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "lie",
+    "grade": 2,
+    "day": 8,
+    "seq": 15,
     "word": "lie",
     "pos": "v.",
     "meaning": "거짓말하다, 눕다",
@@ -6822,6 +7650,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hang",
+    "grade": 2,
+    "day": 8,
+    "seq": 16,
     "word": "hang",
     "pos": "v.",
     "meaning": "걸다, 매달다",
@@ -6848,6 +7679,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "reply",
+    "grade": 2,
+    "day": 8,
+    "seq": 17,
     "word": "reply",
     "pos": "v.",
     "meaning": "대답하다",
@@ -6874,6 +7708,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cough",
+    "grade": 2,
+    "day": 8,
+    "seq": 20,
     "word": "cough",
     "pos": "v.",
     "meaning": "기침하다",
@@ -6900,6 +7737,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "point",
+    "grade": 2,
+    "day": 9,
+    "seq": 1,
     "word": "point",
     "pos": "v.",
     "meaning": "가르키다",
@@ -6926,6 +7766,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "return",
+    "grade": 2,
+    "day": 9,
+    "seq": 2,
     "word": "return",
     "pos": "v.",
     "meaning": "돌아오다, 돌아가다",
@@ -6950,6 +7793,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "create",
+    "grade": 2,
+    "day": 9,
+    "seq": 3,
     "word": "create",
     "pos": "v.",
     "meaning": "창조하다, 만들다",
@@ -6976,6 +7822,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "forget",
+    "grade": 2,
+    "day": 9,
+    "seq": 4,
     "word": "forget",
     "pos": "v.",
     "meaning": "잊다",
@@ -7001,6 +7850,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "lay",
+    "grade": 2,
+    "day": 9,
+    "seq": 5,
     "word": "lay",
     "pos": "v.",
     "meaning": "(알을) 낳다, 놓다[두다]",
@@ -7027,6 +7879,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "weary_of",
+    "grade": 2,
+    "day": 9,
+    "seq": 8,
     "word": "weary of",
     "pos": "v.",
     "meaning": "지치게 하다, ~에 싫증나다",
@@ -7052,6 +7907,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "upset",
+    "grade": 2,
+    "day": 9,
+    "seq": 9,
     "word": "upset",
     "pos": "v.",
     "meaning": "속상하게 만들다",
@@ -7079,6 +7937,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "market",
+    "grade": 2,
+    "day": 9,
+    "seq": 10,
     "word": "market",
     "pos": "v.",
     "meaning": "(상품을)내놓다",
@@ -7105,6 +7966,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "price",
+    "grade": 2,
+    "day": 9,
+    "seq": 11,
     "word": "price",
     "pos": "v.",
     "meaning": "값[가격]을 매기다, 가격을 정하다",
@@ -7130,6 +7994,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "complain",
+    "grade": 2,
+    "day": 9,
+    "seq": 13,
     "word": "complain",
     "pos": "v.",
     "meaning": "불평하다, 항의하다",
@@ -7154,6 +8021,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "yank",
+    "grade": 2,
+    "day": 9,
+    "seq": 14,
     "word": "yank",
     "pos": "v.",
     "meaning": "확 잡아당기다",
@@ -7178,6 +8048,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hunt",
+    "grade": 2,
+    "day": 9,
+    "seq": 17,
     "word": "hunt",
     "pos": "v.",
     "meaning": "사냥하다, 찾다[뒤지다]",
@@ -7202,6 +8075,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "howl",
+    "grade": 2,
+    "day": 9,
+    "seq": 19,
     "word": "howl",
     "pos": "v.",
     "meaning": "(길게)울다[울부짖다], 울부짖다",
@@ -7230,6 +8106,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "slide",
+    "grade": 2,
+    "day": 10,
+    "seq": 1,
     "word": "slide",
     "pos": "v.",
     "meaning": "미끄러지다, 미끄러뜨리다",
@@ -7254,6 +8133,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "startle",
+    "grade": 2,
+    "day": 10,
+    "seq": 5,
     "word": "startle",
     "pos": "v.",
     "meaning": "깜짝 놀라게 하다",
@@ -7280,6 +8162,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "dip",
+    "grade": 3,
+    "day": 1,
+    "seq": 1,
     "word": "dip",
     "pos": "v.",
     "meaning": "살짝 담그다, 적시다",
@@ -7306,6 +8191,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cut",
+    "grade": 3,
+    "day": 1,
+    "seq": 2,
     "word": "cut",
     "pos": "v.",
     "meaning": "자르다",
@@ -7330,6 +8218,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "roar",
+    "grade": 3,
+    "day": 1,
+    "seq": 3,
     "word": "roar",
     "pos": "v.",
     "meaning": "으르렁거리다, 고함치다",
@@ -7355,6 +8246,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cross",
+    "grade": 3,
+    "day": 1,
+    "seq": 4,
     "word": "cross",
     "pos": "v.",
     "meaning": "건너다, 가로지르다",
@@ -7379,6 +8273,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "whisper",
+    "grade": 3,
+    "day": 1,
+    "seq": 7,
     "word": "whisper",
     "pos": "v.",
     "meaning": "속삭이다, 귓속말을 하다",
@@ -7403,6 +8300,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "happen",
+    "grade": 3,
+    "day": 1,
+    "seq": 11,
     "word": "happen",
     "pos": "v.",
     "meaning": "일어나다, 발생하다",
@@ -7429,6 +8329,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "bump",
+    "grade": 3,
+    "day": 1,
+    "seq": 12,
     "word": "bump",
     "pos": "v.",
     "meaning": "부딫히다, 충돌하다",
@@ -7456,6 +8359,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "pin",
+    "grade": 3,
+    "day": 1,
+    "seq": 13,
     "word": "pin",
     "pos": "v.",
     "meaning": "꽂다, 고정시키다",
@@ -7483,6 +8389,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "ask",
+    "grade": 3,
+    "day": 1,
+    "seq": 15,
     "word": "ask",
     "pos": "v.",
     "meaning": "묻다, 질문하다",
@@ -7508,6 +8417,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "study",
+    "grade": 3,
+    "day": 1,
+    "seq": 16,
     "word": "study",
     "pos": "v.",
     "meaning": "공부하다, 연구하다",
@@ -7532,6 +8444,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "arrive",
+    "grade": 3,
+    "day": 1,
+    "seq": 18,
     "word": "arrive",
     "pos": "v.",
     "meaning": "도착하다",
@@ -7557,6 +8472,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "count",
+    "grade": 3,
+    "day": 1,
+    "seq": 19,
     "word": "count",
     "pos": "v.",
     "meaning": "세다, 계산하다",
@@ -7580,6 +8498,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "clap",
+    "grade": 3,
+    "day": 2,
+    "seq": 1,
     "word": "clap",
     "pos": "v.",
     "meaning": "박수치다",
@@ -7605,6 +8526,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "cost",
+    "grade": 3,
+    "day": 2,
+    "seq": 2,
     "word": "cost",
     "pos": "v.",
     "meaning": "(값, 비용이)들다",
@@ -7630,6 +8554,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "subtract",
+    "grade": 3,
+    "day": 2,
+    "seq": 3,
     "word": "subtract",
     "pos": "v.",
     "meaning": "빼다",
@@ -7654,6 +8581,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "meet",
+    "grade": 3,
+    "day": 2,
+    "seq": 6,
     "word": "meet",
     "pos": "v.",
     "meaning": "만나다",
@@ -7680,6 +8610,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "zoom",
+    "grade": 3,
+    "day": 2,
+    "seq": 7,
     "word": "zoom",
     "pos": "v.",
     "meaning": "(빠르게)가다, 질주하다",
@@ -7705,6 +8638,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fish",
+    "grade": 3,
+    "day": 2,
+    "seq": 8,
     "word": "fish",
     "pos": "v.",
     "meaning": "낚시하다",
@@ -7729,6 +8665,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "paddle",
+    "grade": 3,
+    "day": 2,
+    "seq": 9,
     "word": "paddle",
     "pos": "v.",
     "meaning": "첨벙거리며 다니다, 물장난하다",
@@ -7756,6 +8695,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "spin",
+    "grade": 3,
+    "day": 2,
+    "seq": 10,
     "word": "spin",
     "pos": "v.",
     "meaning": "돌다, 회전하다",
@@ -7780,6 +8722,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wave",
+    "grade": 3,
+    "day": 2,
+    "seq": 12,
     "word": "wave",
     "pos": "v.",
     "meaning": "흔들다, 손짓하다",
@@ -7806,6 +8751,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "connect",
+    "grade": 3,
+    "day": 2,
+    "seq": 17,
     "word": "connect",
     "pos": "v.",
     "meaning": "연결하다, 접속하다",
@@ -7832,6 +8780,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "explain",
+    "grade": 3,
+    "day": 2,
+    "seq": 18,
     "word": "explain",
     "pos": "v.",
     "meaning": "설명하다",
@@ -7859,6 +8810,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "change",
+    "grade": 3,
+    "day": 2,
+    "seq": 20,
     "word": "change",
     "pos": "v.",
     "meaning": "변화시키다, 변하다",
@@ -7882,6 +8836,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "tape",
+    "grade": 3,
+    "day": 3,
+    "seq": 1,
     "word": "tape",
     "pos": "v.",
     "meaning": "테이프[끈]로 묶다, 녹음[녹화]하다",
@@ -7909,6 +8866,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "flip",
+    "grade": 3,
+    "day": 3,
+    "seq": 2,
     "word": "flip",
     "pos": "v.",
     "meaning": "홱 뒤집(히)다",
@@ -7935,6 +8895,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "place",
+    "grade": 3,
+    "day": 3,
+    "seq": 7,
     "word": "place",
     "pos": "v.",
     "meaning": "~에 두다, 놓다",
@@ -7961,6 +8924,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "flick",
+    "grade": 3,
+    "day": 3,
+    "seq": 8,
     "word": "flick",
     "pos": "v.",
     "meaning": "(손가락으로)튀기다, 잽싸게 움직이다",
@@ -7985,6 +8951,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "swallow",
+    "grade": 3,
+    "day": 3,
+    "seq": 10,
     "word": "swallow",
     "pos": "v.",
     "meaning": "삼키다",
@@ -8008,6 +8977,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "remember",
+    "grade": 3,
+    "day": 3,
+    "seq": 11,
     "word": "remember",
     "pos": "v.",
     "meaning": "기억하다",
@@ -8032,6 +9004,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "scrub",
+    "grade": 3,
+    "day": 3,
+    "seq": 13,
     "word": "scrub",
     "pos": "v.",
     "meaning": "문질러 씻다, 청소하다",
@@ -8057,6 +9032,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "rinse",
+    "grade": 3,
+    "day": 3,
+    "seq": 14,
     "word": "rinse",
     "pos": "v.",
     "meaning": "헹구다, 씻다",
@@ -8082,6 +9060,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hate",
+    "grade": 3,
+    "day": 3,
+    "seq": 16,
     "word": "hate",
     "pos": "v.",
     "meaning": "싫어하다",
@@ -8105,6 +9086,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "pass",
+    "grade": 3,
+    "day": 3,
+    "seq": 17,
     "word": "pass",
     "pos": "v.",
     "meaning": "지나가다[통과하다], 합격하다",
@@ -8131,6 +9115,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "pull",
+    "grade": 3,
+    "day": 3,
+    "seq": 19,
     "word": "pull",
     "pos": "v.",
     "meaning": "당기다, 끌다",
@@ -8155,6 +9142,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "glow",
+    "grade": 3,
+    "day": 3,
+    "seq": 20,
     "word": "glow",
     "pos": "v.",
     "meaning": "빛나다, 타다",
@@ -8180,6 +9170,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "dive",
+    "grade": 3,
+    "day": 4,
+    "seq": 1,
     "word": "dive",
     "pos": "v.",
     "meaning": "(물속으로)뛰어들다, 다이빙하다",
@@ -8204,6 +9197,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sneeze",
+    "grade": 3,
+    "day": 4,
+    "seq": 3,
     "word": "sneeze",
     "pos": "v.",
     "meaning": "재채기하다",
@@ -8230,6 +9226,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wag",
+    "grade": 3,
+    "day": 4,
+    "seq": 5,
     "word": "wag",
     "pos": "v.",
     "meaning": "흔들다, 흔들리다",
@@ -8254,6 +9253,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "climb",
+    "grade": 3,
+    "day": 4,
+    "seq": 8,
     "word": "climb",
     "pos": "v.",
     "meaning": "오르다, 등반하다",
@@ -8278,6 +9280,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "decorate",
+    "grade": 3,
+    "day": 4,
+    "seq": 9,
     "word": "decorate",
     "pos": "v.",
     "meaning": "장식하다",
@@ -8303,6 +9308,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "glue",
+    "grade": 3,
+    "day": 4,
+    "seq": 10,
     "word": "glue",
     "pos": "v.",
     "meaning": "붙이다",
@@ -8330,6 +9338,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "reuse",
+    "grade": 3,
+    "day": 4,
+    "seq": 12,
     "word": "reuse",
     "pos": "v.",
     "meaning": "재사용하다",
@@ -8353,6 +9364,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "pull_out",
+    "grade": 3,
+    "day": 4,
+    "seq": 13,
     "word": "pull out",
     "pos": "v.",
     "meaning": "옆으로 빠져나가다, 떠나다",
@@ -8380,6 +9394,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "get_out",
+    "grade": 3,
+    "day": 4,
+    "seq": 15,
     "word": "get out",
     "pos": "v.",
     "meaning": "알려지다, 나가다",
@@ -8405,6 +9422,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "whistle",
+    "grade": 3,
+    "day": 4,
+    "seq": 16,
     "word": "whistle",
     "pos": "v.",
     "meaning": "휘파람을 불다",
@@ -8429,6 +9449,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "snap",
+    "grade": 3,
+    "day": 4,
+    "seq": 17,
     "word": "snap",
     "pos": "v.",
     "meaning": "부러뜨리다, 부러지다",
@@ -8456,6 +9479,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "slice",
+    "grade": 3,
+    "day": 5,
+    "seq": 2,
     "word": "slice",
     "pos": "v.",
     "meaning": "(얇게)썰다",
@@ -8481,6 +9507,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "rub",
+    "grade": 3,
+    "day": 5,
+    "seq": 4,
     "word": "rub",
     "pos": "v.",
     "meaning": "비비다, 문지르다",
@@ -8508,6 +9537,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stick",
+    "grade": 3,
+    "day": 5,
+    "seq": 5,
     "word": "stick",
     "pos": "v.",
     "meaning": "붙이다, 붙다",
@@ -8534,6 +9566,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "roll",
+    "grade": 3,
+    "day": 5,
+    "seq": 6,
     "word": "roll",
     "pos": "v.",
     "meaning": "구르다, 굴리다",
@@ -8560,6 +9595,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "drive",
+    "grade": 3,
+    "day": 5,
+    "seq": 7,
     "word": "drive",
     "pos": "v.",
     "meaning": "운전하다",
@@ -8583,6 +9621,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "duck",
+    "grade": 3,
+    "day": 5,
+    "seq": 8,
     "word": "duck",
     "pos": "v.",
     "meaning": "휙[쑥]수그리다[숨기다], 피하다",
@@ -8610,6 +9651,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stick_up_for",
+    "grade": 3,
+    "day": 5,
+    "seq": 12,
     "word": "stick up for",
     "pos": "v.",
     "meaning": "옹호하다, 변호하다",
@@ -8637,6 +9681,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "slip",
+    "grade": 3,
+    "day": 5,
+    "seq": 13,
     "word": "slip",
     "pos": "v.",
     "meaning": "미끄러지다",
@@ -8662,6 +9709,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stand_up",
+    "grade": 3,
+    "day": 5,
+    "seq": 15,
     "word": "stand up",
     "pos": "v.",
     "meaning": "서있다",
@@ -8688,6 +9738,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "wobble",
+    "grade": 3,
+    "day": 5,
+    "seq": 16,
     "word": "wobble",
     "pos": "v.",
     "meaning": "흔들리다[흔들다], 떨다",
@@ -8714,6 +9767,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "babysit",
+    "grade": 3,
+    "day": 5,
+    "seq": 17,
     "word": "babysit",
     "pos": "v.",
     "meaning": "아이를 봐주다",
@@ -8738,6 +9794,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "squirt",
+    "grade": 3,
+    "day": 5,
+    "seq": 18,
     "word": "squirt",
     "pos": "v.",
     "meaning": "찍 짜다, 쏘다",
@@ -8763,6 +9822,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "lay_down",
+    "grade": 3,
+    "day": 5,
+    "seq": 20,
     "word": "lay down",
     "pos": "v.",
     "meaning": "눕다",
@@ -8788,6 +9850,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "clear",
+    "grade": 3,
+    "day": 6,
+    "seq": 1,
     "word": "clear",
     "pos": "v.",
     "meaning": "치우다, 내보내다",
@@ -8815,6 +9880,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "rake",
+    "grade": 3,
+    "day": 6,
+    "seq": 2,
     "word": "rake",
     "pos": "v.",
     "meaning": "갈퀴질을 하다, 갈퀴로 모으다",
@@ -8839,6 +9907,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "tour",
+    "grade": 3,
+    "day": 6,
+    "seq": 3,
     "word": "tour",
     "pos": "v.",
     "meaning": "관광하다",
@@ -8863,6 +9934,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "spend",
+    "grade": 3,
+    "day": 6,
+    "seq": 4,
     "word": "spend",
     "pos": "v.",
     "meaning": "(돈을)쓰다, 소비하다",
@@ -8888,6 +9962,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fix",
+    "grade": 3,
+    "day": 6,
+    "seq": 6,
     "word": "fix",
     "pos": "v.",
     "meaning": "고정시키다, 정하다",
@@ -8914,6 +9991,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "tighten",
+    "grade": 3,
+    "day": 6,
+    "seq": 7,
     "word": "tighten",
     "pos": "v.",
     "meaning": "팽팽해지다, 더 엄격하게\n하다",
@@ -8939,6 +10019,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "surf",
+    "grade": 3,
+    "day": 6,
+    "seq": 8,
     "word": "surf",
     "pos": "v.",
     "meaning": "서핑을 하다, 인터넷을\n검색하다",
@@ -8963,6 +10046,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "serve",
+    "grade": 3,
+    "day": 6,
+    "seq": 11,
     "word": "serve",
     "pos": "v.",
     "meaning": "(음식을)제공하다, 차려주다",
@@ -8986,6 +10072,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "munch",
+    "grade": 3,
+    "day": 6,
+    "seq": 13,
     "word": "munch",
     "pos": "v.",
     "meaning": "우적우적 먹다",
@@ -9009,6 +10098,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "warm_up",
+    "grade": 3,
+    "day": 6,
+    "seq": 14,
     "word": "warm up",
     "pos": "v.",
     "meaning": "몸을 천천히 풀다, 적당히 열을 \n오르다",
@@ -9035,6 +10127,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "tilt",
+    "grade": 3,
+    "day": 6,
+    "seq": 16,
     "word": "tilt",
     "pos": "v.",
     "meaning": "기울다, 젖혀지다",
@@ -9061,6 +10156,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "lift",
+    "grade": 3,
+    "day": 6,
+    "seq": 18,
     "word": "lift",
     "pos": "v.",
     "meaning": "들어 올리다",
@@ -9087,6 +10185,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "raise",
+    "grade": 3,
+    "day": 7,
+    "seq": 2,
     "word": "raise",
     "pos": "v.",
     "meaning": "올리다[들다], 키우다",
@@ -9114,6 +10215,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "stick_out",
+    "grade": 3,
+    "day": 7,
+    "seq": 3,
     "word": "stick out",
     "pos": "v.",
     "meaning": "눈에 띄다, 잘 보이다",
@@ -9139,6 +10243,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "ski",
+    "grade": 3,
+    "day": 7,
+    "seq": 4,
     "word": "ski",
     "pos": "v.",
     "meaning": "스키를 타다",
@@ -9166,6 +10273,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "give_up",
+    "grade": 3,
+    "day": 7,
+    "seq": 6,
     "word": "give up",
     "pos": "v.",
     "meaning": "포기하다",
@@ -9198,6 +10308,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "lock",
+    "grade": 3,
+    "day": 7,
+    "seq": 8,
     "word": "lock",
     "pos": "v.",
     "meaning": "잠그다, 잠가 두다",
@@ -9224,6 +10337,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "scare",
+    "grade": 3,
+    "day": 7,
+    "seq": 11,
     "word": "scare",
     "pos": "v.",
     "meaning": "무섭게하다, 겁주다[겁나게 하다]",
@@ -9248,6 +10364,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "go_away",
+    "grade": 3,
+    "day": 7,
+    "seq": 12,
     "word": "go away",
     "pos": "v.",
     "meaning": "(떠나) 가다, 집을 떠나다",
@@ -9278,6 +10397,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sand",
+    "grade": 3,
+    "day": 7,
+    "seq": 13,
     "word": "sand",
     "pos": "v.",
     "meaning": "사포로 닦다, 모래로 닦다",
@@ -9303,6 +10425,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "kiss",
+    "grade": 3,
+    "day": 7,
+    "seq": 14,
     "word": "kiss",
     "pos": "v.",
     "meaning": "입 맞추다, 키스하다",
@@ -9329,6 +10454,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "bow",
+    "grade": 3,
+    "day": 7,
+    "seq": 15,
     "word": "bow",
     "pos": "v.",
     "meaning": "절하다, 숙이다",
@@ -9354,6 +10482,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "improve",
+    "grade": 3,
+    "day": 7,
+    "seq": 16,
     "word": "improve",
     "pos": "v.",
     "meaning": "나아지다",
@@ -9379,6 +10510,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "climb_up",
+    "grade": 3,
+    "day": 7,
+    "seq": 17,
     "word": "climb up",
     "pos": "v.",
     "meaning": "~에 오르다",
@@ -9404,6 +10538,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "take_a_picture",
+    "grade": 3,
+    "day": 7,
+    "seq": 18,
     "word": "take a picture",
     "pos": "v.",
     "meaning": "사진을 찍다",
@@ -9431,6 +10568,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "care",
+    "grade": 3,
+    "day": 8,
+    "seq": 1,
     "word": "care",
     "pos": "v.",
     "meaning": "관심을 가지다, 상관하다\n[배려하다]",
@@ -9456,6 +10596,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "accept",
+    "grade": 3,
+    "day": 8,
+    "seq": 7,
     "word": "accept",
     "pos": "v.",
     "meaning": "받아들이다, 인정하다",
@@ -9480,6 +10623,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "begin",
+    "grade": 3,
+    "day": 8,
+    "seq": 10,
     "word": "begin",
     "pos": "v.",
     "meaning": "시작하다",
@@ -9505,6 +10651,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "land",
+    "grade": 3,
+    "day": 8,
+    "seq": 11,
     "word": "land",
     "pos": "v.",
     "meaning": "착륙하다",
@@ -9531,6 +10680,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "save",
+    "grade": 3,
+    "day": 8,
+    "seq": 12,
     "word": "save",
     "pos": "v.",
     "meaning": "구하다, 저축(절약)하다",
@@ -9554,6 +10706,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "invent",
+    "grade": 3,
+    "day": 8,
+    "seq": 14,
     "word": "invent",
     "pos": "v.",
     "meaning": "발명하다, 지어내다",
@@ -9578,6 +10733,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "produce",
+    "grade": 3,
+    "day": 8,
+    "seq": 15,
     "word": "produce",
     "pos": "v.",
     "meaning": "생산하다",
@@ -9602,6 +10760,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "send",
+    "grade": 3,
+    "day": 8,
+    "seq": 16,
     "word": "send",
     "pos": "v.",
     "meaning": "보내다, 발송하다",
@@ -9629,6 +10790,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "answer",
+    "grade": 3,
+    "day": 8,
+    "seq": 18,
     "word": "answer",
     "pos": "v.",
     "meaning": "대답하다",
@@ -9655,6 +10819,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "carry",
+    "grade": 3,
+    "day": 8,
+    "seq": 20,
     "word": "carry",
     "pos": "v.",
     "meaning": "나르다, 싣다",
@@ -9681,6 +10848,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "run_away",
+    "grade": 3,
+    "day": 9,
+    "seq": 2,
     "word": "run away",
     "pos": "v.",
     "meaning": "도망치다[탈주하다], 가출하다",
@@ -9707,6 +10877,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "hurt",
+    "grade": 3,
+    "day": 9,
+    "seq": 5,
     "word": "hurt",
     "pos": "v.",
     "meaning": "다치게 하다, 아프다",
@@ -9732,6 +10905,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "lose",
+    "grade": 3,
+    "day": 9,
+    "seq": 9,
     "word": "lose",
     "pos": "v.",
     "meaning": "지다, 잃어버리다\n[잃다]",
@@ -9757,6 +10933,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "breathe",
+    "grade": 3,
+    "day": 9,
+    "seq": 10,
     "word": "breathe",
     "pos": "v.",
     "meaning": "호흡하다",
@@ -9782,6 +10961,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "fold",
+    "grade": 3,
+    "day": 9,
+    "seq": 11,
     "word": "fold",
     "pos": "v.",
     "meaning": "접다",
@@ -9807,6 +10989,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "take_care_of",
+    "grade": 3,
+    "day": 9,
+    "seq": 13,
     "word": "take care of",
     "pos": "v.",
     "meaning": "돌보다",
@@ -9834,6 +11019,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "solve",
+    "grade": 3,
+    "day": 9,
+    "seq": 14,
     "word": "solve",
     "pos": "v.",
     "meaning": "해결하다, 풀다",
@@ -9860,6 +11048,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "become",
+    "grade": 3,
+    "day": 9,
+    "seq": 15,
     "word": "become",
     "pos": "v.",
     "meaning": "~이 되다",
@@ -9887,6 +11078,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "sprinkle",
+    "grade": 3,
+    "day": 9,
+    "seq": 17,
     "word": "sprinkle",
     "pos": "v.",
     "meaning": "뿌리다, 간간이 섞다",
@@ -9912,6 +11106,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "complete",
+    "grade": 3,
+    "day": 9,
+    "seq": 20,
     "word": "complete",
     "pos": "v.",
     "meaning": "완성하다, 작성하다",
@@ -9936,6 +11133,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "edge",
+    "grade": 3,
+    "day": 10,
+    "seq": 1,
     "word": "edge",
     "pos": "v.",
     "meaning": "조금씩[살살]움직이다, 이동시키다",
@@ -9961,6 +11161,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "attach",
+    "grade": 3,
+    "day": 10,
+    "seq": 2,
     "word": "attach",
     "pos": "v.",
     "meaning": "붙이다, 첨부하다",
@@ -9987,6 +11190,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "damage",
+    "grade": 3,
+    "day": 10,
+    "seq": 3,
     "word": "damage",
     "pos": "v.",
     "meaning": "손상을 주다, 피해를 입히다",
@@ -10012,6 +11218,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "whimper",
+    "grade": 3,
+    "day": 10,
+    "seq": 5,
     "word": "whimper",
     "pos": "v.",
     "meaning": "훌쩍거리다, 훌쩍이며 말하다",
@@ -10037,6 +11246,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "plead",
+    "grade": 3,
+    "day": 10,
+    "seq": 6,
     "word": "plead",
     "pos": "v.",
     "meaning": "애원하다, 답변하다",
@@ -10061,6 +11273,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "limp",
+    "grade": 3,
+    "day": 10,
+    "seq": 7,
     "word": "limp",
     "pos": "v.",
     "meaning": "다리를 절다[절뚝거리다], 느릿느릿 나아가다",
@@ -10086,6 +11301,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "trust",
+    "grade": 3,
+    "day": 10,
+    "seq": 8,
     "word": "trust",
     "pos": "v.",
     "meaning": "(사람을)신뢰하다, 믿다",
@@ -10112,6 +11330,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "exchange",
+    "grade": 3,
+    "day": 10,
+    "seq": 9,
     "word": "exchange",
     "pos": "v.",
     "meaning": "교환하다, 주고받다",
@@ -10136,6 +11357,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "polish",
+    "grade": 3,
+    "day": 10,
+    "seq": 11,
     "word": "polish",
     "pos": "v.",
     "meaning": "닦다, (좋아지도록)다듬다",
@@ -10159,6 +11383,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "destroy",
+    "grade": 3,
+    "day": 10,
+    "seq": 12,
     "word": "destroy",
     "pos": "v.",
     "meaning": "파괴하다, 말살하다",
@@ -10184,6 +11411,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "rescue",
+    "grade": 3,
+    "day": 10,
+    "seq": 13,
     "word": "rescue",
     "pos": "v.",
     "meaning": "(위험에서)구하다, 구조[구출]하다",
@@ -10208,6 +11438,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "seek",
+    "grade": 3,
+    "day": 10,
+    "seq": 15,
     "word": "seek",
     "pos": "v.",
     "meaning": "찾다, 구하다",
@@ -10233,6 +11466,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "argue",
+    "grade": 3,
+    "day": 10,
+    "seq": 17,
     "word": "argue",
     "pos": "v.",
     "meaning": "언쟁을 하다, 다투다",
@@ -10261,6 +11497,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "journey",
+    "grade": 3,
+    "day": 10,
+    "seq": 18,
     "word": "journey",
     "pos": "v.",
     "meaning": "여행하다, 이동하다",
@@ -10285,6 +11524,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "remove",
+    "grade": 3,
+    "day": 10,
+    "seq": 19,
     "word": "remove",
     "pos": "v.",
     "meaning": "치우다[내보내다], 벗다",
@@ -10311,6 +11553,9 @@ window.VOCAB_WORDS = [
   },
   {
     "id": "clutch",
+    "grade": 3,
+    "day": 10,
+    "seq": 20,
     "word": "clutch",
     "pos": "v.",
     "meaning": "(꽉)움켜잡다, 와락 움켜잡다",

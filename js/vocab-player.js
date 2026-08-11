@@ -28,6 +28,7 @@
     REPEAT_GAP: 400,   // 예문 반복 사이 간격
     FINAL_HOLD: 2000,
     BETWEEN: 800,
+    PLAY_WAIT: 2500, // 풀스크린 영상 재생 시작 최대 대기
   };
 
   // ── 취소 토큰 ────────────────────────────────────────────────
@@ -40,6 +41,58 @@
 
   // ── 헬퍼 ────────────────────────────────────────────────────
   const raf2 = () => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+  // ── 영상 재생/정지 (레이스 방지) ─────────────────────────────
+  // play()가 pending(로딩 중)인 상태에서 pause()가 호출되면
+  // play()의 catch 재시도가 정지 이후에 영상을 되살릴 수 있다.
+  // '재생 의도' 플래그로 pause 이후의 재시도를 차단한다.
+  function safePlay(v) {
+    if (!v || v.tagName !== 'VIDEO') return;
+    v._wantPlay = true;
+    v.play().catch(() => {
+      if (!v._wantPlay) return;   // 이미 pause됨 — 재시도 금지
+      v.muted = true;
+      v.play().catch(() => { });
+    });
+  }
+  function safePause(v) {
+    if (!v || v.tagName !== 'VIDEO') return;
+    v._wantPlay = false;
+    v.pause();
+  }
+
+  // 영상 미리 로딩 시작 (스냅 단계에서 호출 → 확대 시점엔 준비 완료)
+  function warmVideo(v) {
+    if (!v || v.tagName !== 'VIDEO' || v.readyState >= 2) return;
+    try {
+      v.preload = 'auto';
+      v.load();
+    } catch (e) { }
+  }
+
+  // 실제 재생이 시작될 때까지 대기 (최대 maxMs)
+  // - 이미 재생 중이거나 영상이 아니면 즉시 통과
+  // - 로드 에러(영상 없음)면 즉시 통과 → 대기 시간 낭비 없음
+  function waitVideoPlaying(v, t, maxMs) {
+    if (!v || v.tagName !== 'VIDEO') return Promise.resolve();
+    if (v.error || (!v.paused && v.readyState >= 2)) return Promise.resolve();
+    return new Promise(resolve => {
+      let done = false;
+      const finish = () => {
+        if (done) return;
+        done = true;
+        v.removeEventListener('playing', finish);
+        v.removeEventListener('error', finish);
+        clearInterval(iv);
+        clearTimeout(to);
+        resolve();
+      };
+      const iv = setInterval(() => { if (isCancelled(t)) finish(); }, 100);
+      const to = setTimeout(finish, maxMs);
+      v.addEventListener('playing', finish);
+      v.addEventListener('error', finish);
+    });
+  }
 
   // 취소 가능한 wait — 취소 시 CancelError throw
   function waitOrCancel(ms, t) {
@@ -134,8 +187,8 @@
     refs.fsLetters.forEach(l => l.classList.remove('is-highlight'));
     refs.fsChunks.forEach(c => c.classList.remove('is-highlight'));
     refs.fsImg.style.cssText = '';
-    if (refs.mediaEl?.tagName === 'VIDEO') refs.mediaEl.pause();
-    if (refs.fsImg?.tagName === 'VIDEO') refs.fsImg.pause();
+    safePause(refs.mediaEl);
+    safePause(refs.fsImg);
   }
 
   // 풀스크린 강제 정리
@@ -144,7 +197,7 @@
       refs.fs.classList.remove('is-active');
       refs.fsImg.style.cssText = '';
       refs.fsImg.style.transition = '';
-      if (refs.fsImg?.tagName === 'VIDEO') refs.fsImg.pause();
+      safePause(refs.fsImg);
       [refs.fsBlur, refs.fsWordRow, refs.fsMeaning, refs.fsExWrap]
         .forEach(el => el.classList.remove('is-visible'));
       refs.fsLetters.forEach(l => l.classList.remove('is-highlight'));
@@ -172,7 +225,19 @@
     try {
 
       // ── Phase 1: 스냅 + 빈칸 ──────────────────────────────
-      await w(T.SNAP_HOLD);
+      // 스냅을 보여주는 동안 풀스크린 영상을 '숨겨진 채로' 미리 재생 시작
+      // → 확대가 시작되는 첫 순간부터 이미 움직이고 있게 한다
+      warmVideo(refs.fsImg);
+      warmVideo(refs.mediaEl);
+      if (refs.fsImg?.tagName === 'VIDEO') {
+        try { if (refs.fsImg.readyState >= 1) refs.fsImg.currentTime = 0; } catch (e) { }
+        safePlay(refs.fsImg);
+      }
+      await Promise.all([
+        w(T.SNAP_HOLD),
+        waitVideoPlaying(refs.fsImg, t, T.PLAY_WAIT),
+      ]);
+      ok();
 
       // ── Phase 2: 풀스크린 확대 ────────────────────────────
       refs.snap.style.transition = 'none';
@@ -197,12 +262,6 @@
       refs.fs.classList.add('is-active');
       window._vocabSetFullscreen?.(true);
 
-      // 확대 애니메이션 동안 영상 재생
-      if (fsm.tagName === 'VIDEO') {
-        fsm.currentTime = 0;
-        fsm.play().catch(() => { fsm.muted = true; fsm.play().catch(() => { }); });
-      }
-
       await raf2(); ok();
       fsm.style.transition = `transform ${T.EXPAND_DUR}ms cubic-bezier(0.4,0,0.2,1)`;
       fsm.style.transform = `translate(${dx}px,${dy}px) scale(${sx},${sy})`;
@@ -214,7 +273,7 @@
 
       // ── Phase 3: 블러 + 영단어 ────────────────────────────
       // 블러 등장 시 영상 정지 (움직임 불필요)
-      if (fsm.tagName === 'VIDEO') fsm.pause();
+      safePause(fsm);
       refs.fsBlur.classList.add('is-visible');
       await w(T.BLUR_DUR);
       refs.fsWordRow.classList.add('is-visible');
@@ -257,7 +316,7 @@
       await w(T.COLLAPSE_DUR);
       refs.fs.classList.remove('is-active');
       window._vocabSetFullscreen?.(false);
-      if (fsm.tagName === 'VIDEO') fsm.pause();
+      safePause(fsm);
       fsm.style.cssText = '';
 
       // 카드 상태 복귀
@@ -276,10 +335,7 @@
       // 카드 미디어 재생
       if (refs.mediaEl?.tagName === 'VIDEO') {
         refs.mediaEl.currentTime = 0;
-        refs.mediaEl.play().catch(() => {
-          refs.mediaEl.muted = true;
-          refs.mediaEl.play().catch(() => { });
-        });
+        safePlay(refs.mediaEl);
       }
 
       // 예문 반복 음독
@@ -314,5 +370,5 @@
     }
   }
 
-  window.VocabPlayer = { play, playAll, stopSequence };
+  window.VocabPlayer = { play, playAll, stopSequence, safePause };
 })();

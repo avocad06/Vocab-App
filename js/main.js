@@ -1,58 +1,33 @@
 /**
  * js/main.js
+ *
+ * 흐름: 학년·Day 선택 (day-select.js) → 해당 Day의 단어만 카드 생성 → 재생
+ * 데이터는 words.js 한 번 로드 후 메모리에서 필터 — 추가 통신 없음.
  */
 (function () {
   'use strict';
 
   const root = document.getElementById('vocab-root');
-  const startBtn = document.getElementById('vocab-start');
   const startWrap = document.getElementById('vocab-start-wrap');
   const layout = document.getElementById('vocab-layout');
   const btnPrev = document.getElementById('btn-prev');
   const btnNext = document.getElementById('btn-next');
   const restartWrap = document.getElementById('vocab-restart-wrap');
   const btnRestart = document.getElementById('btn-restart');
+  const btnDaySelect = document.getElementById('btn-day-select');
   const btnAutoplay = document.getElementById('btn-autoplay');
   const autoplayWrap = document.getElementById('vocab-autoplay-wrap');
   const btnHelp = document.getElementById('btn-help');
   const helpModal = document.getElementById('help-modal');
   const btnHelpClose = document.getElementById('btn-help-close');
+  const indicatorWrap = document.getElementById('day-indicator-wrap');
+  const dayIndicator = document.getElementById('day-indicator');
 
-  const loadingEl = document.getElementById('vocab-loading');
-  const loadingProgressEl = document.getElementById('vocab-loading-progress');
-
-  // 카드 DOM 생성 — 청크 단위로 나눠 생성해 로딩 오버레이가 먼저 그려지게 한다
-  const cards = [];
-  const BUILD_CHUNK = 30;
-  const totalWords = VOCAB_WORDS.length;
-
-  function buildChunk(start) {
-    const frag = document.createDocumentFragment();
-    const end = Math.min(start + BUILD_CHUNK, totalWords);
-    for (let i = start; i < end; i++) {
-      const card = VocabCard.createCard(VOCAB_WORDS[i]);
-      frag.appendChild(card);
-      cards.push(card);
-    }
-    root.appendChild(frag);
-    if (loadingProgressEl) {
-      loadingProgressEl.textContent = Math.round((end / totalWords) * 100) + '%';
-    }
-    if (end < totalWords) {
-      requestAnimationFrame(() => buildChunk(end));
-    } else {
-      finishLoading();
-    }
-  }
-
-  function finishLoading() {
-    if (!loadingEl) return;
-    loadingEl.classList.add('is-hidden');
-    setTimeout(() => { loadingEl.style.display = 'none'; }, 300);
-  }
-
-  // 오버레이가 실제로 렌더된 다음 프레임부터 카드 생성 시작
-  requestAnimationFrame(() => buildChunk(0));
+  // 현재 학습 중인 Day의 단어·카드 (선택 시 채워짐)
+  let dayWords = [];
+  let cards = [];
+  let currentGrade = null;
+  let currentDay = null;
 
   let currentIndex = 0;
   let isFullscreen = false;  // 풀스크린 중 여부 — 이때만 버튼 완전 차단
@@ -62,7 +37,22 @@
   // 풀스크린 상태 변경 (vocab-player.js 에서 호출)
   function setFullscreen(active) {
     isFullscreen = active;
-    if (autoplayWrap) autoplayWrap.style.visibility = active ? 'hidden' : 'visible';
+    const vis = active ? 'hidden' : 'visible';
+    if (autoplayWrap) autoplayWrap.style.visibility = vis;
+    if (indicatorWrap) indicatorWrap.style.visibility = vis;
+  }
+
+  // 선택된 Day의 카드 생성 (10~20장 — 청크 분할·로딩 오버레이 불필요)
+  function buildCards(list) {
+    root.innerHTML = '';
+    cards = [];
+    const frag = document.createDocumentFragment();
+    list.forEach(w => {
+      const card = VocabCard.createCard(w);
+      frag.appendChild(card);
+      cards.push(card);
+    });
+    root.appendChild(frag);
   }
 
   // 버튼 상태 = 인덱스에만 종속
@@ -77,6 +67,12 @@
   // 현재 카드 활성화
   function showCard(index) {
     cards.forEach((c, i) => c.classList.toggle('is-active', i === index));
+    // 현재·다음 카드 썸네일은 lazy를 풀어 즉시 로딩
+    // (Day 전환 직후 스냅이 빈 화면으로 보이는 현상 방지)
+    [index, index + 1].forEach(i => {
+      const img = cards[i]?.querySelector('.vocab-card__snap img');
+      if (img && img.loading === 'lazy') img.loading = 'eager';
+    });
     updateButtons(index);
   }
 
@@ -93,7 +89,7 @@
     const myId = ++_playId;
     showCard(index);
     try {
-      await VocabPlayer.play(cards[index], VOCAB_WORDS[index]);
+      await VocabPlayer.play(cards[index], dayWords[index]);
     } catch (err) {
       console.warn('[main] playCard 실패:', err);
     } finally {
@@ -108,7 +104,7 @@
   }
 
   // 이전 버튼 — 풀스크린 중에만 차단
-  // 첫 번째 카드에서 누르면 시작 페이지로 복귀 (새로고침)
+  // 첫 번째 카드에서 누르면 학년·Day 선택 화면으로 복귀 (새로고침)
   btnPrev.addEventListener('click', () => {
     if (isFullscreen) return;
     disableAutoplay();
@@ -126,10 +122,16 @@
     playCard(currentIndex + 1);
   });
 
-  // 처음으로 버튼 — 풀스크린 중에만 차단
+  // 처음부터 버튼 — 현재 Day를 처음부터 다시
   btnRestart.addEventListener('click', () => {
     if (isFullscreen) return;
     playCard(0);
+  });
+
+  // 다른 Day 버튼 — Day 변경 모달 열기
+  btnDaySelect?.addEventListener('click', () => {
+    if (isFullscreen) return;
+    openDayPicker();
   });
 
   // 자동재생 OFF로 전환
@@ -167,7 +169,7 @@
     if (fs) {
       fs.classList.remove('is-active');
       const fsImg = fs.querySelector('.vocab-fs__img');
-      if (fsImg) { fsImg.style.cssText = ''; if (fsImg.tagName === 'VIDEO') fsImg.pause(); }
+      if (fsImg) { fsImg.style.cssText = ''; VocabPlayer.safePause(fsImg); }
       fs.querySelectorAll('.is-visible').forEach(el => el.classList.remove('is-visible'));
       fs.querySelectorAll('.is-highlight').forEach(el => el.classList.remove('is-highlight'));
       card.classList.remove('is-fs-open');
@@ -182,32 +184,60 @@
     card.querySelectorAll('.vocab-card__chunk').forEach(c => c.classList.remove('is-highlight'));
 
     const mediaEl = card.querySelector('.vocab-card__media');
-    if (mediaEl?.tagName === 'VIDEO') mediaEl.pause();
+    VocabPlayer.safePause(mediaEl);
 
     updateButtons(index);
   }
 
-  function openHelp() {
+  // 재생 전체 중단 + 현재 카드 초기 상태로 리셋 (모달 열기 전 공용)
+  function interruptPlayback() {
     isModalOpen = true;       // autoplay 차단 — 가장 먼저
-    // 모든 것 즉시 중단
     AudioPlayer.stopAll();
     VocabPlayer.stopSequence();
     isFullscreen = false;
     window._vocabSetFullscreen?.(false);
-
-    // 현재 카드 초기 상태로 리셋
     resetCardDisplay(currentIndex);
-
     if (autoplayWrap) autoplayWrap.style.visibility = 'hidden';
+  }
+
+  // 모달 닫은 뒤 현재 카드 재개 (공용)
+  async function resumePlayback() {
+    isModalOpen = false;
+    if (autoplayWrap) autoplayWrap.style.visibility = 'visible';
+    if (indicatorWrap) indicatorWrap.style.visibility = 'visible';
+    await playCard(currentIndex);
+  }
+
+  function openHelp() {
+    interruptPlayback();
     helpModal.hidden = false;
   }
 
   async function closeHelp() {
-    isModalOpen = false;
     helpModal.hidden = true;
-    if (autoplayWrap) autoplayWrap.style.visibility = 'visible';
-    await playCard(currentIndex);
+    await resumePlayback();
   }
+
+  // ── Day 변경 모달 ──────────────────────────────────────────
+  function openDayPicker() {
+    if (isModalOpen) return;
+    interruptPlayback();
+    if (indicatorWrap) indicatorWrap.style.visibility = 'hidden';
+    DaySelect.openPicker({
+      current: { grade: currentGrade, day: currentDay },
+      onPick: (g, d) => {
+        isModalOpen = false;
+        if (autoplayWrap) autoplayWrap.style.visibility = 'visible';
+        startDay(g, d);
+      },
+      onCancel: () => { resumePlayback(); },
+    });
+  }
+
+  dayIndicator?.addEventListener('click', () => {
+    if (isFullscreen) return;
+    openDayPicker();
+  });
 
   btnHelp?.addEventListener('click', openHelp);
   btnHelpClose?.addEventListener('click', closeHelp);
@@ -218,17 +248,31 @@
   // vocab-player.js 가 풀스크린 상태를 알릴 수 있도록 전역 노출
   window._vocabSetFullscreen = setFullscreen;
 
-  // 시작
-  function startPlay() {
+  // Day 시작 — 선택된 학년·Day의 단어만 필터·정렬 후 재생
+  function startDay(grade, day) {
+    dayWords = VOCAB_WORDS
+      .filter(w => w.grade === grade && w.day === day)
+      .sort((a, b) => (a.seq ?? 999) - (b.seq ?? 999));
+    if (!dayWords.length) return;
+
+    currentGrade = grade;
+    currentDay = day;
+    if (dayIndicator) dayIndicator.textContent = `G${grade} · Day ${day} ▾`;
+
+    buildCards(dayWords);
+
     startWrap.style.display = 'none';
     layout.style.visibility = 'visible';
     if (autoplayWrap) autoplayWrap.style.visibility = 'visible';
+    if (indicatorWrap) indicatorWrap.style.visibility = 'visible';
     playCard(0);
   }
 
-  if (startBtn) {
-    startBtn.addEventListener('click', startPlay, { once: true });
-  } else {
-    startPlay();
-  }
+  // 학년·Day 선택 화면 렌더링
+  DaySelect.init({
+    tabsEl: document.getElementById('grade-tabs'),
+    gridEl: document.getElementById('day-grid'),
+    words: window.VOCAB_WORDS,
+    onStart: startDay,
+  });
 })();
