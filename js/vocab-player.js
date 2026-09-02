@@ -26,7 +26,7 @@
     CHUNK_FB: 1200,
     COLLAPSE_DUR: 500,
     REPEAT_GAP: 400,   // 예문 반복 사이 간격
-    FINAL_HOLD: 2000,
+    FINAL_HOLD: 300,
     BETWEEN: 800,
     PLAY_WAIT: 2500, // 풀스크린 영상 재생 시작 최대 대기
   };
@@ -114,20 +114,64 @@
   async function readWithHighlight(chunks, src, t) {
     const n = chunks.length;
     const timings = await AudioPlayer.analyzeChunkTimings(src, n, {
-      silenceThreshold: 0.015,
-      minSilenceMs: 80,
+      silenceThreshold: 0.030,  // ★ d·b 등 폐쇄음 클로저 구간도 무음으로 인식
+      minSilenceMs: 10,         // ★ 10ms(1프레임) — 짧은 자음 폐쇄도 경계로 감지
     });
     if (isCancelled(t)) throw new CancelError();
-
-    const start = performance.now();
-    const audioPromise = AudioPlayer.playOnce(src, T.CHUNK_FB);
 
     // 재생 속도를 늦추면 실제 재생 시간이 늘어나므로 하이라이트 타이밍도 스케일
     const rate = (window.MEDIA_CONFIG && window.MEDIA_CONFIG.audio && window.MEDIA_CONFIG.audio.playbackRate) || 1;
 
+    // ★ Fix: playOnce가 반환하는 startedAt Promise를 기준점으로 사용
+    //   'playing' 이벤트 발생 시각을 측정하므로 시스템마다 다른 버퍼 딜레이를
+    //   자동으로 보정함 (LEAD_MS 고정값 방식보다 정확)
+    const audioPromise = AudioPlayer.playOnce(src, T.CHUNK_FB);
+    const playStart = await audioPromise.startedAt;  // 실제 재생 시작 시각 (performance.now() 기준)
+
+    // ★ 스피커 출력 버퍼 지연(20~100ms) 보정: 하이라이트를 검출 타이밍보다 약간 앞당김
+    // ★ 단어별 WORD_PRE 테이블로 개별 튜닝, 미등록 단어는 PRE_MAX→PRE_MIN 선형 보간
+    const PRE_MAX = 160, PRE_MIN = 0;
+
+    // ★ 단어별 per-chunk pre-advance (ms) 테이블
+    //   양수: 하이라이트를 검출 시점보다 앞당김 (빠르게)
+    //   음수: 검출 시점보다 늦춤 (느리게)
+    //   src URL의 키워드로 매칭
+    const WORD_PRE = {
+      // decide: [He=160, decides=120, to=-120, drink=40, milk=0]
+      'decide_sentence':     [160, 120, -120, 40, 0],
+      // investigate: [The=160, police=260, officer=300, investigates=80, the=-360, crime=-100]
+      'investigate_sentence': [160, 260, 300, 80, -360, -100],
+      // invite: [My=160, sister=133, invites=-80, her=-100, friends=-220, to=-200, party=60]
+      'invite_sentence':     [160, 133, -80, -100, -220, -200, 60],
+      // prefer: [I=160, prefer=120, apples=60, over=100, bananas=-80]
+      'prefer_sentence':     [160, 120, 60, 20, 100],
+      // should: [He=160, should=280, apologize=-80, for=-100, his=60, behavior=60]
+      'should_sentence':     [160, 280, 240, -100, 60, 120],
+      // rip: [She=160, rips=200, the=-80, paper=-100, in=32, half=0]
+      'rip_sentence':        [160, 200, -80, 20, -80, 0],
+      // call: [Mom=160, calls=-80, my=-80, name=-80]
+      'call_sentence':       [160, -80, -160, 0],
+      // touch: [She=160, touches=107, the=-80, cat=80]
+      'touch_sentence':      [160, 107, -80, 80],
+      // have: [I=160, have=107, two=53, dogs=80]
+      'have_sentence':       [160, 107, 53, 140],
+      // know: [I=160, know=128, how=-80, to=-100, cook=32, noodle=0]
+      'know_sentence':       [160, 128, -80, -100, 32, 0],
+      // teach: [My=160, sister=120, teaches=-80, me=100, math=80]
+      'teach_sentence':      [160, 120, -80, -80, 80],
+    };
+
+    // src URL에서 단어 키워드 추출하여 매칭
+    const wordKey = src && Object.keys(WORD_PRE).find(k => src.includes(k));
+    const wordPre = wordKey ? WORD_PRE[wordKey] : null;
+
     for (let i = 0; i < n; i++) {
       if (isCancelled(t)) break;
-      const delay = Math.max(0, timings[i] / rate - (performance.now() - start));
+      const preMs = (wordPre && wordPre[i] !== undefined)
+        ? wordPre[i]
+        : (n > 1 ? Math.round(PRE_MAX - (PRE_MAX - PRE_MIN) * i / (n - 1)) : PRE_MAX);
+      const targetMs = Math.max(0, timings[i] - preMs);
+      const delay = Math.max(0, targetMs / rate - (performance.now() - playStart));
       await waitOrCancel(delay, t);
       if (i > 0) chunks[i - 1].classList.remove('is-highlight');
       chunks[i].classList.add('is-highlight');
