@@ -825,9 +825,9 @@ window.VOCAB_WORDS = [
       "Korea."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260508_030815_7d1670c2-321c-46f6-946f-070ecd7ddfd7.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260508_030815_7d1670c2-321c-46f6-946f-070ecd7ddfd7.mp4",
-      "thumb": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260508_024235_80c87ff9-f016-4562-a476-6849b0e1b554.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/live.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/live.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/live.jpeg",
       "placeholder": "🏠",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_014_live_word.mp3",
@@ -1209,9 +1209,9 @@ window.VOCAB_WORDS = [
       "class."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054635_f6698e63-6ef4-4462-a0f2-9996bd227ca2.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054635_f6698e63-6ef4-4462-a0f2-9996bd227ca2.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/b4765185-03f9-418e-b274-d667bf628225.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/come.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/come.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/come.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_009_come_word.mp3",
@@ -1294,9 +1294,9 @@ window.VOCAB_WORDS = [
       "another."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054701_428a029f-2715-44b9-9706-38181cc23473.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054701_428a029f-2715-44b9-9706-38181cc23473.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/6aa1303d-b96a-4374-9d09-5a67c7d3f1e7.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fight.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fight.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/fight.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_012_fight_word.mp3",
@@ -1320,9 +1320,9 @@ window.VOCAB_WORDS = [
       "candy."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054708_06556cb4-31dd-456d-bbaf-50c593a22a69.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054708_06556cb4-31dd-456d-bbaf-50c593a22a69.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/848b66be-c3d1-4788-b1c4-a09c9334ce06.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/like.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/like.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/like.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_013_like_word.mp3",
@@ -1346,9 +1346,9 @@ window.VOCAB_WORDS = [
       "music."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054715_977c9f29-0a9c-47fe-96d3-525648de7e92.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_054715_977c9f29-0a9c-47fe-96d3-525648de7e92.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/d3aecf50-0e93-4298-9673-bcdeec8fd79e.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/enjoy.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/enjoy.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/enjoy.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_014_enjoy_word.mp3",
@@ -1434,7 +1434,7 @@ window.VOCAB_WORDS = [
     "media": {
       "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_055052_d84590e7-fb15-400f-a707-78fbeb0b97b2.mp4",
       "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_055052_d84590e7-fb15-400f-a707-78fbeb0b97b2.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/ce2969ba-5118-437e-8cb7-9b00fa0a4164.png",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/put.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_017_put_word.mp3",
@@ -1459,9 +1459,9 @@ window.VOCAB_WORDS = [
       "lights."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_055105_b973bde0-5d59-464d-ae5b-ebb571b9c21f.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_055105_b973bde0-5d59-464d-ae5b-ebb571b9c21f.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/e90a3d14-11bb-4265-bd05-685b756fc80e.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/turn-on.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/turn-on.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/turn-on.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_019_turn%20on_word.mp3",
@@ -1568,9 +1568,9 @@ window.VOCAB_WORDS = [
       "cat."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_064157_6af4c172-15e2-4d8a-bc1c-9d2a25a9410d.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_064157_6af4c172-15e2-4d8a-bc1c-9d2a25a9410d.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/5345d56c-4793-4f6d-bf39-725ede2b67df.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/show.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/show.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/show.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_004_show_word.mp3",
@@ -1813,9 +1813,9 @@ window.VOCAB_WORDS = [
       "class."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_064824_ae91c966-395e-4fa7-847e-9d9dae97a05b.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_064824_ae91c966-395e-4fa7-847e-9d9dae97a05b.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/050c6473-e1ca-431b-b2a8-627979dedf3a.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/use.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/use.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/use.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_013_use_word.mp3",
@@ -1865,9 +1865,9 @@ window.VOCAB_WORDS = [
       "around."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_065014_8d35fb9c-df1a-4af8-86e3-39729c60c1ee.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_065014_8d35fb9c-df1a-4af8-86e3-39729c60c1ee.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/927bf9db-c8b4-47ac-b324-0919f64811c9.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/turn.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/turn.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/turn.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_016_turn_word.mp3",
@@ -1893,9 +1893,9 @@ window.VOCAB_WORDS = [
       "color."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_065128_08d98efd-62c4-432e-9cab-82e18147fa0c.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_065128_08d98efd-62c4-432e-9cab-82e18147fa0c.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/cc63406d-f388-4dec-a8c8-2913c37530c5.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/mix.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/mix.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/mix.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_017_mix_word.mp3",
@@ -1919,9 +1919,9 @@ window.VOCAB_WORDS = [
       "ball."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_065134_559ede62-c58c-4869-a264-97ee06138f77.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_065134_559ede62-c58c-4869-a264-97ee06138f77.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/22d06d07-555d-4c6f-9e07-04038110076e.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/throw.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/throw.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/throw.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_018_throw_word.mp3",
@@ -1972,9 +1972,9 @@ window.VOCAB_WORDS = [
       "good."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_065233_902d1b0f-c9fb-48a5-88ce-1e4eaa26a659.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_065233_902d1b0f-c9fb-48a5-88ce-1e4eaa26a659.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/5ed1a4d9-a191-4b0d-890c-c77015352715.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/taste.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/taste.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/taste.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_020_taste_word.mp3",
@@ -2000,9 +2000,9 @@ window.VOCAB_WORDS = [
       "brother."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_083004_9e9a5b64-d714-4485-912b-113540848c0a.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_083004_9e9a5b64-d714-4485-912b-113540848c0a.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/d812f136-ec68-4d80-881d-3cb8c91dd271.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sit.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sit.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/sit.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_001_sit_word.mp3",
@@ -2085,9 +2085,9 @@ window.VOCAB_WORDS = [
       "iron."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_083524_b01ec453-abbd-4b90-bb94-656c7adf986d.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_083524_b01ec453-abbd-4b90-bb94-656c7adf986d.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/f3868b97-1d5d-4c65-b37b-5b770ebee0bb.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/curl.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/curl.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/curl.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_004_curl_word.mp3",
@@ -2110,9 +2110,9 @@ window.VOCAB_WORDS = [
       "angry."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_083530_5baddd20-0e64-48d4-9e4e-b36326b75654.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_083530_5baddd20-0e64-48d4-9e4e-b36326b75654.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/93b70224-ce7b-41e4-b188-bee4b5d80b21.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sound.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sound.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/sound.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_005_sound_word.mp3",
@@ -2215,9 +2215,9 @@ window.VOCAB_WORDS = [
       "coffee."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084103_9112dc8d-de1c-47e8-bde5-c59d06421346.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084103_9112dc8d-de1c-47e8-bde5-c59d06421346.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/fc7150a2-462f-48dc-b4d7-1aa9de919f8f.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/drink.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/drink.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/drink.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_009_drink_word.mp3",
@@ -2322,9 +2322,9 @@ window.VOCAB_WORDS = [
       "cat."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084307_78e864ce-2274-4478-b47e-84c859ccb1c9.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084307_78e864ce-2274-4478-b47e-84c859ccb1c9.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/b8ce593d-9d36-4418-bb32-decd93b2cf3c.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/touch.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/touch.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/touch.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_014_touch_word.mp3",
@@ -2352,9 +2352,9 @@ window.VOCAB_WORDS = [
       "test."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084523_0ec7582b-ce7d-4571-866c-7c6ce3694d79.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084523_0ec7582b-ce7d-4571-866c-7c6ce3694d79.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/567fd227-e8c5-4f03-9bcc-1e0155717fe4.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/try.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/try.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/try.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_015_try_word.mp3",
@@ -2379,9 +2379,9 @@ window.VOCAB_WORDS = [
       "bus."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084531_bad61740-a29f-46c0-b112-0b650ba72843.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084531_bad61740-a29f-46c0-b112-0b650ba72843.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/3932d864-65af-453c-bfdf-e8ee17187941.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/miss.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/miss.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/miss.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_016_miss_word.mp3",
@@ -2408,9 +2408,9 @@ window.VOCAB_WORDS = [
       "home."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084539_5e9ae81a-ac76-43d4-b031-6b2db2b691ec.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084539_5e9ae81a-ac76-43d4-b031-6b2db2b691ec.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/0779ff74-2b32-4737-bb25-7fb3d9fe0df8.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/visit.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/visit.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/visit.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_017_visit_word.mp3",
@@ -2434,8 +2434,8 @@ window.VOCAB_WORDS = [
       "party."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084547_455ed395-76fe-47dd-85a3-f466c48fa844.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084547_455ed395-76fe-47dd-85a3-f466c48fa844.mp4",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/join.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/join.mp4",
       "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/ed67bf0f-723a-46ab-86d6-77299f15f286.png",
       "placeholder": "📖",
       "audio": {
@@ -2488,9 +2488,9 @@ window.VOCAB_WORDS = [
       "loudly."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084751_4a119cd0-688a-440e-a17f-68c1fa25fc60.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260624_084751_4a119cd0-688a-440e-a17f-68c1fa25fc60.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/894d3fd1-7678-472a-b001-4f2230fbc14a.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/laugh.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/laugh.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/laugh.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_020_laugh_word.mp3",
@@ -2541,9 +2541,9 @@ window.VOCAB_WORDS = [
       "hometown."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_123543_8c5c4606-cfea-4efd-bc55-d7d84097f6f7.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_123543_8c5c4606-cfea-4efd-bc55-d7d84097f6f7.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/5dbad7e8-e4df-444d-a875-6c53b1d3015e.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/leave.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/leave.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/leave.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_002_leave_word.mp3",
@@ -2570,9 +2570,9 @@ window.VOCAB_WORDS = [
       "world."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_123545_6624f0d6-e3c2-45b4-a820-44e9f3e40bb3.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_123545_6624f0d6-e3c2-45b4-a820-44e9f3e40bb3.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/5c938ddf-90f3-48ed-942e-d8a1ddc3d581.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/travel.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/travel.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/travel.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_003_travel_word.mp3",
@@ -2595,9 +2595,9 @@ window.VOCAB_WORDS = [
       "happy."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260625_042936_5b409dbe-3818-49db-93ad-84f97fb1f546.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260625_042936_5b409dbe-3818-49db-93ad-84f97fb1f546.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/ab9a4036-9c84-4dcf-9c80-33b8c9e91a67.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/feel.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/feel.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/feel.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_004_feel_word.mp3",
@@ -2622,9 +2622,9 @@ window.VOCAB_WORDS = [
       "math."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260625_042929_ec0c7f8a-03fc-4f30-9f12-1762f880acb6.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260625_042929_ec0c7f8a-03fc-4f30-9f12-1762f880acb6.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/5345d56c-4793-4f6d-bf39-725ede2b67df.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/teach.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/teach.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/teach.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_005_teach_word.mp3",
@@ -2649,9 +2649,9 @@ window.VOCAB_WORDS = [
       "me."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260625_042943_490c5c25-fb89-411a-8c17-4bf15ae6ce22.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260625_042943_490c5c25-fb89-411a-8c17-4bf15ae6ce22.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/22d06d07-555d-4c6f-9e07-04038110076e.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/annoy.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/annoy.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/annoy.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_006_annoy_word.mp3",
@@ -2677,9 +2677,9 @@ window.VOCAB_WORDS = [
       "teachers."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_123548_9980bbe9-f8fc-46e5-a3ef-0541b3981a6a.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_123548_9980bbe9-f8fc-46e5-a3ef-0541b3981a6a.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/e57b690f-5f40-423b-93eb-cf6911af341a.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pay-attention.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pay-attention.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/pay-attention.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_007_pay%20attention_word.mp3",
@@ -3911,9 +3911,9 @@ window.VOCAB_WORDS = [
       "mood."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_170959_917bc281-f55e-4fc9-a4b1-347badcbc184.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_170959_917bc281-f55e-4fc9-a4b1-347badcbc184.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/4f3bcae4-ee46-4823-b21e-fde680a59208.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/boost.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/boost.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/boost.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%209_003_boost_word.mp3",
@@ -4195,9 +4195,9 @@ window.VOCAB_WORDS = [
       "lake."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_172059_352f616d-41e0-4e1f-bdee-a8f342b268ab.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_172059_352f616d-41e0-4e1f-bdee-a8f342b268ab.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/f98f52eb-bbf7-474a-a103-5d49bb65afc4.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/float.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/float.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/float.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%209_016_float_word.mp3",
@@ -5273,7 +5273,7 @@ window.VOCAB_WORDS = [
     "media": {
       "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_155023_5b0337b2-c3d1-4b2d-8a56-924f63728da2.mp4",
       "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_155023_5b0337b2-c3d1-4b2d-8a56-924f63728da2.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/909040b2-9fe5-4870-bc6b-51c06c534a32.png",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/start.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%202_019_start_word.mp3",
@@ -5792,7 +5792,7 @@ window.VOCAB_WORDS = [
     "media": {
       "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_175409_422908e1-bdf9-4922-876c-84f9037a63a7.mp4",
       "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_175409_422908e1-bdf9-4922-876c-84f9037a63a7.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/d5d60386-a49c-4b8e-a3df-99fe9589c077.png",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/cover.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_004_cover_word.mp3",
@@ -5847,7 +5847,7 @@ window.VOCAB_WORDS = [
     "media": {
       "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_184152_2e554fdf-2fab-4dff-bb91-94fe27957bbb.mp4",
       "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_184152_2e554fdf-2fab-4dff-bb91-94fe27957bbb.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/93fd7498-ea80-4d8a-ac1c-db0224fcce30.png",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/crash%20(1).jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_007_crash_word.mp3",
@@ -5984,9 +5984,9 @@ window.VOCAB_WORDS = [
       "mart."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_184251_9ad6c35b-3905-45af-8554-3a1e8934ec05.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_184251_9ad6c35b-3905-45af-8554-3a1e8934ec05.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/3916bb4f-e628-418d-970a-0810de8e8d29.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pick.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pick.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/pick.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_013_pick_word.mp3",
@@ -6040,9 +6040,9 @@ window.VOCAB_WORDS = [
       "nest."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185024_a92d6a2e-8f3d-4122-8677-a3768f01be8f.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185024_a92d6a2e-8f3d-4122-8677-a3768f01be8f.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/04b6f299-50e0-4e4b-8615-879df79817bd.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/build.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/build.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/build.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_015_build_word.mp3",
@@ -6494,9 +6494,9 @@ window.VOCAB_WORDS = [
       "healthy."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185641_558920f5-7edf-4484-b53b-4c8bd0769d1d.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185641_558920f5-7edf-4484-b53b-4c8bd0769d1d.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/276a971e-5b00-4e57-829a-e3732bf680c6.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/exercise.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/exercise.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/exercise.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%205_012_exercise_word.mp3",
@@ -6666,9 +6666,9 @@ window.VOCAB_WORDS = [
       "city."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185910_3e31fbe2-525b-4d57-85b9-b40f59988d26.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_185910_3e31fbe2-525b-4d57-85b9-b40f59988d26.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/80be71f7-2994-4406-986b-0c603fdfe745.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/gust.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/gust.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/gust.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%205_019_gust_word.mp3",
@@ -6752,9 +6752,9 @@ window.VOCAB_WORDS = [
       "contents."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_195046_137d1d5f-89f5-444e-9e9d-92a94c7ac3a4.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_195046_137d1d5f-89f5-444e-9e9d-92a94c7ac3a4.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/49d12a64-4de9-4656-8e21-79458a921801.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/label.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/label.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/label.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%206_003_label_word.mp3",
@@ -7184,7 +7184,7 @@ window.VOCAB_WORDS = [
     "media": {
       "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260626_044143_0eb2e56c-2b33-43b4-a4ff-23b1f502b5d9.mp4",
       "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260626_044143_0eb2e56c-2b33-43b4-a4ff-23b1f502b5d9.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/9a5a5b52-7c8e-4c7d-8218-cf0d764072f1.png",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/vanish.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%207_005_vanish_word.mp3",
@@ -7496,9 +7496,9 @@ window.VOCAB_WORDS = [
       "peacefully."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260628_043313_d7318426-cec7-4c1e-a82b-73610cc09eed.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260628_043313_d7318426-cec7-4c1e-a82b-73610cc09eed.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/e06b8bab-6952-44be-ac83-85c6b4c56f8c.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/snore.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/snore.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/snore.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_006_snore_word.mp3",
@@ -9609,9 +9609,9 @@ window.VOCAB_WORDS = [
       "school."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260701_175336_684d156f-f1ab-43af-9d00-d935389b71e4.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260701_175336_684d156f-f1ab-43af-9d00-d935389b71e4.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/0f7bbdd6-48f6-4f85-a9e0-e0c8bf14fa35.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/drive.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/drive.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/drive.jpeg",
       "placeholder": "📖",
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_007_drive_word.mp3",
