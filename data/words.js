@@ -276,6 +276,48 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "dance",
+    "grade": 1,
+    "day": 1,
+    "seq": 11,
+    "word": "dance",
+    "pos": "v.",
+    "meaning": "춤을 추다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/dance.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/dance.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/dance.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "sleep",
+    "grade": 1,
+    "day": 1,
+    "seq": 12,
+    "word": "sleep",
+    "pos": "v.",
+    "meaning": "자다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sleep.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sleep.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/sleep.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "open",
     "grade": 1,
     "day": 1,
@@ -619,8 +661,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260508_024107_22f77352-fe4a-4f69-9a09-a97ecfc4146f.png",
       "placeholder": "😉",
       "audio": {
-        "word": "assets/audio/wink-word.mp3",
-        "example": "assets/audio/wink-example.mp3"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_005_wink_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_005_wink_sentence.mp3"
       }
     }
   },
@@ -784,6 +826,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "find",
+    "grade": 1,
+    "day": 2,
+    "seq": 12,
+    "word": "find",
+    "pos": "v.",
+    "meaning": "~을 찾다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/find.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/find.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/find.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "run",
     "grade": 1,
     "day": 2,
@@ -891,6 +954,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_016_ride_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%202_016_ride_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "write",
+    "grade": 1,
+    "day": 2,
+    "seq": 17,
+    "word": "write",
+    "pos": "v.",
+    "meaning": "쓰다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/write.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/write.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/write.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -1129,8 +1213,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260508_024429_f938d2f1-6b76-4b63-9c7c-ff6799d1637a.png",
       "placeholder": "🎁",
       "audio": {
-        "word": "",
-        "example": ""
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_006_get_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%203_006_get_sentence.mp3"
       }
     }
   },
@@ -1497,6 +1581,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "hear",
+    "grade": 1,
+    "day": 4,
+    "seq": 1,
+    "word": "hear",
+    "pos": "v.",
+    "meaning": "듣다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/hear.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/hear.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/hear.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "jump",
     "grade": 1,
     "day": 4,
@@ -1748,14 +1853,13 @@ window.VOCAB_WORDS = [
     "word": "kick",
     "pos": "v.",
     "meaning": "차다",
-    "example": "She kicks the ball to me.",
+    "example": "She kicks a soccer ball.",
     "exampleChunks": [
       "She",
       "kicks",
-      "the",
-      "ball",
-      "to",
-      "me."
+      "a",
+      "soccer",
+      "ball."
     ],
     "media": {
       "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_145857_55735918-58f9-430d-8cd8-d3d29cef1cc1.mp4",
@@ -1763,8 +1867,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/56156047-ad0e-45e0-a342-1374df9f052c.png",
       "placeholder": "📖",
       "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1U9r_qjuAAt7KgqmoErAcd_wr7hQkW6ON",
-        "example": "https://drive.google.com/uc?export=download&id=1FptrbaBXYXvlR__vDHLlpPnk6Bs5X00J"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_011_kick_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_011_kick_sentence.mp3"
       }
     }
   },
@@ -1820,6 +1924,36 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_013_use_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_013_use_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "guess",
+    "grade": 1,
+    "day": 4,
+    "seq": 14,
+    "word": "guess",
+    "pos": "v.",
+    "meaning": "추측하다",
+    "example": "Can you guess the answer to the question?",
+    "exampleChunks": [
+      "Can",
+      "you",
+      "guess",
+      "the",
+      "answer",
+      "to",
+      "the",
+      "question?"
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/guess.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/guess.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/guess.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_014_guess_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%204_014_guess_sentence.mp3"
       }
     }
   },
@@ -2229,18 +2363,17 @@ window.VOCAB_WORDS = [
     "id": "think",
     "grade": 1,
     "day": 5,
-    "seq": 10,
+    "seq": 11,
     "word": "think",
     "pos": "v.",
     "meaning": "생각하다, 상상하다",
-    "example": "She always thinks carefully before speaking.",
+    "example": "I think about him everyday.",
     "exampleChunks": [
-      "She",
-      "always",
-      "thinks",
-      "carefully",
-      "before",
-      "speaking."
+      "I",
+      "think",
+      "about",
+      "him",
+      "everyday."
     ],
     "media": {
       "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260703_184313_ef7cb066-8d94-4e66-932b-70d6e20e07bc.mp4",
@@ -2248,8 +2381,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/49084566-b4cd-4595-9a35-ea72d6eca386.png",
       "placeholder": "📖",
       "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1LqVtBD94OL3Y_yL6GZl0fTzKPPWAeKZC",
-        "example": "https://drive.google.com/uc?export=download&id=1jOSoQkP9GWUx0r8ToYOKnqD7KwmN1hn9"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_011_think_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%205_011_think_sentence.mp3"
       }
     }
   },
@@ -2688,6 +2821,31 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "calm",
+    "grade": 1,
+    "day": 6,
+    "seq": 8,
+    "word": "calm",
+    "pos": "v.",
+    "meaning": "차분하다[고요하다]",
+    "example": "Please calm down.",
+    "exampleChunks": [
+      "Please",
+      "calm",
+      "down."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/calm.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/calm.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/calm.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_008_calm_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_008_calm_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "comfort",
     "grade": 1,
     "day": 6,
@@ -2712,6 +2870,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_009_comfort_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_009_comfort_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "pack",
+    "grade": 1,
+    "day": 6,
+    "seq": 10,
+    "word": "pack",
+    "pos": "v.",
+    "meaning": "싸다[포장하다]",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pack.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pack.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/pack.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -2882,6 +3061,31 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "embarrass",
+    "grade": 1,
+    "day": 6,
+    "seq": 17,
+    "word": "embarrass",
+    "pos": "v.",
+    "meaning": "당황스럽게 만들다[곤란하게 만들다]",
+    "example": "Mike embarrasses me.",
+    "exampleChunks": [
+      "Mike",
+      "embarrasses",
+      "me."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/embarrass.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/embarrass.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/embarrass.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_017_embarrass_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_017_embarrass_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "pat",
     "grade": 1,
     "day": 6,
@@ -2904,6 +3108,48 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_018_pat_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%206_018_pat_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "exhaust",
+    "grade": 1,
+    "day": 6,
+    "seq": 19,
+    "word": "exhaust",
+    "pos": "v.",
+    "meaning": "기진맥진 하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/exhaust.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/exhaust.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/exhaust.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "explore",
+    "grade": 1,
+    "day": 6,
+    "seq": 20,
+    "word": "explore",
+    "pos": "v.",
+    "meaning": "탐험하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/explore.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/explore.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/explore.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -2957,8 +3203,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/bec6a456-edc1-4901-8434-be9bdea454e9.png",
       "placeholder": "📖",
       "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1-9rE_rfSgSsqNMlJwR1Sv-b2MuSSVfEF",
-        "example": "https://drive.google.com/uc?export=download&id=1kjiWRjb4zFW-FllapjpnFGodj3GYdhAn"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_002_fascinate_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_002_fascinate_sentence.mp3"
       }
     }
   },
@@ -2985,8 +3231,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/feast.jpeg",
       "placeholder": "📖",
       "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1gBzashe7qf5JSJoPuKQ8Bcjxc9sw2cGC",
-        "example": "https://drive.google.com/uc?export=download&id=1qQeuL7fPolJCxKfvoN1WZ6bvPsZQpHdS"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_003_feast_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_003_feast_sentence.mp3"
       }
     }
   },
@@ -3012,8 +3258,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/bac8e816-b799-4f53-96d3-316134517d56.png",
       "placeholder": "📖",
       "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1rQhM6sNMHExkOAzOarCzmfoPsOKSMQKU",
-        "example": "https://drive.google.com/uc?export=download&id=1V4wWzezBqJY9hFiV6rrNvFguGJxl4cdl"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_004_focus_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_004_focus_sentence.mp3"
       }
     }
   },
@@ -3039,8 +3285,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/frusrate.jpeg",
       "placeholder": "📖",
       "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1lu05klh3dwhuzOQ4Y2NOiPIdQ7VXjHkH",
-        "example": "https://drive.google.com/uc?export=download&id=18FZjjFNXf5JOYA3FoAi2DDm5qFdXHM0E"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_005_frustrate_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_005_frustrate_sentence.mp3"
       }
     }
   },
@@ -3049,9 +3295,37 @@ window.VOCAB_WORDS = [
     "grade": 1,
     "day": 7,
     "seq": 6,
-    "word": "punish",
+    "word": "grow",
     "pos": "v.",
     "meaning": "처벌하다, 벌을 주다",
+    "example": "The plant grow over the summer.",
+    "exampleChunks": [
+      "The",
+      "plant",
+      "grow",
+      "over",
+      "the",
+      "summer."
+    ],
+    "media": {
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_144005_b7280cf6-b347-41d5-8385-bac9cb2882c4.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_144005_b7280cf6-b347-41d5-8385-bac9cb2882c4.mp4",
+      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/71ef9523-4e29-4e20-a2de-e5eacdb0bf41.png",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_006_grow_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_006_grow_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "punish_g1d7",
+    "grade": 1,
+    "day": 7,
+    "seq": 7,
+    "word": "punish",
+    "pos": "v.",
+    "meaning": "처벌하다[벌을 주다]",
     "example": "The teacher punishes the students.",
     "exampleChunks": [
       "The",
@@ -3061,13 +3335,42 @@ window.VOCAB_WORDS = [
       "students."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_144005_b7280cf6-b347-41d5-8385-bac9cb2882c4.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260625_144005_b7280cf6-b347-41d5-8385-bac9cb2882c4.mp4",
-      "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/71ef9523-4e29-4e20-a2de-e5eacdb0bf41.png",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/punish.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/punish.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/punish.jpeg",
       "placeholder": "📖",
       "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=16VTgryEwvcHBOj65G78d3MBzzOhe8ftT",
-        "example": "https://drive.google.com/uc?export=download&id=1w-kZ8GnceEA7Agwu3YWsoKLGs-lwiDFj"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_007_punish_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_007_punish_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "increase",
+    "grade": 1,
+    "day": 7,
+    "seq": 8,
+    "word": "increase",
+    "pos": "v.",
+    "meaning": "증가하다[커지다]",
+    "example": "The library increases the numbers of books.",
+    "exampleChunks": [
+      "The",
+      "library",
+      "increases",
+      "the",
+      "numbers",
+      "of",
+      "books."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/increase.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/increase.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/increase.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_008_increase_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%207_008_increase_sentence.mp3"
       }
     }
   },
@@ -3352,6 +3655,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "mumble",
+    "grade": 1,
+    "day": 8,
+    "seq": 1,
+    "word": "mumble",
+    "pos": "v.",
+    "meaning": "말을 더듬거리다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/mumble.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/mumble.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/mumble.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "tap",
     "grade": 1,
     "day": 8,
@@ -3550,6 +3874,36 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%208_008_stuff_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%208_008_stuff_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "posit",
+    "grade": 1,
+    "day": 8,
+    "seq": 9,
+    "word": "posit",
+    "pos": "v.",
+    "meaning": "가정하다[제시하다]",
+    "example": "The book posits that happiness is a choice.",
+    "exampleChunks": [
+      "The",
+      "book",
+      "posits",
+      "that",
+      "happiness",
+      "is",
+      "a",
+      "choice."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/posit.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/posit.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/posit.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%208_009_posit_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%208_009_posit_sentence.mp3"
       }
     }
   },
@@ -3778,6 +4132,37 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%208_017_repeat_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%208_017_repeat_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "report",
+    "grade": 1,
+    "day": 8,
+    "seq": 18,
+    "word": "report",
+    "pos": "v.",
+    "meaning": "알리다",
+    "example": "My sister reports the lost wallet to the police.",
+    "exampleChunks": [
+      "My",
+      "sister",
+      "reports",
+      "the",
+      "lost",
+      "wallet",
+      "to",
+      "the",
+      "police."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/report.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/report.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/report.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%208_018_report_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%208_018_report_sentence.mp3"
       }
     }
   },
@@ -4095,6 +4480,33 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "warn",
+    "grade": 1,
+    "day": 9,
+    "seq": 10,
+    "word": "warn",
+    "pos": "v.",
+    "meaning": "경고하다[주의를 주다]",
+    "example": "The teacher warns the students.",
+    "exampleChunks": [
+      "The",
+      "teacher",
+      "warns",
+      "the",
+      "students."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/warn.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/warn.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/warn.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%209_010_warn_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%209_010_warn_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "worry",
     "grade": 1,
     "day": 9,
@@ -4376,6 +4788,69 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "differ",
+    "grade": 1,
+    "day": 10,
+    "seq": 3,
+    "word": "differ",
+    "pos": "v.",
+    "meaning": "다르다[차이가 있다]",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/differ.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/differ.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/differ.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "get_fat",
+    "grade": 1,
+    "day": 10,
+    "seq": 4,
+    "word": "get fat",
+    "pos": "v.",
+    "meaning": "뚱뚱해지다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/get-fat.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/get-fat.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/get-fat.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "get_lost",
+    "grade": 1,
+    "day": 10,
+    "seq": 8,
+    "word": "get lost",
+    "pos": "v.",
+    "meaning": "길을 잃다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/get-lost.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/get-lost.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/get-lost.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "push",
     "grade": 1,
     "day": 10,
@@ -4434,6 +4909,79 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "seem",
+    "grade": 1,
+    "day": 10,
+    "seq": 13,
+    "word": "seem",
+    "pos": "v.",
+    "meaning": "보인다",
+    "example": "He seems tired after a long day at work.",
+    "exampleChunks": [
+      "He",
+      "seems",
+      "tired",
+      "after",
+      "a",
+      "long",
+      "day",
+      "at",
+      "work."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/seem.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/seem.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/seem.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_013_seem_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_013_seem_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "shut",
+    "grade": 1,
+    "day": 10,
+    "seq": 14,
+    "word": "shut",
+    "pos": "v.",
+    "meaning": "닫다[감다]",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/shut.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/shut.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/shut.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "fall_below",
+    "grade": 1,
+    "day": 10,
+    "seq": 15,
+    "word": "fall below",
+    "pos": "v.",
+    "meaning": "아래로 떨어지다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fall-below.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fall-below.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/fall-below.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "stare",
     "grade": 1,
     "day": 10,
@@ -4464,6 +5012,48 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "grin",
+    "grade": 1,
+    "day": 10,
+    "seq": 17,
+    "word": "grin",
+    "pos": "v.",
+    "meaning": "활짝 웃다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/grin.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/grin.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/grin.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "empty",
+    "grade": 1,
+    "day": 10,
+    "seq": 18,
+    "word": "empty",
+    "pos": "v.",
+    "meaning": "비우다[비게 되다]",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/empty.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/empty.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/empty.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "gasp",
     "grade": 1,
     "day": 10,
@@ -4486,6 +5076,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_019_gasp_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G1_Day%2010_019_gasp_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "scold",
+    "grade": 1,
+    "day": 10,
+    "seq": 20,
+    "word": "scold",
+    "pos": "v.",
+    "meaning": "야단치다[꾸짖다]",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/scold.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/scold.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/scold.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -4815,6 +5426,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%201_015_train_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%201_015_train_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "chew",
+    "grade": 2,
+    "day": 1,
+    "seq": 16,
+    "word": "chew",
+    "pos": "v.",
+    "meaning": "씹다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/chew.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/chew.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/chew.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -5202,6 +5834,35 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "erase",
+    "grade": 2,
+    "day": 2,
+    "seq": 16,
+    "word": "erase",
+    "pos": "v.",
+    "meaning": "지우다",
+    "example": "I erase my name from the book.",
+    "exampleChunks": [
+      "I",
+      "erase",
+      "my",
+      "name",
+      "from",
+      "the",
+      "book."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/erase.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/erase.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/erase.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%202_016_erase_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%202_016_erase_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "shine",
     "grade": 2,
     "day": 2,
@@ -5271,8 +5932,8 @@ window.VOCAB_WORDS = [
       "cry."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_155023_5b0337b2-c3d1-4b2d-8a56-924f63728da2.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260623_155023_5b0337b2-c3d1-4b2d-8a56-924f63728da2.mp4",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/start.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/start.mp4",
       "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/start.jpeg",
       "placeholder": "📖",
       "audio": {
@@ -5631,6 +6292,33 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "heal",
+    "grade": 2,
+    "day": 3,
+    "seq": 15,
+    "word": "heal",
+    "pos": "v.",
+    "meaning": "치유[치료]하다[낫다[고치다]]",
+    "example": "The doctor heals the sick.",
+    "exampleChunks": [
+      "The",
+      "doctor",
+      "heals",
+      "the",
+      "sick."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/heal.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/heal.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/heal.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%203_015_heal_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%203_015_heal_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "choose",
     "grade": 2,
     "day": 3,
@@ -5797,6 +6485,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_004_cover_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_004_cover_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "pet",
+    "grade": 2,
+    "day": 4,
+    "seq": 5,
+    "word": "pet",
+    "pos": "v.",
+    "meaning": "쓰다듬다[어루만지다]",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pet.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pet.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/pet.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -6047,6 +6756,34 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_015_build_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_015_build_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "amaze",
+    "grade": 2,
+    "day": 4,
+    "seq": 16,
+    "word": "amaze",
+    "pos": "v.",
+    "meaning": "놀라게 하다",
+    "example": "His magic tricks amaze the audience.",
+    "exampleChunks": [
+      "His",
+      "magic",
+      "tricks",
+      "amaze",
+      "the",
+      "audience."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/amaze.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/amaze.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/amaze.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_016_amaze_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%204_016_amaze_sentence.mp3"
       }
     }
   },
@@ -6820,6 +7557,33 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "peek",
+    "grade": 2,
+    "day": 6,
+    "seq": 9,
+    "word": "peek",
+    "pos": "v.",
+    "meaning": "(재빨리)훔쳐보다",
+    "example": "He peeks through the window.",
+    "exampleChunks": [
+      "He",
+      "peeks",
+      "through",
+      "the",
+      "window."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/peek.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/peek.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/peek.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%206_009_peek_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%206_009_peek_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "predict",
     "grade": 2,
     "day": 6,
@@ -7182,8 +7946,8 @@ window.VOCAB_WORDS = [
       "sky."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260626_044143_0eb2e56c-2b33-43b4-a4ff-23b1f502b5d9.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260626_044143_0eb2e56c-2b33-43b4-a4ff-23b1f502b5d9.mp4",
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/vanish.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/vanish.mp4",
       "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/vanish.jpeg",
       "placeholder": "📖",
       "audio": {
@@ -7271,6 +8035,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%207_015_camp_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%207_015_camp_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "marry",
+    "grade": 2,
+    "day": 7,
+    "seq": 16,
+    "word": "marry",
+    "pos": "v.",
+    "meaning": "~와 결혼하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/marry.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/marry.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/marry.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -7565,6 +8350,67 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "peel",
+    "grade": 2,
+    "day": 8,
+    "seq": 10,
+    "word": "peel",
+    "pos": "v.",
+    "meaning": "껍질을 벗기다",
+    "example": "She peels an orange to enjoy as a snack.",
+    "exampleChunks": [
+      "She",
+      "peels",
+      "an",
+      "orange",
+      "to",
+      "enjoy",
+      "as",
+      "a",
+      "snack."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/peel.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/peel.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/peel.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_010_peel_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_010_peel_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "guess_g2d8",
+    "grade": 2,
+    "day": 8,
+    "seq": 11,
+    "word": "guess",
+    "pos": "v.",
+    "meaning": "추측하다",
+    "example": "I guess the answer to the riddle correctly.",
+    "exampleChunks": [
+      "I",
+      "guess",
+      "the",
+      "answer",
+      "to",
+      "the",
+      "riddle",
+      "correctly."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/guess.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/guess.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/guess.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_011_guess_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_011_guess_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "honk",
     "grade": 2,
     "day": 8,
@@ -7656,15 +8502,15 @@ window.VOCAB_WORDS = [
     "word": "hang",
     "pos": "v.",
     "meaning": "걸다, 매달다",
-    "example": "She hangs the clock on the wall.",
+    "example": "The teacher normally hangs the students' artwork.",
     "exampleChunks": [
-      "She",
+      "The",
+      "teacher",
+      "normally",
       "hangs",
       "the",
-      "clock",
-      "on",
-      "the",
-      "wall."
+      "students'",
+      "artwork."
     ],
     "media": {
       "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260701_213233_8c998f32-82a2-4b9e-8b01-798c4df72b23.mp4",
@@ -7672,8 +8518,8 @@ window.VOCAB_WORDS = [
       "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/6730b439-3e9c-4fba-818d-7966970716e1.png",
       "placeholder": "📖",
       "audio": {
-        "word": "https://drive.google.com/uc?export=download&id=1Qt6GsBCTjbgC2xYVCbfMj6ZBerZ1w0Lq",
-        "example": "https://drive.google.com/uc?export=download&id=1LgAfirrZOz0apDHeNhy5aysm0HEHyCJw"
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_016_hang_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_016_hang_sentence.mp3"
       }
     }
   },
@@ -7703,6 +8549,34 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_017_reply_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_017_reply_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "collect",
+    "grade": 2,
+    "day": 8,
+    "seq": 19,
+    "word": "collect",
+    "pos": "v.",
+    "meaning": "모으다 수집하다",
+    "example": "She collects stamps as a hobby.",
+    "exampleChunks": [
+      "She",
+      "collects",
+      "stamps",
+      "as",
+      "a",
+      "hobby."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/collect.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/collect.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/collect.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_019_collect_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%208_019_collect_sentence.mp3"
       }
     }
   },
@@ -7878,6 +8752,54 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "fog",
+    "grade": 2,
+    "day": 9,
+    "seq": 6,
+    "word": "fog",
+    "pos": "v.",
+    "meaning": "수증기가 서리다 헷갈리게 만들다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fog.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fog.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/fog.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "gulp",
+    "grade": 2,
+    "day": 9,
+    "seq": 7,
+    "word": "gulp",
+    "pos": "v.",
+    "meaning": "꿀꺽 삼키다 벌컥 마시다",
+    "example": "He gulps down his drink",
+    "exampleChunks": [
+      "He",
+      "gulps",
+      "down",
+      "his",
+      "drink"
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/gulp.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/gulp.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/gulp.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%209_007_gulp_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%209_007_gulp_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "weary_of",
     "grade": 2,
     "day": 9,
@@ -7993,6 +8915,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "surround",
+    "grade": 2,
+    "day": 9,
+    "seq": 12,
+    "word": "surround",
+    "pos": "v.",
+    "meaning": "둘러싸다 포위하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/surround.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/surround.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/surround.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "complain",
     "grade": 2,
     "day": 9,
@@ -8074,6 +9017,34 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "huddle",
+    "grade": 2,
+    "day": 9,
+    "seq": 18,
+    "word": "huddle",
+    "pos": "v.",
+    "meaning": "옹송거리며 모이다 옹송그리다",
+    "example": "Penguins huddle closely to keep warm.",
+    "exampleChunks": [
+      "Penguins",
+      "huddle",
+      "closely",
+      "to",
+      "keep",
+      "warm."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/huddle.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/huddle.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/huddle.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%209_018_huddle_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%209_018_huddle_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "howl",
     "grade": 2,
     "day": 9,
@@ -8105,6 +9076,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "hatch",
+    "grade": 2,
+    "day": 9,
+    "seq": 20,
+    "word": "hatch",
+    "pos": "v.",
+    "meaning": "부화하다 부화되다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/hatch.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/hatch.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/hatch.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "slide",
     "grade": 2,
     "day": 10,
@@ -8128,6 +9120,69 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_001_slide_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_001_slide_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "chatter",
+    "grade": 2,
+    "day": 10,
+    "seq": 2,
+    "word": "chatter",
+    "pos": "v.",
+    "meaning": "수다를 떨다 딱딱 맞부딪치다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/chat.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/chat.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/chat.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "stumble",
+    "grade": 2,
+    "day": 10,
+    "seq": 3,
+    "word": "stumble",
+    "pos": "v.",
+    "meaning": "발이 걸리다 발을 헛디디다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/stumble.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/stumble.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/stumble.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "blush",
+    "grade": 2,
+    "day": 10,
+    "seq": 4,
+    "word": "blush",
+    "pos": "v.",
+    "meaning": "얼굴을 붉히다 ~에 부끄러워하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/blush.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/blush.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/blush.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -8157,6 +9212,308 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_005_startle_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_005_startle_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "drench",
+    "grade": 2,
+    "day": 10,
+    "seq": 6,
+    "word": "drench",
+    "pos": "v.",
+    "meaning": "흠뻑 적시다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/drench.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/drench.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/drench.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "doze",
+    "grade": 2,
+    "day": 10,
+    "seq": 7,
+    "word": "doze",
+    "pos": "v.",
+    "meaning": "깜빡 잠이 들다 졸다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/doze.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/doze.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/doze.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "burst",
+    "grade": 2,
+    "day": 10,
+    "seq": 9,
+    "word": "burst",
+    "pos": "v.",
+    "meaning": "터지다[파열하다] 불쑥 가다",
+    "example": "The balloon bursts with a loud pop.",
+    "exampleChunks": [
+      "The",
+      "balloon",
+      "bursts",
+      "with",
+      "a",
+      "loud",
+      "pop."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/burst.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/burst.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/burst.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_009_burst_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G2_Day%2010_009_burst_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "tangle",
+    "grade": 2,
+    "day": 10,
+    "seq": 10,
+    "word": "tangle",
+    "pos": "v.",
+    "meaning": "헝클이다 헝클어지다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/tangle.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/tangle.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/tangle.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "examine",
+    "grade": 2,
+    "day": 10,
+    "seq": 11,
+    "word": "examine",
+    "pos": "v.",
+    "meaning": "조사하다 검사하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/examine.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/examine.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/examine.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "judge",
+    "grade": 2,
+    "day": 10,
+    "seq": 12,
+    "word": "judge",
+    "pos": "v.",
+    "meaning": "판단하다 짐작하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/judge.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/judge.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/judge.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "space",
+    "grade": 2,
+    "day": 10,
+    "seq": 13,
+    "word": "space",
+    "pos": "v.",
+    "meaning": "간격을 두다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/space.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/space.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/space.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "fasten",
+    "grade": 2,
+    "day": 10,
+    "seq": 14,
+    "word": "fasten",
+    "pos": "v.",
+    "meaning": "(단단히)잠그다 고정시키다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fasten.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fasten.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/fasten.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "shock",
+    "grade": 2,
+    "day": 10,
+    "seq": 15,
+    "word": "shock",
+    "pos": "v.",
+    "meaning": "충격을 주다 깜짝 놀라다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/shock.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/shock.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/shock.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "spread",
+    "grade": 2,
+    "day": 10,
+    "seq": 16,
+    "word": "spread",
+    "pos": "v.",
+    "meaning": "펼치다 펼치다/펴다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/spread.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/spread.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/spread.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "perform",
+    "grade": 2,
+    "day": 10,
+    "seq": 17,
+    "word": "perform",
+    "pos": "v.",
+    "meaning": "수행하다[행하다] 공연하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/perform.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/perform.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/perform.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "whirl",
+    "grade": 2,
+    "day": 10,
+    "seq": 18,
+    "word": "whirl",
+    "pos": "v.",
+    "meaning": "빙그르르[빙빙]돌다 혼란스럽다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/whirl.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/whirl.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/whirl.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "shriek",
+    "grade": 2,
+    "day": 10,
+    "seq": 19,
+    "word": "shriek",
+    "pos": "v.",
+    "meaning": "소리[비명]를 지르다 악을 쓰며 말하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/shriek.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/shriek.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/shriek.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "stun",
+    "grade": 2,
+    "day": 10,
+    "seq": 20,
+    "word": "stun",
+    "pos": "v.",
+    "meaning": "기절[실신]시키다 망연자실하게 만들다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/stun.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/stun.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/stun.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -8272,6 +9629,36 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "dig",
+    "grade": 3,
+    "day": 1,
+    "seq": 6,
+    "word": "dig",
+    "pos": "v.",
+    "meaning": "파다",
+    "example": "The dog digs the ground in the yard.",
+    "exampleChunks": [
+      "The",
+      "dog",
+      "digs",
+      "the",
+      "ground",
+      "in",
+      "the",
+      "yard."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/dig.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/dig.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/dig.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%201_006_dig_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%201_006_dig_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "whisper",
     "grade": 3,
     "day": 1,
@@ -8295,6 +9682,54 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%201_007_whisper_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%201_007_whisper_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "yell",
+    "grade": 3,
+    "day": 1,
+    "seq": 8,
+    "word": "yell",
+    "pos": "v.",
+    "meaning": "외치다 소리 지르다",
+    "example": "He yells at my sister.",
+    "exampleChunks": [
+      "He",
+      "yells",
+      "at",
+      "my",
+      "sister."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/yell.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/yell.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/yell.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%201_008_yell_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%201_008_yell_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "cheer",
+    "grade": 3,
+    "day": 1,
+    "seq": 9,
+    "word": "cheer",
+    "pos": "v.",
+    "meaning": "환호하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/cheer.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/cheer.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/cheer.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -8750,6 +10185,33 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "tell",
+    "grade": 3,
+    "day": 2,
+    "seq": 15,
+    "word": "tell",
+    "pos": "v.",
+    "meaning": "말하다",
+    "example": "She tells me her secret.",
+    "exampleChunks": [
+      "She",
+      "tells",
+      "me",
+      "her",
+      "secret."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/tell.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/tell.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/tell.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%202_015_tell_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%202_015_tell_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "connect",
     "grade": 3,
     "day": 2,
@@ -8805,6 +10267,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%202_018_explain_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%202_018_explain_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "pour",
+    "grade": 3,
+    "day": 2,
+    "seq": 19,
+    "word": "pour",
+    "pos": "v.",
+    "meaning": "붓다 따르다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pour.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pour.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/pour.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -8894,6 +10377,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "mop",
+    "grade": 3,
+    "day": 3,
+    "seq": 3,
+    "word": "mop",
+    "pos": "v.",
+    "meaning": "대걸레로 닦다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/mop.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/mop.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/mop.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "place",
     "grade": 3,
     "day": 3,
@@ -8946,6 +10450,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%203_008_flick_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%203_008_flick_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "sew",
+    "grade": 3,
+    "day": 3,
+    "seq": 9,
+    "word": "sew",
+    "pos": "v.",
+    "meaning": "바느질 하다 꿰매다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sew.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sew.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/sew.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -9252,6 +10777,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "comb",
+    "grade": 3,
+    "day": 4,
+    "seq": 6,
+    "word": "comb",
+    "pos": "v.",
+    "meaning": "빗질하다 빗다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/comb.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/comb.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/comb.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "climb",
     "grade": 3,
     "day": 4,
@@ -9333,6 +10879,33 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%204_010_glue_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%204_010_glue_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "tie",
+    "grade": 3,
+    "day": 4,
+    "seq": 11,
+    "word": "tie",
+    "pos": "v.",
+    "meaning": "묶다 매다",
+    "example": "My mom ties my hair.",
+    "exampleChunks": [
+      "My",
+      "mom",
+      "ties",
+      "my",
+      "hair."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/tie.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/tie.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/tie.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%204_011_tie_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%204_011_tie_sentence.mp3"
       }
     }
   },
@@ -9474,6 +11047,36 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%204_017_snap_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%204_017_snap_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "peel_g3d5",
+    "grade": 3,
+    "day": 5,
+    "seq": 1,
+    "word": "peel",
+    "pos": "v.",
+    "meaning": "껍질을 벗기다",
+    "example": "I feel the banana before I eat it.",
+    "exampleChunks": [
+      "I",
+      "feel",
+      "the",
+      "banana",
+      "before",
+      "I",
+      "eat",
+      "it."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/peel.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/peel.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/peel.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_001_peel_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_001_peel_sentence.mp3"
       }
     }
   },
@@ -9650,6 +11253,60 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "flip_g3d5",
+    "grade": 3,
+    "day": 5,
+    "seq": 10,
+    "word": "flip",
+    "pos": "v.",
+    "meaning": "뒤집(히)다",
+    "example": "The teacher flips the pages.",
+    "exampleChunks": [
+      "The",
+      "teacher",
+      "flips",
+      "the",
+      "pages."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/flip.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/flip.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/flip.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_010_flip_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_010_flip_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "vacuum",
+    "grade": 3,
+    "day": 5,
+    "seq": 11,
+    "word": "vacuum",
+    "pos": "v.",
+    "meaning": "진공청소기로  청소하다",
+    "example": "He vacuums the living room.",
+    "exampleChunks": [
+      "He",
+      "vacuums",
+      "the",
+      "living",
+      "room."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/vacuum.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/vacuum.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/vacuum.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_011_vacuum_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_011_vacuum_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "stick_up_for",
     "grade": 3,
     "day": 5,
@@ -9821,6 +11478,36 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "burn",
+    "grade": 3,
+    "day": 5,
+    "seq": 19,
+    "word": "burn",
+    "pos": "v.",
+    "meaning": "(불에)타다 태우다",
+    "example": "I burn my hand on the hot stove.",
+    "exampleChunks": [
+      "I",
+      "burn",
+      "my",
+      "hand",
+      "on",
+      "the",
+      "hot",
+      "stove."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/burn.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/burn.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/burn.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_019_burn_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%205_019_burn_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "lay_down",
     "grade": 3,
     "day": 5,
@@ -9961,6 +11648,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "weigh",
+    "grade": 3,
+    "day": 6,
+    "seq": 5,
+    "word": "weigh",
+    "pos": "v.",
+    "meaning": "무게가~이다 무게를 재다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/weigh.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/weigh.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/weigh.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "fix",
     "grade": 3,
     "day": 6,
@@ -10041,6 +11749,32 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%206_008_surf_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%206_008_surf_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "collect_g3d6",
+    "grade": 3,
+    "day": 6,
+    "seq": 10,
+    "word": "collect",
+    "pos": "v.",
+    "meaning": "모으다[수집하다]",
+    "example": "He collects animal stickers.",
+    "exampleChunks": [
+      "He",
+      "collects",
+      "animal",
+      "stickers."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/collect.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/collect.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/collect.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%206_010_collect_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%206_010_collect_sentence.mp3"
       }
     }
   },
@@ -10126,6 +11860,33 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "stretch_g3d6",
+    "grade": 3,
+    "day": 6,
+    "seq": 15,
+    "word": "stretch",
+    "pos": "v.",
+    "meaning": "늘이다[뻗다·펴다]",
+    "example": "The cat stretches its body.",
+    "exampleChunks": [
+      "The",
+      "cat",
+      "stretches",
+      "its",
+      "body."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/stretch.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/stretch.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/stretch.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%206_015_stretch_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%206_015_stretch_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "tilt",
     "grade": 3,
     "day": 6,
@@ -10180,6 +11941,59 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%206_018_lift_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%206_018_lift_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "sigh",
+    "grade": 3,
+    "day": 6,
+    "seq": 20,
+    "word": "sigh",
+    "pos": "v.",
+    "meaning": "한숨을 내쉬다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sigh.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/sigh.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/sigh.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
+    "id": "pack_g3d7",
+    "grade": 3,
+    "day": 7,
+    "seq": 1,
+    "word": "pack",
+    "pos": "v.",
+    "meaning": "싸다[포장하다]",
+    "example": "We pack our clothes for the trip to the beach.",
+    "exampleChunks": [
+      "We",
+      "pack",
+      "our",
+      "clothes",
+      "for",
+      "the",
+      "trip",
+      "to",
+      "the",
+      "beach."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pack.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pack.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/pack.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%207_001_pack_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%207_001_pack_sentence.mp3"
       }
     }
   },
@@ -10307,6 +12121,36 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "fill",
+    "grade": 3,
+    "day": 7,
+    "seq": 7,
+    "word": "fill",
+    "pos": "v.",
+    "meaning": "채우다",
+    "example": "Mom fills the jar with some cherry jam.",
+    "exampleChunks": [
+      "Mom",
+      "fills",
+      "the",
+      "jar",
+      "with",
+      "some",
+      "cherry",
+      "jam."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fill.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/fill.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/fill.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%207_007_fill_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%207_007_fill_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "lock",
     "grade": 3,
     "day": 7,
@@ -10332,6 +12176,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%207_008_lock_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%207_008_lock_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "steal",
+    "grade": 3,
+    "day": 7,
+    "seq": 10,
+    "word": "steal",
+    "pos": "v.",
+    "meaning": "훔치다 도둑질하다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/steal.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/steal.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/steal.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -10567,6 +12432,34 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "pose",
+    "grade": 3,
+    "day": 7,
+    "seq": 19,
+    "word": "pose",
+    "pos": "v.",
+    "meaning": "포즈를 취하다 질문을 하다",
+    "example": "The kids pose for the picture.",
+    "exampleChunks": [
+      "The",
+      "kids",
+      "pose",
+      "for",
+      "the",
+      "picture."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pose.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/pose.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/pose.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%207_019_pose_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%207_019_pose_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "care",
     "grade": 3,
     "day": 8,
@@ -10618,6 +12511,36 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%208_007_accept_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%208_007_accept_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "appear",
+    "grade": 3,
+    "day": 8,
+    "seq": 8,
+    "word": "appear",
+    "pos": "v.",
+    "meaning": "나타나다",
+    "example": "The sun will appear in the sky soon.",
+    "exampleChunks": [
+      "The",
+      "sun",
+      "will",
+      "appear",
+      "in",
+      "the",
+      "sky",
+      "soon."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/emerge.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/emerge.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/emerge.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%208_008_appear_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%208_008_appear_sentence.mp3"
       }
     }
   },
@@ -10876,6 +12799,35 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "mail",
+    "grade": 3,
+    "day": 9,
+    "seq": 4,
+    "word": "mail",
+    "pos": "v.",
+    "meaning": "(우편으로)보내다 부치다",
+    "example": "He mails the letter to his friend.",
+    "exampleChunks": [
+      "He",
+      "mails",
+      "the",
+      "letter",
+      "to",
+      "his",
+      "friend."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/mail.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/mail.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/mail.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%209_004_mail_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%209_004_mail_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "hurt",
     "grade": 3,
     "day": 9,
@@ -11077,6 +13029,27 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "groan",
+    "grade": 3,
+    "day": 9,
+    "seq": 16,
+    "word": "groan",
+    "pos": "v.",
+    "meaning": "(고통으로) 신음소리를 내다 낮게 탄성을  지르다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/groan.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/groan.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/groan.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
+      }
+    }
+  },
+  {
     "id": "sprinkle",
     "grade": 3,
     "day": 9,
@@ -11101,6 +13074,34 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%209_017_sprinkle_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%209_017_sprinkle_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "roam",
+    "grade": 3,
+    "day": 9,
+    "seq": 18,
+    "word": "roam",
+    "pos": "v.",
+    "meaning": "(이리저리)돌아다니다 배회[방랑]하다",
+    "example": "The deer roams in the forest.",
+    "exampleChunks": [
+      "The",
+      "deer",
+      "roams",
+      "in",
+      "the",
+      "forest."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/roam.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/roam.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/roam.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%209_018_roam_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%209_018_roam_sentence.mp3"
       }
     }
   },
@@ -11213,6 +13214,27 @@ window.VOCAB_WORDS = [
       "audio": {
         "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%2010_003_damage_word.mp3",
         "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%2010_003_damage_sentence.mp3"
+      }
+    }
+  },
+  {
+    "id": "creak",
+    "grade": 3,
+    "day": 10,
+    "seq": 4,
+    "word": "creak",
+    "pos": "v.",
+    "meaning": "삐걱거리다",
+    "example": "",
+    "exampleChunks": [],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/creak.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/creak.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/creak.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "",
+        "example": ""
       }
     }
   },
@@ -11356,6 +13378,33 @@ window.VOCAB_WORDS = [
     }
   },
   {
+    "id": "tidy",
+    "grade": 3,
+    "day": 10,
+    "seq": 10,
+    "word": "tidy",
+    "pos": "v.",
+    "meaning": "정돈[정리]하다",
+    "example": "She tidies up her desk.",
+    "exampleChunks": [
+      "She",
+      "tidies",
+      "up",
+      "her",
+      "desk."
+    ],
+    "media": {
+      "gif": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/tidy.mp4",
+      "video": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca-videos/tidy.mp4",
+      "thumb": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/voca%20-%20images/tidy.jpeg",
+      "placeholder": "📖",
+      "audio": {
+        "word": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%2010_010_tidy_word.mp3",
+        "example": "https://dovmtkxpjupbdkifrlss.supabase.co/storage/v1/object/public/Voca%20-%20TTS/G3_Day%2010_010_tidy_sentence.mp3"
+      }
+    }
+  },
+  {
     "id": "polish",
     "grade": 3,
     "day": 10,
@@ -11371,8 +13420,8 @@ window.VOCAB_WORDS = [
       "shoes."
     ],
     "media": {
-      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260704_211255_8e3ece87-6fb5-4663-b27c-4a52cff5bf4e.mp4",
-      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/hf_20260704_211255_8e3ece87-6fb5-4663-b27c-4a52cff5bf4e.mp4",
+      "gif": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260902_001305_de878b06-539f-4e53-9a12-924b1609c675.mp4",
+      "video": "https://d8j0ntlcm91z4.cloudfront.net/user_3BO3KyJ9rz504vburMhH4hlonmN/hf_20260902_001305_de878b06-539f-4e53-9a12-924b1609c675.mp4",
       "thumb": "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bfqnph7JZyUpQdqDvhdpHlpkN1/fcded2f3-2089-4c80-81cd-7bd566681335.png",
       "placeholder": "📖",
       "audio": {
@@ -11582,3 +13631,7 @@ window.VOCAB_WORDS = [
     }
   }
 ];
+
+window.VOCAB_WORDS.sort((a, b) =>
+  a.grade - b.grade || a.day - b.day || a.seq - b.seq
+);
