@@ -373,7 +373,7 @@
         span.textContent = wordData.word;
         refs.wordRow.appendChild(span);
       }
-      refs.meaning.classList.remove('is-visible');
+      refs.meaning.classList.add('is-visible');
       refs.exWrap.classList.add('is-visible');
 
       // 카드 미디어 재생
